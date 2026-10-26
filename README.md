@@ -12,6 +12,20 @@ The key feature is the explanation. For each opportunity the assistant says **wh
 fit**, citing the organization's published rules. It flags information that is **missing or
 conflicting**, and when someone can't meet a requirement it suggests **another way to help**.
 
+## Quick start (about 1 minute of commands; Python 3.10+, no Node needed)
+
+```bash
+git clone https://github.com/rheasong3411/final-project.git
+cd final-project
+python3 -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+# Put PORTKEY_API_KEY=... in final-project/.env OR in the folder above it (../.env); see .env.example
+uvicorn backend.api:app --port 8000                     # if 8000 is busy: --port 8001
+```
+
+Open http://localhost:8000. Browsing, details, Compare and "Check my fit" work without a key; Find my fit (the
+AI assistant, gpt-6-luna via Portkey) needs the key. Details: [Setup and run](#setup-and-run-local).
+
 > **What this app does not do:** it helps people prepare to apply. It does **not** approve volunteers,
 > confirm openings or guarantee placement or shifts. Every rule comes from public web pages on the date
 > shown in `data/sources.json`, and the organization has final say.

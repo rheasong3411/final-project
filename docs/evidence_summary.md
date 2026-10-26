@@ -139,3 +139,9 @@ Kept separate on purpose:
   gpt-6-luna run; report 15 pages and slides 10, visually inspected. Evidence: `output/final_submission/`.
 - **Pending (Rhea):** the Canvas upload (repo link, report.html, slides.html); optional demo video.
 - **Participant quotes:** four verbatim quotes added 2026-10-26 (`docs/user_test_findings.md`). **Not recorded:** task timing or a session screenshot.
+
+## Self-grading fixes (2026-10-26)
+
+New traced runs on the final build with screenshots from the same runs (walkthrough `da50c35fac69`, safety
+`cdb992fe4e6c`), an in-app "Run details" token screenshot, a cost spot check (10 fresh runs, mean $0.00160), a fixed
+card layout bug and a README quick start. Evidence: `output/final_submission/20261026-023657_grading_fixes/`.

@@ -135,3 +135,12 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
    time against the 10-minute rule). Decide before publishing.
 10. **Port 8000 is busy on this machine** (another project's server). The documented default stays 8000;
    check that the grader's dry run isn't affected.
+
+## Self-assessment against the rubric (2026-10-26, after the final fixes)
+
+Estimated by the coding assistant, not by the course staff. Fixed today: a traced step-by-step run with screenshots from
+the same run (Agent design), current-build safety screenshot, in-app token usage screenshot and a current-build cost spot
+check (Tokenomics), a card layout bug, repeated follow-up wording, README quick start at the top. Remaining limits that
+cannot be fixed by code: novelty is a judgment call (Idea, 21); Impact rests on one informal user test with quotes but
+no task timing or before/after measurement (5); the app is local, not hosted.
+

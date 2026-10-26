@@ -294,3 +294,11 @@ def test_age_offer_is_added_when_the_model_only_offered_a_wider_area():
     r = run(AssistantRequest(message=AGE15), steps)
     assert r.ok and any("other ways to help" in q for q in r.follow_up_questions)
     assert any("Norwalk" in q for q in r.follow_up_questions)
+
+
+def test_age_offer_not_duplicated_for_other_activity_wording():
+    # Real run 2026-10-26: "look at other animal-volunteering activities" duplicated the server's offer.
+    from backend.agent import _OTHER_WAYS_Q
+    assert _OTHER_WAYS_Q.search("Would you like to look at other animal-volunteering activities in Greater New Haven?")
+    assert not _OTHER_WAYS_Q.search("Would you like me to include other Connecticut locations?")
+

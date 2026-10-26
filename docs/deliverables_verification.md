@@ -163,3 +163,11 @@ survive a rebuild.
   paragraph was shortened, a sentence repeated elsewhere was removed, the Tokenomics limits became one paragraph, and
   the feedback table may now split across pages (its header repeats).
 - `report.html`: 15 Letter pages, 0 external requests; `slides.html`: 10 slides, no overflow. Renders: `output/final_submission/20261026-023428_participant_quotes/`.
+
+## Self-grading fixes (2026-10-26): report and slides rebuilt
+
+- §4 walkthrough replaced by a final-build run with its own screenshots (option card, Your answers, Run details); §6
+  Demonstration 1 replaced by a final-build safety run (Session 6 run kept as a mention); §5 adds a current-build cost
+  spot check. Slides 6 and 8 use the same runs. Tables may now split across pages with repeated headers.
+- `report.html` 15 Letter pages, 0 external requests; `slides.html` 10 slides, no overflow; all pages/slides rendered
+  and inspected (`output/final_submission/20261026-023657_grading_fixes/visual_check/`).

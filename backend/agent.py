@@ -473,7 +473,8 @@ _ZIP_Q = re.compile(r"\bzip\b", re.I)
 _PERIOD_Q = re.compile(r"each week|per week|each month|single visit|per visit|how often", re.I)
 
 
-_OTHER_WAYS_Q = re.compile(r"other ways to help|other (kinds|types) of (activit|volunteer)|different (activit|ways)", re.I)
+_OTHER_WAYS_Q = re.compile(r"other ways to help|other (kinds|types) of (activit|volunteer)|different (activit|ways)|"
+                           r"other [\w-]*\s?(activit|roles|ways|options)", re.I)
 _WIDEN_Q = re.compile(r"widen|broaden|expand|beyond|outside|other (towns|activit)|different activit", re.I)
 
 

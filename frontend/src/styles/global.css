@@ -275,6 +275,8 @@ blockquote { margin: 0 0 var(--space-2); padding: 6px 12px; border-left: 3px sol
 .fact-line dt { font-weight: 700; font-size: 0.9rem; color: var(--ink-muted); }
 .fact-line dd { margin: 0; overflow-wrap: anywhere; }
 .fact-line .sep { color: var(--border-strong, #b9b2a3); margin: 0 2px; }
+.fact-line-note dd { grid-column: 2; font-size: 0.85rem; }  /* a shared note sits under the values, not in the label column */
+@media (max-width: 560px) { .fact-line-note dd { grid-column: 1; } }
 .fact-note { display: block; font-size: 0.86rem; color: var(--q-ink); margin-top: 2px; }
 .fit-word { font-weight: 650; }
 .fit-met { color: var(--met-ink); } .fit-not_met { color: var(--no-ink); } .fit-needs_confirmation { color: var(--q-ink); }

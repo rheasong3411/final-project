@@ -3115,3 +3115,42 @@ still no session timing or session screenshot.
 ### Follow-up prompts
 
 None yet.
+
+## Session 23 — 2026-10-26 — Self-grading against the rubric, and fixes
+
+### Prompt (verbatim)
+
+```text
+if you were to grade this project based on the current version - would it be 100/100? if not, what are the problems - fix them
+```
+
+### What happened
+
+**Estimate:** about 88–93/100 before these fixes (the assistant's estimate, not the course staff's).
+
+**Fixable gaps:**
+- the step-by-step run's screenshots weren't from that run, and some were from older builds;
+- older-build screenshots elsewhere;
+- a cost figure measured before later changes;
+- the run steps were far down the README.
+
+**Not fixable by code:** novelty is a judgment call, and the Impact evidence is one informal test without timings.
+
+**Fixes:**
+- **New runs:** a traced walkthrough run (`da50c35fac69`) and a safety run (`cdb992fe4e6c`) on the final build, with
+  real gpt-6-luna fresh calls. Report §4 and §6 and slides 6 and 8 now use their own screenshots, plus an in-app "Run
+  details" token screenshot.
+- **Cost:** a spot check of 10 fresh runs today averages $0.00160 per run, slightly below the report's $0.00185, so
+  the scaled costs are conservative.
+- **App bugs** found in the new screenshots:
+  - a card's shared note was squeezed into the label column (CSS fixed, frontend rebuilt);
+  - an overlapping follow-up question wasn't caught (regex fixed, test added).
+- **README:** a quick start now sits at the top.
+- **Report layout:** tables may split across pages with repeated headers; the report stays at 15 pages.
+
+**Checks:** 245 tests. Report 15 pages; slides 10, with no overflow. All pages and slides were inspected. Evidence is in
+`output/final_submission/20261026-023657_grading_fixes/`.
+
+### Follow-up prompts
+
+None yet.
