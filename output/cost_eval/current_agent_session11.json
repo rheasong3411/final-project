@@ -1,0 +1,290 @@
+{
+ "rates_usd_per_1m": {
+  "input": 0.1,
+  "cached": 0.01,
+  "cache_write": 0.125,
+  "output": 0.5
+ },
+ "rate_source": "Course Lecture 11 (Tokenomics) slides and vibe page, https://zlisto.github.io/mgt_409_fa26/lectures/slides/lec11-slides.html, which cite https://developers.openai.com/api/docs/pricing; both accessed 2026-10-25. gpt-6-luna, Standard tier, short context (<=272K): input $0.10, cached input $0.01, 30-minute cache write $0.125, output $0.50 per 1M tokens (USD). No date is printed on either page.",
+ "groups": {
+  "standard_cases": {
+   "n": 5,
+   "runs": [
+    {
+     "run": "01_normal_match__70752b750789",
+     "requests": 6,
+     "input": 53027,
+     "cached": 44168,
+     "cache_write": 8103,
+     "uncached": 756,
+     "output": 2512,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 25.06,
+     "cost_usd": 0.002786
+    },
+    {
+     "run": "02_conflict_animal_haven__52bfc19dfc47",
+     "requests": 4,
+     "input": 26531,
+     "cached": 23147,
+     "cache_write": 2880,
+     "uncached": 504,
+     "output": 1266,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 12.78,
+     "cost_usd": 0.001275
+    },
+    {
+     "run": "03b_prompt_injection_subtle__b840904b49aa",
+     "requests": 6,
+     "input": 39897,
+     "cached": 35383,
+     "cache_write": 3758,
+     "uncached": 756,
+     "output": 914,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 16.01,
+     "cost_usd": 0.001356
+    },
+    {
+     "run": "04_impossible_request__91b5939fa61f",
+     "requests": 8,
+     "input": 79718,
+     "cached": 68614,
+     "cache_write": 10096,
+     "uncached": 1008,
+     "output": 2902,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 38.13,
+     "cost_usd": 0.0035
+    },
+    {
+     "run": "05_vague_request__83e8899391a3",
+     "requests": 3,
+     "input": 21245,
+     "cached": 16886,
+     "cache_write": 3981,
+     "uncached": 378,
+     "output": 692,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 29.83,
+     "cost_usd": 0.00105
+    }
+   ],
+   "mean_cost_usd": 0.001993,
+   "median_cost_usd": 0.001356,
+   "mean_input": 44084,
+   "mean_cached": 37640,
+   "mean_output": 1657,
+   "mean_requests": 5.4
+  },
+  "website_location_conversation": {
+   "n": 12,
+   "runs": [
+    {
+     "run": "ui_s11__05442f8d696f",
+     "requests": 7,
+     "input": 57050,
+     "cached": 49328,
+     "cache_write": 6840,
+     "uncached": 882,
+     "output": 2628,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 26.45,
+     "cost_usd": 0.00275
+    },
+    {
+     "run": "ui_s11__235e48a72278",
+     "requests": 4,
+     "input": 26762,
+     "cached": 22837,
+     "cache_write": 3421,
+     "uncached": 504,
+     "output": 1640,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 15.19,
+     "cost_usd": 0.001526
+    },
+    {
+     "run": "ui_s11__36d348ff6280",
+     "requests": 4,
+     "input": 26899,
+     "cached": 22616,
+     "cache_write": 3779,
+     "uncached": 504,
+     "output": 1507,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 15.98,
+     "cost_usd": 0.001502
+    },
+    {
+     "run": "ui_s11__3e79c1cbc9c3",
+     "requests": 4,
+     "input": 26330,
+     "cached": 22135,
+     "cache_write": 3691,
+     "uncached": 504,
+     "output": 1087,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 16.54,
+     "cost_usd": 0.001277
+    },
+    {
+     "run": "ui_s11__4b4ea359c778",
+     "requests": 4,
+     "input": 26731,
+     "cached": 17299,
+     "cache_write": 8928,
+     "uncached": 504,
+     "output": 1260,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 16.85,
+     "cost_usd": 0.001969
+    },
+    {
+     "run": "ui_s11__4f8311c9a882",
+     "requests": 6,
+     "input": 43764,
+     "cached": 38030,
+     "cache_write": 4978,
+     "uncached": 756,
+     "output": 1690,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 18.03,
+     "cost_usd": 0.001923
+    },
+    {
+     "run": "ui_s11__5eeb50d91d15",
+     "requests": 4,
+     "input": 24616,
+     "cached": 21988,
+     "cache_write": 2124,
+     "uncached": 504,
+     "output": 1003,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 13.62,
+     "cost_usd": 0.001037
+    },
+    {
+     "run": "ui_s11__6e1b5534264a",
+     "requests": 6,
+     "input": 51133,
+     "cached": 43105,
+     "cache_write": 7272,
+     "uncached": 756,
+     "output": 1908,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 20.52,
+     "cost_usd": 0.00237
+    },
+    {
+     "run": "ui_s11__b1edd10b64e4",
+     "requests": 4,
+     "input": 28709,
+     "cached": 22959,
+     "cache_write": 5246,
+     "uncached": 504,
+     "output": 1753,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 15.84,
+     "cost_usd": 0.001812
+    },
+    {
+     "run": "ui_s11__ee2ec88901b9",
+     "requests": 5,
+     "input": 34552,
+     "cached": 29492,
+     "cache_write": 4430,
+     "uncached": 630,
+     "output": 2182,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 19.68,
+     "cost_usd": 0.002003
+    },
+    {
+     "run": "ui_s11__ee50bf622e6a",
+     "requests": 4,
+     "input": 27802,
+     "cached": 22957,
+     "cache_write": 4341,
+     "uncached": 504,
+     "output": 1644,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 14.14,
+     "cost_usd": 0.001645
+    },
+    {
+     "run": "ui_s11__f80eb076bc37",
+     "requests": 4,
+     "input": 26302,
+     "cached": 22058,
+     "cache_write": 3740,
+     "uncached": 504,
+     "output": 1677,
+     "gateway": [
+      "REFRESH"
+     ],
+     "latency_s": 26.1,
+     "cost_usd": 0.001577
+    }
+   ],
+   "mean_cost_usd": 0.001783,
+   "median_cost_usd": 0.001729,
+   "mean_input": 33388,
+   "mean_cached": 27900,
+   "mean_output": 1665,
+   "mean_requests": 4.7
+  }
+ },
+ "excluded": [
+  {
+   "run": "03_prompt_injection__8d3d0cc4108b",
+   "reason": "content_filtered"
+  }
+ ],
+ "all": {
+  "n": 17,
+  "mean_cost_usd": 0.001845,
+  "median_cost_usd": 0.001645,
+  "min_cost_usd": 0.001037,
+  "max_cost_usd": 0.0035
+ },
+ "scaling_same_assumption_as_session6": {
+  "runs_per_user_month": 4,
+  "per_user_month": 0.0074,
+  "users_100": 0.74,
+  "users_10000": 73.8
+ }
+}

@@ -1,0 +1,1132 @@
+{
+  "schema_version": 1,
+  "description": "Verified volunteering locations for distance estimates. Separate from opportunities.json so the original records stay unchanged. Session 12 adds organization_locations (one verified physical site per organization, or none when there are several or only a P.O. box) and, for home-based roles, travel notes with evidence.",
+  "location_status_values": {
+    "verified_site": "An official page places this role at the site, and the site's street address is published. Coordinates allowed.",
+    "candidate_site_unconfirmed": "A likely site exists but no official page says the role happens there. No distance is calculated.",
+    "volunteer_home": "The role happens in the volunteer's own home (fostering). No distance to the activity; a related site (orientation, supply pickup) is shown only when a source says so.",
+    "not_published": "No dependable volunteering location. No distance is calculated."
+  },
+  "verification": {
+    "verified_on": "2026-10-25",
+    "method": "Official organization pages were fetched again on 2026-10-25 and the quoted text was found on each page (see accessed_at). Mailing addresses and P.O. boxes are never used.",
+    "page_snapshots": "local_data/source_snapshots/2026-10-25/location_verification/ (gitignored)"
+  },
+  "geocoding_method": {
+    "service": "U.S. Census Geocoder REST API, /geocoder/locations/onelineaddress",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress",
+    "benchmark": "Public_AR_Current",
+    "permissions": "Public U.S. Census Bureau service; no key or account required. Results are U.S. Government works (public domain in the U.S., 17 U.S.C. 105).",
+    "documentation": [
+      "https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/census-geocoder.html",
+      "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html"
+    ],
+    "how_coordinates_are_made": "Census documentation: 'Coordinate results are interpolated, or approximated, based on the physical location that the address geocoded on the TIGER address ranges.'",
+    "uncertainty": "An interpolated street-address point can be off by tens to a few hundred meters, and a large property (for example The Animal Haven's seven acres) is reduced to one point. Shown distances are rounded to at least half a mile, which is coarser than this error.",
+    "accepted_matches": "Exactly one match per address; otherwise coordinates stay null."
+  },
+  "sites": [
+    {
+      "site_id": "fnhas_shelter",
+      "organization_id": "fnhas",
+      "label": "Robin I. Kroogman New Haven Animal Shelter",
+      "address": "81 Fournier Street, New Haven, CT 06511",
+      "town": "New Haven",
+      "address_evidence": [
+        {
+          "source_id": "fnhas_volunteer",
+          "url": "https://findafriendforlife.org/volunteer.html",
+          "quote": "Location The Robin I. Kroogman New Haven Animal Shelter 81 Fournier Street New Haven, CT 06511",
+          "accessed_at": "2026-10-25T19:25:25-04:00"
+        }
+      ],
+      "geocoder_query": "81 Fournier Street, New Haven, CT 06511",
+      "note": "City shelter where Friends volunteers work. The P.O. Box is a mailing address and is not used.",
+      "geocode": {
+        "latitude": 41.331216,
+        "longitude": -72.940219,
+        "matched_address": "81 FOURNIER ST, NEW HAVEN, CT, 06511",
+        "match_count": 1,
+        "tiger_line_id": "604738974",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:02-04:00"
+      }
+    },
+    {
+      "site_id": "ah_shelter",
+      "organization_id": "animal_haven",
+      "label": "The Animal Haven shelter",
+      "address": "89 Mill Road, North Haven, CT 06473",
+      "town": "North Haven",
+      "address_evidence": [
+        {
+          "source_id": "ah_contact",
+          "url": "https://theanimalhavenct.org/contact/",
+          "quote": "Address 89 Mill Road North Haven, CT 06473",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "geocoder_query": "89 Mill Road, North Haven, CT 06473",
+      "note": "The shelter sits on about seven acres; one interpolated point is used for the whole property.",
+      "geocode": {
+        "latitude": 41.37134,
+        "longitude": -72.840054,
+        "matched_address": "89 MILL RD, NORTH HAVEN, CT, 06473",
+        "match_count": 1,
+        "tiger_line_id": "648787939",
+        "street_side": "L",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:02-04:00"
+      }
+    },
+    {
+      "site_id": "bcc_center",
+      "organization_id": "bcc",
+      "label": "Branford Compassion Club Feline Rescue and Adoption Center",
+      "address": "2037 Foxon Road, North Branford, CT 06471",
+      "town": "North Branford",
+      "address_evidence": [
+        {
+          "source_id": "bcc_contact",
+          "url": "https://branfordcompassionclub.org/contact-us/",
+          "quote": "Physical Address Branford Compassion Club Feline Rescue and Adoption Center 2037 Foxon Road North Branford, CT 06471",
+          "accessed_at": "2026-10-25T19:25:27-04:00"
+        }
+      ],
+      "geocoder_query": "2037 Foxon Road, North Branford, CT 06471",
+      "note": "P.O. Box 768, Branford is a mailing address and is not used.",
+      "geocode": {
+        "latitude": 41.334519,
+        "longitude": -72.757214,
+        "matched_address": "2037 FOXON RD, NORTH BRANFORD, CT, 06471",
+        "match_count": 1,
+        "tiger_line_id": "3706877",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:02-04:00"
+      }
+    },
+    {
+      "site_id": "branford_shelter",
+      "organization_id": "branford_shelter",
+      "label": "Dan Cosgrove Animal Shelter",
+      "address": "749 East Main Street, Branford, CT 06405",
+      "town": "Branford",
+      "address_evidence": [
+        {
+          "source_id": "branford_volunteering",
+          "url": "https://www.branford-ct.gov/178/Volunteering",
+          "quote": "Volunteer classes takes place at our shelter located at 749 East Main Street Branford CT, 06405.",
+          "accessed_at": "2026-10-25T19:25:28-04:00"
+        }
+      ],
+      "geocoder_query": "749 East Main Street, Branford, CT 06405",
+      "note": null,
+      "geocode": {
+        "latitude": 41.307533,
+        "longitude": -72.752008,
+        "matched_address": "749 E MAIN ST, BRANFORD, CT, 06405",
+        "match_count": 1,
+        "tiger_line_id": "3749972",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:03-04:00"
+      }
+    },
+    {
+      "site_id": "gnhcp_center",
+      "organization_id": "gnhcp",
+      "label": "GNHCP Center",
+      "address": "1874 Middletown Avenue, Northford, CT",
+      "town": "Northford (village of North Branford)",
+      "address_evidence": [
+        {
+          "source_id": "gnhcp_home",
+          "url": "https://www.gnhcp.org/",
+          "quote": "We moved to1874 Middletown Avenue in Northford, CT",
+          "accessed_at": "2026-10-25T19:25:29-04:00"
+        }
+      ],
+      "geocoder_query": "1874 Middletown Avenue, Northford, CT",
+      "note": "The home page gives no ZIP code; the Census Geocoder matched ZIP 06472. P.O. Box 118 is a mailing address and is not used. No role is confirmed to take place here, so it is only a candidate site.",
+      "geocode": {
+        "latitude": 41.411866,
+        "longitude": -72.759945,
+        "matched_address": "1874 MIDDLETOWN AVE, NORTHFORD, CT, 06472",
+        "match_count": 1,
+        "tiger_line_id": "3722491",
+        "street_side": "L",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:03-04:00"
+      }
+    },
+    {
+      "site_id": "chs_newington",
+      "organization_id": "chs",
+      "label": "CHS Newington adoption center",
+      "address": "701 Russell Road, Newington, CT 06111",
+      "town": "Newington",
+      "address_evidence": [
+        {
+          "source_id": "chs_volunteer",
+          "url": "https://cthumane.org/volunteer/",
+          "quote": "Locations and Hours Newington 701 Russell Road Newington, CT 06111",
+          "accessed_at": "2026-10-25T19:25:29-04:00"
+        }
+      ],
+      "geocoder_query": "701 Russell Road, Newington, CT 06111",
+      "note": null,
+      "geocode": {
+        "latitude": 41.700172,
+        "longitude": -72.705761,
+        "matched_address": "701 RUSSELL RD, NEWINGTON, CT, 06111",
+        "match_count": 1,
+        "tiger_line_id": "658287039",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:03-04:00"
+      }
+    },
+    {
+      "site_id": "chs_waterford",
+      "organization_id": "chs",
+      "label": "CHS Waterford (Quaker Hill)",
+      "address": "169 Old Colchester Road, Quaker Hill, CT 06375",
+      "town": "Waterford (Quaker Hill)",
+      "address_evidence": [
+        {
+          "source_id": "chs_volunteer",
+          "url": "https://cthumane.org/volunteer/",
+          "quote": "Waterford 169 Old Colchester Road Quaker Hill, CT 06375",
+          "accessed_at": "2026-10-25T19:25:29-04:00"
+        }
+      ],
+      "geocoder_query": "169 Old Colchester Road, Quaker Hill, CT 06375",
+      "note": "No on-site role in the dataset is placed here; it is the pick-up/return site for Waterford fosters.",
+      "geocode": {
+        "latitude": 41.420628,
+        "longitude": -72.131578,
+        "matched_address": "169 OLD COLCHESTER RD, QUAKER HILL, CT, 06375",
+        "match_count": 1,
+        "tiger_line_id": "611675386",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:04-04:00"
+      }
+    },
+    {
+      "site_id": "chs_wilton",
+      "organization_id": "chs",
+      "label": "CHS Wilton",
+      "address": "863 Danbury Road, Wilton, CT 06897",
+      "town": "Wilton",
+      "address_evidence": [
+        {
+          "source_id": "chs_volunteer",
+          "url": "https://cthumane.org/volunteer/",
+          "quote": "Wilton 863 Danbury Road Wilton, CT 06897",
+          "accessed_at": "2026-10-25T19:25:29-04:00"
+        }
+      ],
+      "geocoder_query": "863 Danbury Road, Wilton, CT 06897",
+      "note": "No on-site role in the dataset is placed here; it is the pick-up/return site for Wilton fosters.",
+      "geocode": {
+        "latitude": 41.253081,
+        "longitude": -73.433976,
+        "matched_address": "863 DANBURY RD, WILTON, CT, 06897",
+        "match_count": 1,
+        "tiger_line_id": "3271368",
+        "street_side": "L",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:04-04:00"
+      }
+    },
+    {
+      "site_id": "paws_shelter",
+      "organization_id": "paws",
+      "label": "PAWS shelter",
+      "address": "504 Main Avenue, Norwalk, CT 06851",
+      "town": "Norwalk",
+      "address_evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "Visit Us: 504 Main Avenue Norwalk, CT 06851",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "geocoder_query": "504 Main Avenue, Norwalk, CT 06851",
+      "note": null,
+      "geocode": {
+        "latitude": 41.150354,
+        "longitude": -73.425275,
+        "matched_address": "504 MAIN AVE, NORWALK, CT, 06851",
+        "match_count": 1,
+        "tiger_line_id": "3279486",
+        "street_side": "R",
+        "benchmark": "Public_AR_Current",
+        "geocoded_at": "2026-10-25T19:30:04-04:00"
+      }
+    }
+  ],
+  "opportunity_locations": [
+    {
+      "opportunity_id": "fnhas_dog_handler",
+      "location_status": "verified_site",
+      "site_id": "fnhas_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "fnhas_volunteer",
+          "url": "https://findafriendforlife.org/volunteer.html",
+          "quote": "Volunteer hours at the shelter are Monday through Saturday 12:30 to 4:30 p.m.",
+          "accessed_at": "2026-10-25T19:25:25-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "fnhas_cat_handler",
+      "location_status": "verified_site",
+      "site_id": "fnhas_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "fnhas_volunteer",
+          "url": "https://findafriendforlife.org/volunteer.html",
+          "quote": "Volunteer hours at the shelter are Monday through Saturday 12:30 to 4:30 p.m.",
+          "accessed_at": "2026-10-25T19:25:25-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "fnhas_foster",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": "fnhas_shelter",
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home. Orientation is at the New Haven shelter.",
+      "related_site_purpose": "Orientation",
+      "travel_note": "Orientation is an individual session at the New Haven shelter.",
+      "travel_evidence": [
+        {
+          "source_id": "fnhas_volunteer",
+          "url": "https://findafriendforlife.org/volunteer.html",
+          "quote": "will be asked to schedule an individual orientation at the shelter",
+          "accessed_at": "2026-10-25T15:50:44-04:00"
+        }
+      ]
+    },
+    {
+      "opportunity_id": "fnhas_adoption_events",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "fnhas_dog_bathing",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "fnhas_shelter",
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "fnhas_volunteer",
+          "url": "https://findafriendforlife.org/volunteer.html",
+          "quote": "To bathe dogs on the Friday prior to an adoption event.",
+          "accessed_at": "2026-10-25T19:25:25-04:00"
+        }
+      ],
+      "note": "The page does not say where dogs are bathed. The shelter is likely but not confirmed."
+    },
+    {
+      "opportunity_id": "fnhas_transport_rescue",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "fnhas_fundraising_education",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_dog_walking",
+      "location_status": "verified_site",
+      "site_id": "ah_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "ah_volunteer",
+          "url": "https://theanimalhavenct.org/volunteer/",
+          "quote": "Come walk The Animal Haven's dogs on our seven acres of land",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "ah_cat_socializing",
+      "location_status": "verified_site",
+      "site_id": "ah_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "ah_volunteer",
+          "url": "https://theanimalhavenct.org/volunteer/",
+          "quote": "please consider becoming a volunteer dog walker or cat socializer at The Animal Haven",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "ah_shelter_cleaning",
+      "location_status": "verified_site",
+      "site_id": "ah_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "ah_volunteer",
+          "url": "https://theanimalhavenct.org/volunteer/",
+          "quote": "clean the cat cages, clean the dog runs, and do general cleaning of the shelter",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "ah_fundraising_events",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_administrative",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_building_maintenance",
+      "location_status": "verified_site",
+      "site_id": "ah_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "ah_volunteer",
+          "url": "https://theanimalhavenct.org/volunteer/",
+          "quote": "we would greatly appreciate your help with the routine maintenance of the shelter",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "ah_gardening",
+      "location_status": "verified_site",
+      "site_id": "ah_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "ah_volunteer",
+          "url": "https://theanimalhavenct.org/volunteer/",
+          "quote": "We have lots of land at The Animal Haven that can use some beautifying by someone with a green thumb.",
+          "accessed_at": "2026-10-25T19:25:26-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "ah_grant_writing",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_communications_marketing",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_food_supply_drives",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "ah_adoption_awareness_events",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "bcc_shelter_care",
+      "location_status": "verified_site",
+      "site_id": "bcc_center",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "bcc_volunteer",
+          "url": "https://branfordcompassionclub.org/how-to-help/volunteer/",
+          "quote": "Volunteers clean and feed at our shelter twice a day",
+          "accessed_at": "2026-10-25T19:25:28-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "bcc_shy_cat_socializing",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "bcc_center",
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "bcc_volunteer",
+          "url": "https://branfordcompassionclub.org/how-to-help/volunteer/",
+          "quote": "socialize shy cats",
+          "accessed_at": "2026-10-25T19:25:28-04:00"
+        }
+      ],
+      "note": "The page lists this task without saying where it happens (the adoption center or foster homes)."
+    },
+    {
+      "opportunity_id": "bcc_feral_colony_feeding",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "bcc_foster",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home (13 listed towns).",
+      "travel_note": "Fosters must live close to BCC's veterinary hospitals (their locations aren't published); ask what travel is involved.",
+      "travel_evidence": [
+        {
+          "source_id": "bcc_foster",
+          "url": "https://branfordcompassionclub.org/how-to-help/foster/",
+          "quote": "We require foster families to live in close proximity to our veterinary hospitals.",
+          "accessed_at": "2026-10-25T15:51:24-04:00"
+        }
+      ]
+    },
+    {
+      "opportunity_id": "bcc_fundraising",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "bcc_bake_sales",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "bcc_offsite_events",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "bcc_crafting",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "bcc_youth_supply_drives",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "bcc_youth_art_advocacy",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "bcc_youth_kindness_education",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "branford_general_volunteer",
+      "location_status": "verified_site",
+      "site_id": "branford_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "branford_volunteering",
+          "url": "https://www.branford-ct.gov/178/Volunteering",
+          "quote": "The general volunteer orientation is for volunteers looking to volunteer in the shelter setting working with cats, critters and even dogs",
+          "accessed_at": "2026-10-25T19:25:28-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "branford_tails_to_trails",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "Walks go to off-site trail locations that are not named."
+    },
+    {
+      "opportunity_id": "gnhcp_direct_care",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "gnhcp_center",
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "gnhcp_adoptions",
+          "url": "https://www.gnhcp.org/adoptions",
+          "quote": "The cats and kittens featured on this page residE in foster homes or at the GNHCP Center.",
+          "accessed_at": "2026-10-25T19:26:06-04:00"
+        }
+      ],
+      "note": "Foster cats live in foster homes or at the Center; where direct-care volunteers work is not stated."
+    },
+    {
+      "opportunity_id": "gnhcp_grant_writing",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "gnhcp_event_organizing",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "gnhcp_awareness_outreach",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "gnhcp_food_drives_workshops",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "gnhcp_rescue_tnr",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_shelter_care",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_foster",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_feral_feeding",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_vet_transport",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_trades",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_adoption_appointments",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_donor_correspondence",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_fundraiser_help",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_phone_line",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The organization's pages do not say where this role takes place."
+    },
+    {
+      "opportunity_id": "cattales_youth_school_fundraiser",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "chs_newington_group_trails",
+      "location_status": "verified_site",
+      "site_id": "chs_newington",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "chs_newington_openings",
+          "url": "https://cthumane.org/volunteer/newington-volunteer-opportunities/",
+          "quote": "The Newington adoption center is in need of one-time volunteer groups to help with the maintenance of the dog walking trails and outside dog play yards.",
+          "accessed_at": "2026-10-25T19:26:06-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "chs_newington_laundry",
+      "location_status": "verified_site",
+      "site_id": "chs_newington",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "chs_newington_openings",
+          "url": "https://cthumane.org/volunteer/newington-volunteer-opportunities/",
+          "quote": "The Newington adoption center is looking for reliable volunteers to assist in our busy laundry room.",
+          "accessed_at": "2026-10-25T19:26:06-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "chs_newington_dog_trainer",
+      "location_status": "verified_site",
+      "site_id": "chs_newington",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "chs_newington_openings",
+          "url": "https://cthumane.org/volunteer/newington-volunteer-opportunities/",
+          "quote": "The Newington shelter is looking for volunteers with at least 2 years of professional, positive-reinforcement dog training experience",
+          "accessed_at": "2026-10-25T19:26:06-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "chs_foster_newington",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": "chs_newington",
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home; pets come from and return to CHS Newington.",
+      "related_site_purpose": "Supply pickup, meet-and-greets and medical visits",
+      "travel_note": "You may need to pick up supplies and bring the pet to CHS for meet-and-greets or medical visits.",
+      "travel_evidence": [
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "CHS will pack more supplies for you to pick up at your earliest convenience.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Volunteers who agree to these assignments will bring the pets to CHS for meet-and-greets with potential adoptive families as needed.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Medical staff will be available to see foster pets that become sick or injured during their foster stay.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        }
+      ]
+    },
+    {
+      "opportunity_id": "chs_foster_waterford",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": "chs_waterford",
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home; pets come from and return to CHS Waterford (Quaker Hill).",
+      "related_site_purpose": "Supply pickup, meet-and-greets and medical visits",
+      "travel_note": "You may need to pick up supplies and bring the pet to CHS for meet-and-greets or medical visits.",
+      "travel_evidence": [
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "CHS will pack more supplies for you to pick up at your earliest convenience.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Volunteers who agree to these assignments will bring the pets to CHS for meet-and-greets with potential adoptive families as needed.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Medical staff will be available to see foster pets that become sick or injured during their foster stay.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        }
+      ]
+    },
+    {
+      "opportunity_id": "chs_foster_wilton",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": "chs_wilton",
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home; pets come from and return to CHS Wilton.",
+      "related_site_purpose": "Supply pickup, meet-and-greets and medical visits",
+      "travel_note": "You may need to pick up supplies and bring the pet to CHS for meet-and-greets or medical visits.",
+      "travel_evidence": [
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "CHS will pack more supplies for you to pick up at your earliest convenience.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Volunteers who agree to these assignments will bring the pets to CHS for meet-and-greets with potential adoptive families as needed.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        },
+        {
+          "source_id": "chs_foster_care",
+          "url": "https://cthumane.org/volunteer/foster-care/",
+          "quote": "Medical staff will be available to see foster pets that become sick or injured during their foster stay.",
+          "accessed_at": "2026-10-25T15:52:25-04:00"
+        }
+      ]
+    },
+    {
+      "opportunity_id": "chs_collection_drive",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "chs_craft_projects",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "paws_cat_volunteer",
+      "location_status": "verified_site",
+      "site_id": "paws_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "These volunteers help with the socialization process of our cats at PAWS",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": null
+    },
+    {
+      "opportunity_id": "paws_dog_walker",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "paws_shelter",
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "Our dog walkers are trained to help socialize our dogs while providing them with adequate daily exercise.",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": "The role text does not say where walks take place."
+    },
+    {
+      "opportunity_id": "paws_families_for_felines",
+      "location_status": "verified_site",
+      "site_id": "paws_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "will have the opportunity to volunteer with a parent or guardian in our cat volunteer program",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": "Placed at the shelter through the cat volunteer program, which the same page describes as working with 'our cats at PAWS'."
+    },
+    {
+      "opportunity_id": "paws_adoption_counselor",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "paws_shelter",
+      "related_site_id": null,
+      "evidence": [],
+      "note": "The role text does not say where adoption counseling takes place."
+    },
+    {
+      "opportunity_id": "paws_fundraising",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "Fundraising events are held off-site on a regular basis.",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": "Off-site events; venues are not published."
+    },
+    {
+      "opportunity_id": "paws_office_admin",
+      "location_status": "candidate_site_unconfirmed",
+      "site_id": null,
+      "candidate_site_id": "paws_shelter",
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "as well as front desk receptionist duties",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": "Front-desk duties suggest the shelter, but the page does not say so."
+    },
+    {
+      "opportunity_id": "paws_foster",
+      "location_status": "volunteer_home",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "Foster care happens in the volunteer's home.",
+      "travel_note": "The listing doesn't say whether pickup, training or supplies involve travel; ask PAWS.",
+      "travel_evidence": []
+    },
+    {
+      "opportunity_id": "paws_junior_volunteer",
+      "location_status": "not_published",
+      "site_id": null,
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [],
+      "note": "You organize this yourself; no volunteering site applies."
+    },
+    {
+      "opportunity_id": "paws_reading_to_rescues",
+      "location_status": "verified_site",
+      "site_id": "paws_shelter",
+      "candidate_site_id": null,
+      "related_site_id": null,
+      "evidence": [
+        {
+          "source_id": "paws_volunteer",
+          "url": "https://www.pawsct.org/volunteer",
+          "quote": "helping our dogs and cats at the shelter",
+          "accessed_at": "2026-10-25T19:25:30-04:00"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "organization_locations": [
+    {
+      "organization_id": "fnhas",
+      "site_id": "fnhas_shelter",
+      "basis": "The Friends group's volunteer page gives the city shelter as its location; its P.O. Box is a mailing address and is not used."
+    },
+    {
+      "organization_id": "animal_haven",
+      "site_id": "ah_shelter",
+      "basis": "Single physical address on the organization's contact page."
+    },
+    {
+      "organization_id": "bcc",
+      "site_id": "bcc_center",
+      "basis": "Physical address of the Feline Rescue and Adoption Center on the contact page; the Branford P.O. Box is not used."
+    },
+    {
+      "organization_id": "branford_shelter",
+      "site_id": "branford_shelter",
+      "basis": "The town shelter's own address on its volunteering page."
+    },
+    {
+      "organization_id": "gnhcp",
+      "site_id": "gnhcp_center",
+      "basis": "The Center's address on the home page (moved to Northford in 2025); the P.O. Box is not used."
+    },
+    {
+      "organization_id": "paws",
+      "site_id": "paws_shelter",
+      "basis": "Single physical address on the volunteer page."
+    },
+    {
+      "organization_id": "chs",
+      "site_id": null,
+      "other_site_ids": [
+        "chs_newington",
+        "chs_waterford",
+        "chs_wilton"
+      ],
+      "basis": "Three sites. When a record doesn't say which one applies, none is chosen."
+    },
+    {
+      "organization_id": "cat_tales",
+      "site_id": null,
+      "basis": "Only a mailing address (P.O. Box, Middletown) is published, so no physical location is known."
+    }
+  ]
+}

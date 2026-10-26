@@ -1,0 +1,11 @@
+{
+  "dataset": "U.S. Census Bureau, 2026 Gazetteer Files: County Subdivisions (national file)",
+  "download_url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_cousubs_national.zip",
+  "zip_sha256": "9d528b39b70a27075c863b1572f27eadaf24484d5435fac17fc3b4cdd36434c2",
+  "rows_kept": 169,
+  "rows_kept_rule": "USPS = CT and NAME ends with ' town' (Connecticut's 169 towns)",
+  "reference_point": "INTPTLAT/INTPTLONG: the Census internal point of the town's area. Used as the 'town center' reference for towns published without an address. Not a downtown, a town hall or a volunteering location.",
+  "dataset_date": "2026 Gazetteer; server Last-Modified Tue, 08 Sep 2026 21:00:12 GMT",
+  "downloaded_at": "2026-10-25 (Session 12)",
+  "license": "U.S. Government work; public domain in the U.S. (17 U.S.C. 105). No key or account needed."
+}

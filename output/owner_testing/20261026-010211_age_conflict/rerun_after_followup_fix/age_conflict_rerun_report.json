@@ -1,0 +1,226 @@
+{
+ "checks": [
+  {
+   "check": "desktop: turn 1 answered by gpt-6-luna",
+   "passed": true,
+   "detail": "['gpt-6-luna-global']"
+  },
+  {
+   "check": "desktop: turn 1 profile age 15 with a parent",
+   "passed": true,
+   "detail": "{'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'commitment_preference': None, 'commitment_required': None, 'available_days': [], 'available_times': [], 'max_session_hours': None}"
+  },
+  {
+   "check": "desktop turn 1: rendered cards inspected",
+   "passed": true,
+   "detail": "[(\"Roles that don't fit rig\", 'ah_dog_walking', \"21+ | You: 15 | Doesn't meet requirement\", 'Fit: Does not meet a published requirement'), (\"Roles that don't fit rig\", 'branford_tails_to_trails', \"25+ | You: 15 | Doesn't meet requirement\", 'Fit: Does not meet a published requirement')]"
+  },
+  {
+   "check": "desktop turn 1: no role whose every published age is above 15 is offered (rendered cards)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 1: no offered card has a failed age rule",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 1: structured response agrees (no offered card is not_met on age)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 1: supported vs needs-confirmation ages distinguished on cards",
+   "passed": true,
+   "detail": "{'age_supported_green': [], 'age_needs_confirmation_amber': [], 'no_age_line': []}"
+  },
+  {
+   "check": "desktop: turn 1 offers other ways to help and asks first",
+   "passed": true,
+   "detail": "['Would you like to see other ways to help in Greater New Haven, or expand the search to other Connecticut locations? ']"
+  },
+  {
+   "check": "desktop: turn 2 answered",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "desktop: turn 2 keeps age 15 and the parent answer",
+   "passed": true,
+   "detail": "{'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'commitment_preference': None, 'commitment_required': None, 'available_days': [], 'available_times': [], 'max_session_hours': None}"
+  },
+  {
+   "check": "desktop turn 2: rendered cards inspected",
+   "passed": true,
+   "detail": "[('Other ways to help', 'bcc_youth_art_advocacy', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit \u2014 confirm requirements'), ('Other ways to help', 'bcc_youth_kindness_education', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit \u2014 confirm requirements'), ('Other ways to help', 'bcc_youth_supply_drives', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit \u2014 confirm requirements')]"
+  },
+  {
+   "check": "desktop turn 2: no role whose every published age is above 15 is offered (rendered cards)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 2: no offered card has a failed age rule",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 2: structured response agrees (no offered card is not_met on age)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop turn 2: supported vs needs-confirmation ages distinguished on cards",
+   "passed": true,
+   "detail": "{'age_supported_green': [], 'age_needs_confirmation_amber': ['bcc_youth_art_advocacy', 'bcc_youth_kindness_education', 'bcc_youth_supply_drives'], 'no_age_line': []}"
+  },
+  {
+   "check": "desktop: turn 2 actually returned other ways to help as cards",
+   "passed": true,
+   "detail": "['Other ways to help', 'Other ways to help', 'Other ways to help']"
+  },
+  {
+   "check": "desktop: no claim that an activity accepts minors without evidence",
+   "passed": true,
+   "detail": "Here are a few alternatives to dog walking. Age and parent/guardian rules aren\u2019t published for these, so ask whether a 15-year-old can participate and what supervision is needed. The art, kindness-education, and supply-drive ideas are independently organized support activities, not staffed placements."
+  },
+  {
+   "check": "desktop: no page errors",
+   "passed": true,
+   "detail": "[]"
+  }
+ ],
+ "real_model_runs": [
+  {
+   "case": "age15_turn1_desktop",
+   "run_id": "f9fc7cedfdef",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 21748,
+    "cached_input_tokens": 19207,
+    "cache_write_input_tokens": 2163,
+    "uncached_input_tokens": 378,
+    "output_tokens": 718,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I didn\u2019t find a Greater New Haven dog-walking role whose published age requirement you meet; having a parent attend does not change those requirements. I also found a dog-walking listing in Norwalk, outside the default search area, and can include other Connecticut locations if you\u2019d like.",
+   "follow_up_questions": [
+    "Would you like to see other ways to help in Greater New Haven, or expand the search to other Connecticut locations? "
+   ],
+   "profile_used": {
+    "age": 15,
+    "guardian_available": true,
+    "interests": [
+     "dog_walking"
+    ],
+    "animal_preferences": [
+     "dogs"
+    ]
+   },
+   "cards": {
+    "recommendations": [],
+    "alternatives": [],
+    "ask_about": [],
+    "outside_area_suggestions": [],
+    "explained_non_matches": [
+     {
+      "id": "ah_dog_walking",
+      "overall": "not_met",
+      "age": {
+       "status": "not_met",
+       "applicability": "published_applicable",
+       "explanation": "The published minimum age is 21 and you are 15."
+      }
+     },
+     {
+      "id": "branford_tails_to_trails",
+      "overall": "not_met",
+      "age": {
+       "status": "not_met",
+       "applicability": "published_applicable",
+       "explanation": "The published minimum age is 25 and you are 15."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "case": "age15_turn2_other_ways_desktop",
+   "run_id": "e7899acc3469",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 37385,
+    "cached_input_tokens": 30938,
+    "cache_write_input_tokens": 5943,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1618,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "Here are a few alternatives to dog walking. Age and parent/guardian rules aren\u2019t published for these, so ask whether a 15-year-old can participate and what supervision is needed. The art, kindness-education, and supply-drive ideas are independently organized support activities, not staffed placements.",
+   "follow_up_questions": [],
+   "profile_used": {
+    "age": 15,
+    "guardian_available": true,
+    "interests": [
+     "dog_walking"
+    ]
+   },
+   "cards": {
+    "recommendations": [],
+    "alternatives": [
+     {
+      "id": "bcc_youth_art_advocacy",
+      "overall": "needs_confirmation",
+      "age": {
+       "status": "needs_confirmation",
+       "applicability": "not_published",
+       "explanation": "The organization does not publish a minimum age for this independent support activity. Because you are under 18, ask whether minors can take part and under what conditions."
+      }
+     },
+     {
+      "id": "bcc_youth_kindness_education",
+      "overall": "needs_confirmation",
+      "age": {
+       "status": "needs_confirmation",
+       "applicability": "not_published",
+       "explanation": "The organization does not publish a minimum age for this independent support activity. Because you are under 18, ask whether minors can take part and under what conditions."
+      }
+     },
+     {
+      "id": "bcc_youth_supply_drives",
+      "overall": "needs_confirmation",
+      "age": {
+       "status": "needs_confirmation",
+       "applicability": "not_published",
+       "explanation": "The organization does not publish a minimum age for this independent support activity. Because you are under 18, ask whether minors can take part and under what conditions."
+      }
+     }
+    ],
+    "ask_about": [],
+    "outside_area_suggestions": [],
+    "explained_non_matches": []
+   }
+  }
+ ],
+ "usage_total_api_reported": {
+  "requests": 7,
+  "input_tokens": 59133,
+  "cached_input_tokens": 50145,
+  "cache_write_input_tokens": 8106,
+  "uncached_input_tokens": 882,
+  "output_tokens": 2336
+ },
+ "passed": 18,
+ "total": 18
+}

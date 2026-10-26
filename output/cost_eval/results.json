@@ -1,0 +1,534 @@
+{
+  "n_runs": 12,
+  "by_profile": {
+    "baseline": {
+      "runs": 6,
+      "successful_fresh_runs": 6,
+      "mean_requests": 4.7,
+      "mean_input_tokens": 30484,
+      "mean_cached_input_tokens": 22993.3,
+      "mean_uncached_input_tokens": 7490.7,
+      "mean_output_tokens": 1489.5,
+      "mean_latency_s": 16.5,
+      "total_input_tokens": 182904,
+      "total_uncached_input_tokens": 44944,
+      "total_cached_input_tokens": 137960,
+      "total_output_tokens": 8937,
+      "quality_runs_passing_all": 6,
+      "quality_checks_passed": 54,
+      "quality_checks_total": 54,
+      "details_calls": 14
+    },
+    "compact": {
+      "runs": 6,
+      "successful_fresh_runs": 6,
+      "mean_requests": 4.3,
+      "mean_input_tokens": 23552.3,
+      "mean_cached_input_tokens": 19013.5,
+      "mean_uncached_input_tokens": 4538.8,
+      "mean_output_tokens": 1068.5,
+      "mean_latency_s": 13.0,
+      "total_input_tokens": 141314,
+      "total_uncached_input_tokens": 27233,
+      "total_cached_input_tokens": 114081,
+      "total_output_tokens": 6411,
+      "quality_runs_passing_all": 6,
+      "quality_checks_passed": 54,
+      "quality_checks_total": 54,
+      "details_calls": 5
+    }
+  },
+  "by_case": {
+    "C1_ordinary": {
+      "baseline": {
+        "mean_input_tokens": 28745,
+        "mean_uncached_input_tokens": 8907.5,
+        "mean_output_tokens": 1506.5,
+        "quality_pass_all": "2/2"
+      },
+      "compact": {
+        "mean_input_tokens": 29645.5,
+        "mean_uncached_input_tokens": 7650.5,
+        "mean_output_tokens": 1237.5,
+        "quality_pass_all": "2/2"
+      }
+    },
+    "C2_conflict": {
+      "baseline": {
+        "mean_input_tokens": 24538,
+        "mean_uncached_input_tokens": 5764,
+        "mean_output_tokens": 1076,
+        "quality_pass_all": "2/2"
+      },
+      "compact": {
+        "mean_input_tokens": 13436.5,
+        "mean_uncached_input_tokens": 2313.5,
+        "mean_output_tokens": 697.5,
+        "quality_pass_all": "2/2"
+      }
+    },
+    "C3_minor": {
+      "baseline": {
+        "mean_input_tokens": 38169,
+        "mean_uncached_input_tokens": 7800.5,
+        "mean_output_tokens": 1886,
+        "quality_pass_all": "2/2"
+      },
+      "compact": {
+        "mean_input_tokens": 27575,
+        "mean_uncached_input_tokens": 3652.5,
+        "mean_output_tokens": 1270.5,
+        "quality_pass_all": "2/2"
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_id": "r1_C1_ordinary_baseline__d15df9a96802",
+      "case": "C1_ordinary",
+      "profile": "baseline",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 5,
+      "input_tokens": 37202,
+      "cached_input_tokens": 27861,
+      "uncached_input_tokens": 9341,
+      "output_tokens": 1757,
+      "reasoning_output_tokens": 684,
+      "latency_s": 19.26,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "assess_profile": 2,
+        "get_opportunity_details": 3,
+        "get_application_checklist": 3,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q6_C1_open_fit": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r1_C1_ordinary_compact__401313fad66f",
+      "case": "C1_ordinary",
+      "profile": "compact",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 5,
+      "input_tokens": 34484,
+      "cached_input_tokens": 24460,
+      "uncached_input_tokens": 10024,
+      "output_tokens": 1442,
+      "reasoning_output_tokens": 537,
+      "latency_s": 14.45,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "assess_profile": 1,
+        "get_opportunity_details": 3,
+        "get_application_checklist": 3,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q6_C1_open_fit": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r1_C2_conflict_baseline__c913900d70cd",
+      "case": "C2_conflict",
+      "profile": "baseline",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 4,
+      "input_tokens": 24492,
+      "cached_input_tokens": 18756,
+      "uncached_input_tokens": 5736,
+      "output_tokens": 985,
+      "reasoning_output_tokens": 316,
+      "latency_s": 12.09,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "get_opportunity_details": 2,
+        "assess_profile": 1,
+        "get_application_checklist": 2,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q7_C2_conflict": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r1_C2_conflict_compact__a4dcf6a2e9df",
+      "case": "C2_conflict",
+      "profile": "compact",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 3,
+      "input_tokens": 13524,
+      "cached_input_tokens": 11131,
+      "uncached_input_tokens": 2393,
+      "output_tokens": 789,
+      "reasoning_output_tokens": 258,
+      "latency_s": 8.96,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "assess_profile": 1,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q7_C2_conflict": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r1_C3_minor_baseline__e610bfe8118d",
+      "case": "C3_minor",
+      "profile": "baseline",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 5,
+      "input_tokens": 31216,
+      "cached_input_tokens": 23189,
+      "uncached_input_tokens": 8027,
+      "output_tokens": 1838,
+      "reasoning_output_tokens": 976,
+      "latency_s": 16.9,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "get_opportunity_details": 3,
+        "assess_profile": 1,
+        "find_alternatives": 1,
+        "get_application_checklist": 1,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q8_C3_minor": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r1_C3_minor_compact__93dfc2191376",
+      "case": "C3_minor",
+      "profile": "compact",
+      "rep": 1,
+      "success": true,
+      "error": null,
+      "requests": 5,
+      "input_tokens": 23958,
+      "cached_input_tokens": 20666,
+      "uncached_input_tokens": 3292,
+      "output_tokens": 1065,
+      "reasoning_output_tokens": 383,
+      "latency_s": 15.81,
+      "tool_calls": {
+        "search_opportunities": 2,
+        "assess_profile": 2,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q8_C3_minor": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C1_ordinary_baseline__cf261b180786",
+      "case": "C1_ordinary",
+      "profile": "baseline",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 3,
+      "input_tokens": 20288,
+      "cached_input_tokens": 11814,
+      "uncached_input_tokens": 8474,
+      "output_tokens": 1256,
+      "reasoning_output_tokens": 368,
+      "latency_s": 15.3,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "get_opportunity_details": 4,
+        "assess_profile": 1,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q6_C1_open_fit": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C1_ordinary_compact__8520756a3a0f",
+      "case": "C1_ordinary",
+      "profile": "compact",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 4,
+      "input_tokens": 24807,
+      "cached_input_tokens": 19530,
+      "uncached_input_tokens": 5277,
+      "output_tokens": 1033,
+      "reasoning_output_tokens": 324,
+      "latency_s": 12.74,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "assess_profile": 1,
+        "get_opportunity_details": 2,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q6_C1_open_fit": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C2_conflict_baseline__79bdf5e620d4",
+      "case": "C2_conflict",
+      "profile": "baseline",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 4,
+      "input_tokens": 24584,
+      "cached_input_tokens": 18792,
+      "uncached_input_tokens": 5792,
+      "output_tokens": 1167,
+      "reasoning_output_tokens": 553,
+      "latency_s": 13.32,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "get_opportunity_details": 2,
+        "assess_profile": 1,
+        "get_application_checklist": 2,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q7_C2_conflict": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C2_conflict_compact__57923d1b7078",
+      "case": "C2_conflict",
+      "profile": "compact",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 3,
+      "input_tokens": 13349,
+      "cached_input_tokens": 11115,
+      "uncached_input_tokens": 2234,
+      "output_tokens": 606,
+      "reasoning_output_tokens": 126,
+      "latency_s": 8.58,
+      "tool_calls": {
+        "search_opportunities": 1,
+        "assess_profile": 1,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q7_C2_conflict": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C3_minor_baseline__bb7121c89d1a",
+      "case": "C3_minor",
+      "profile": "baseline",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 7,
+      "input_tokens": 45122,
+      "cached_input_tokens": 37548,
+      "uncached_input_tokens": 7574,
+      "output_tokens": 1934,
+      "reasoning_output_tokens": 1119,
+      "latency_s": 22.08,
+      "tool_calls": {
+        "search_opportunities": 3,
+        "assess_profile": 3,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q8_C3_minor": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    },
+    {
+      "run_id": "r2_C3_minor_compact__82b5d118cf8c",
+      "case": "C3_minor",
+      "profile": "compact",
+      "rep": 2,
+      "success": true,
+      "error": null,
+      "requests": 6,
+      "input_tokens": 31192,
+      "cached_input_tokens": 27179,
+      "uncached_input_tokens": 4013,
+      "output_tokens": 1476,
+      "reasoning_output_tokens": 715,
+      "latency_s": 17.75,
+      "tool_calls": {
+        "search_opportunities": 2,
+        "assess_profile": 2,
+        "get_application_checklist": 1,
+        "final_result": 1
+      },
+      "validator_retries": 0,
+      "cache_status": [
+        "REFRESH"
+      ],
+      "quality": {
+        "Q0_ok": true,
+        "Q1_profile": true,
+        "Q2_assessment": true,
+        "Q3_app_status": true,
+        "Q4_sources": true,
+        "Q5_uncertainty": true,
+        "Q8_C3_minor": true,
+        "Q9_no_false_claims": true,
+        "Q10_model_and_fresh": true
+      },
+      "quality_pass_all": true
+    }
+  ],
+  "excluded_replays": []
+}

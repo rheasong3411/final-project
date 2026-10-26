@@ -1,0 +1,452 @@
+{
+ "label": "before",
+ "checks": [
+  {
+   "check": "turn 1: age, town and no car used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: interest in cats used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: weekend days used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: morning availability used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: 2–3 hours kept as a range",
+   "passed": false,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: no period or session length silently chosen",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: no ZIP invented",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': None, 'zip_code': None}"
+  },
+  {
+   "check": "turn 1: answered by gpt-6-luna",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "turn 1: asks what the 2–3 hours means (period or per visit) instead of choosing",
+   "passed": false,
+   "detail": "[\"Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.\", 'Do you need to stay within New Haven, or can you travel to nearby towns?']"
+  },
+  {
+   "check": "turn 1: ZIP asked optionally (no car)",
+   "passed": true,
+   "detail": "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed. Do you need to stay within New Haven, or can you travel to nearby towns?"
+  },
+  {
+   "check": "turn 2: age, town and no car used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: interest in cats used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: weekend days used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: morning availability used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: 2–3 hours kept as a range",
+   "passed": false,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: no period or session length silently chosen",
+   "passed": false,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: no ZIP invented",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 2: answered by gpt-6-luna",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "turn 2: chat's one-year explanation carries the same uncertainty as the card",
+   "passed": true,
+   "detail": "The Animal Haven Cat socializer role fits your interest in cats, but its current requirements need confirmation: published sources conflict on the minimum age, and the 12-month commitment appears on an older on-site form. The role’s posted age versions are 18+ and 21+; at 25, you meet both. No minimum hours are published. Cat socializing matches your interest; confirm whether the listed age and commitment requirements are current."
+  },
+  {
+   "check": "turn 2: ah_cat_socializing card shows the one-year rule as needing confirmation",
+   "passed": true,
+   "detail": "12 months | You: not given yet | Needs confirmation ⚠ Listed on an older application form; needs confirmation."
+  },
+  {
+   "check": "turn 2: ah_cat_socializing age line is simple",
+   "passed": false,
+   "detail": "Sources say 18, 21+ (conflicting published ages) | You: 25 | Needs confirmation (your answer matches the listed value) ⚠ Sources disagree; confirm with the organization."
+  },
+  {
+   "check": "turn 3: age, town and no car used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: interest in cats used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: weekend days used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: morning availability used",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: 2–3 hours kept as a range",
+   "passed": false,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: no period or session length silently chosen",
+   "passed": false,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: no ZIP invented",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_days': ['sat', 'sun'], 'available_times': ['morning'], 'available_hours': None, 'available_hours_max': None, 'hours_period': None, 'max_session_hours': 3.0, 'zip_code': None}"
+  },
+  {
+   "check": "turn 3: answered by gpt-6-luna",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "turn 3: still knows there's no car",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "turn 3: no invented bus routes or travel times",
+   "passed": true,
+   "detail": "I can’t determine which is closest from town alone, and the listings don’t provide transit directions or route details. Animal Haven’s cat role is at its North Haven site; the Branford Compassion Club socializing role’s activity location isn’t published, so its organization address doesn’t confirm where you’d go. You can optionally share a ZIP for approximate distance estimates; it’s not required."
+  },
+  {
+   "check": "no page errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "Explore: Greater New Haven scope offers only Greater New Haven towns",
+   "passed": false,
+   "detail": "['Newington', 'North Branford', 'North Haven', 'Norwalk']"
+  },
+  {
+   "check": "Explore: wider scope adds other Connecticut towns",
+   "passed": false,
+   "detail": "['Newington', 'North Branford', 'North Haven', 'Norwalk']"
+  }
+ ],
+ "turns": [
+  {
+   "turn": 1,
+   "message": "i’m 25 and live in New Haven. i like cats, don’t have a car, and can volunteer for 2–3 hours on Saturday or Sunday mornings. what could fit me?",
+   "run_id": "e241e537b64b",
+   "ok": true,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 32434,
+    "cached_input_tokens": 27284,
+    "cache_write_input_tokens": 4646,
+    "uncached_input_tokens": 504,
+    "output_tokens": 2023,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I found cat-socializing and cat-care possibilities that relate to your interests and weekend-morning availability, though exact schedules and placements need confirmation. Some additional options are outside Greater New Haven; I can include those if you’d like. You may optionally share a ZIP code for approximate distance estimates; it isn’t required.",
+   "follow_up_questions": [
+    "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+    "Do you need to stay within New Haven, or can you travel to nearby towns?"
+   ],
+   "profile": {
+    "age": 25,
+    "town": "New Haven",
+    "has_car": false,
+    "animal_preferences": [
+     "cats"
+    ],
+    "available_days": [
+     "sat",
+     "sun"
+    ],
+    "available_times": [
+     "morning"
+    ],
+    "available_hours": null,
+    "available_hours_max": null,
+    "hours_period": null,
+    "max_session_hours": null,
+    "zip_code": null
+   },
+   "fact_statuses": {
+    "town": "from_message",
+    "age": "from_message",
+    "animal_preferences": "from_message",
+    "available_days": "suggested",
+    "available_times": "suggested",
+    "interests": "suggested",
+    "max_session_hours": "suggested"
+   },
+   "cards": [
+    {
+     "section": "Options to consider",
+     "id": "bcc_shy_cat_socializing",
+     "rows": {
+      "Location": "Organization: North BranfordActivity location may differ",
+      "Minimum age": "18+ | You: 25 | Meets requirement",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "Not published",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Meets the published requirements we checked"
+     },
+     "why": "Shy-cat socializing fits your interest in cats; the activity’s location and schedule aren’t published, so check whether it works with your availability."
+    },
+    {
+     "section": "Options to consider",
+     "id": "bcc_shelter_care",
+     "rows": {
+      "Location": "North Branford",
+      "Minimum age": "18+ | You: 25 | Meets requirement",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "Not published",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Possible fit — confirm requirements"
+     },
+     "why": "This cat-shelter care role includes cleaning and feeding; confirm which care sessions align with your weekend mornings."
+    },
+    {
+     "section": "Options to consider",
+     "id": "ah_cat_socializing",
+     "rows": {
+      "Location": "North Haven",
+      "Minimum age": "Sources say 18, 21+ (conflicting published ages) | You: 25 | Needs confirmation (your answer matches the listed value) ⚠ Sources disagree; confirm with the organization.",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "12 months | You: not given yet | Needs confirmation ⚠ Listed on an older application form; needs confirmation.",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Possible fit — confirm requirements"
+     },
+     "why": "One-on-one time with shelter cats matches your interest; the published age sources conflict, and a one-year commitment appears on an older form, so confirm current requirements."
+    }
+   ],
+   "panel": [
+    "Town where you liveNew Haven from chatEdit Town where you liveRemove Town where you live",
+    "Age25 from chatEdit AgeRemove Age",
+    "AnimalsCats from chatEdit AnimalsRemove Animals"
+   ]
+  },
+  {
+   "turn": 2,
+   "message": "what are the requirements for the Animal Haven cat role? how long would i need to commit, and does my age work?",
+   "run_id": "f821243b117e",
+   "ok": true,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 22964,
+    "cached_input_tokens": 19989,
+    "cache_write_input_tokens": 2597,
+    "uncached_input_tokens": 378,
+    "output_tokens": 930,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "The Animal Haven Cat socializer role fits your interest in cats, but its current requirements need confirmation: published sources conflict on the minimum age, and the 12-month commitment appears on an older on-site form. The role’s posted age versions are 18+ and 21+; at 25, you meet both. No minimum hours are published.",
+   "follow_up_questions": [
+    "Do you need to stay within New Haven, or can you travel to nearby towns?",
+    "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed."
+   ],
+   "profile": {
+    "age": 25,
+    "town": "New Haven",
+    "has_car": false,
+    "animal_preferences": [
+     "cats"
+    ],
+    "available_days": [
+     "sat",
+     "sun"
+    ],
+    "available_times": [
+     "morning"
+    ],
+    "available_hours": null,
+    "available_hours_max": null,
+    "hours_period": null,
+    "max_session_hours": 3.0,
+    "zip_code": null
+   },
+   "fact_statuses": {
+    "town": "from_message",
+    "age": "from_message",
+    "animal_preferences": "from_message",
+    "available_days": "suggested",
+    "available_times": "suggested",
+    "interests": "from_message",
+    "max_session_hours": "from_message"
+   },
+   "cards": [
+    {
+     "section": "Options to consider",
+     "id": "ah_cat_socializing",
+     "rows": {
+      "Location": "North Haven",
+      "Minimum age": "Sources say 18, 21+ (conflicting published ages) | You: 25 | Needs confirmation (your answer matches the listed value) ⚠ Sources disagree; confirm with the organization.",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "12 months | You: not given yet | Needs confirmation ⚠ Listed on an older application form; needs confirmation.",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Possible fit — confirm requirements"
+     },
+     "why": "Cat socializing matches your interest; confirm whether the listed age and commitment requirements are current."
+    }
+   ],
+   "panel": [
+    "Town where you liveNew Haven from chatEdit Town where you liveRemove Town where you live",
+    "Age25 from chatEdit AgeRemove Age",
+    "AnimalsCats from chatEdit AnimalsRemove Animals",
+    "InterestsSocializing animals from chatEdit InterestsRemove Interests",
+    "Longest single session (hours)3 from chatEdit Longest single session (hours)Remove Longest single session (hours)"
+   ]
+  },
+  {
+   "turn": 3,
+   "message": "how would i get to these places without a car? which ones are closest?",
+   "run_id": "b5f5d4582bf6",
+   "ok": true,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 32652,
+    "cached_input_tokens": 27630,
+    "cache_write_input_tokens": 4518,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1876,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I can’t determine which is closest from town alone, and the listings don’t provide transit directions or route details. Animal Haven’s cat role is at its North Haven site; the Branford Compassion Club socializing role’s activity location isn’t published, so its organization address doesn’t confirm where you’d go. You can optionally share a ZIP for approximate distance estimates; it’s not required.",
+   "follow_up_questions": [
+    "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+    "Do you need to stay within New Haven, or can you travel to nearby towns?"
+   ],
+   "profile": {
+    "age": 25,
+    "town": "New Haven",
+    "has_car": false,
+    "animal_preferences": [
+     "cats"
+    ],
+    "available_days": [
+     "sat",
+     "sun"
+    ],
+    "available_times": [
+     "morning"
+    ],
+    "available_hours": null,
+    "available_hours_max": null,
+    "hours_period": null,
+    "max_session_hours": 3.0,
+    "zip_code": null
+   },
+   "fact_statuses": {
+    "town": "from_message",
+    "age": "from_message",
+    "animal_preferences": "from_message",
+    "interests": "from_message",
+    "max_session_hours": "from_message",
+    "available_days": "suggested",
+    "available_times": "suggested"
+   },
+   "cards": [
+    {
+     "section": "Options to consider",
+     "id": "ah_cat_socializing",
+     "rows": {
+      "Location": "North Haven",
+      "Minimum age": "Sources say 18, 21+ (conflicting published ages) | You: 25 | Needs confirmation (your answer matches the listed value) ⚠ Sources disagree; confirm with the organization.",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "12 months | You: not given yet | Needs confirmation ⚠ Listed on an older application form; needs confirmation.",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Possible fit — confirm requirements"
+     },
+     "why": "It’s a cat-socializing role at a confirmed North Haven site, but ask the organization about current requirements and travel logistics."
+    },
+    {
+     "section": "Options to consider",
+     "id": "bcc_shy_cat_socializing",
+     "rows": {
+      "Location": "Organization: North BranfordActivity location may differ",
+      "Minimum age": "18+ | You: 25 | Meets requirement",
+      "Parent or guardian": "Not published",
+      "Hours": "Not published",
+      "Commitment": "Not published",
+      "Application status": "Application status: Availability not confirmed?What “Availability not confirmed” means",
+      "Your fit": "Fit: Meets the published requirements we checked"
+     },
+     "why": "It involves socializing shy cats; the activity location and travel arrangements are not published."
+    }
+   ],
+   "panel": [
+    "Town where you liveNew Haven from chatEdit Town where you liveRemove Town where you live",
+    "Age25 from chatEdit AgeRemove Age",
+    "AnimalsCats from chatEdit AnimalsRemove Animals",
+    "InterestsSocializing animals from chatEdit InterestsRemove Interests",
+    "Longest single session (hours)3 from chatEdit Longest single session (hours)Remove Longest single session (hours)"
+   ]
+  }
+ ],
+ "usage_total_api_reported": {
+  "requests": 11,
+  "input_tokens": 88050,
+  "cached_input_tokens": 74903,
+  "cache_write_input_tokens": 11761,
+  "uncached_input_tokens": 1386,
+  "output_tokens": 4829
+ },
+ "passed": 25,
+ "total": 34
+}

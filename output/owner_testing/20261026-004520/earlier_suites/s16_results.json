@@ -1,0 +1,312 @@
+[
+ {
+  "check": "desktop: no ZIP -> no distances on any card",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no ZIP place labels",
+  "passed": true,
+  "detail": "[['fnhas_adoption_events', 'Organization: New Haven', ['Activity location may differ', 'Greater New Haven']], ['chs_collection_drive', 'Organization sites: Newington, Waterford, Wilton', ['Activity location may differ', 'Other Connecticut location']]]"
+ },
+ {
+  "check": "desktop: sort options; only distance disabled without ZIP",
+  "passed": true,
+  "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+ },
+ {
+  "check": "desktop: short explanation of the prerequisite",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: A\u2013Z sorting without a ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: every card renders the backend label (verified/org/nearest/home/unknown)",
+  "passed": true,
+  "detail": "[]"
+ },
+ {
+  "check": "desktop: verified site",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: organization fallback + small note",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: multi-site with role association",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: multi-site without association -> nearest named site",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: home-based keeps 'Help from your home' primary; reference distance secondary",
+  "passed": true,
+  "detail": "['bcc_foster', 'Help from your home', ['Organization: North Branford \u00b7 About 9 miles away (for reference; no travel is stated)', 'Greater New Haven']]"
+ },
+ {
+  "check": "desktop: no physical address -> no distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no card repeats the distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: one shared explanation",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: combined unrounded order, no-distance records last (stable)",
+  "passed": true,
+  "detail": "46 with distance, 12 without"
+ },
+ {
+  "check": "desktop: verified and organization destinations interleave in one ranking",
+  "passed": true,
+  "detail": "{'organization_location', 'related_site', 'volunteering_site', 'organization_nearest_site'}"
+ },
+ {
+  "check": "desktop: home reference distance not ranked (not 0 miles)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: one list, one count",
+  "passed": true,
+  "detail": "58 / 58"
+ },
+ {
+  "check": "desktop: 'Other leads' heading and paragraph gone",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: sort hint",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: changing ZIP updates labels and order",
+  "passed": true,
+  "detail": "Organization: New Haven \u00b7 About 1 mile away -> Organization: New Haven \u00b7 About 3.5 miles away"
+ },
+ {
+  "check": "desktop: removing ZIP leaves no stale distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear all clears typed+applied ZIP, sort, messages, distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: town filter unaffected by organization fallback",
+  "passed": true,
+  "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away']"
+ },
+ {
+  "check": "desktop: detail shows organization address and labelled distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: detail keeps the other sites",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Compare uses the same place text",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Home cards use the place line",
+  "passed": true,
+  "detail": "['Organization: New Haven', 'North Haven', 'North Branford']"
+ },
+ {
+  "check": "desktop: Find my fit ZIP untouched",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no page errors",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no ZIP -> no distances on any card",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no ZIP place labels",
+  "passed": true,
+  "detail": "[['fnhas_adoption_events', 'Organization: New Haven', ['Activity location may differ', 'Greater New Haven']], ['chs_collection_drive', 'Organization sites: Newington, Waterford, Wilton', ['Activity location may differ', 'Other Connecticut location']]]"
+ },
+ {
+  "check": "mobile: sort options; only distance disabled without ZIP",
+  "passed": true,
+  "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+ },
+ {
+  "check": "mobile: short explanation of the prerequisite",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: A\u2013Z sorting without a ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: every card renders the backend label (verified/org/nearest/home/unknown)",
+  "passed": true,
+  "detail": "[]"
+ },
+ {
+  "check": "mobile: verified site",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: organization fallback + small note",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: multi-site with role association",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: multi-site without association -> nearest named site",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: home-based keeps 'Help from your home' primary; reference distance secondary",
+  "passed": true,
+  "detail": "['bcc_foster', 'Help from your home', ['Organization: North Branford \u00b7 About 9 miles away (for reference; no travel is stated)', 'Greater New Haven']]"
+ },
+ {
+  "check": "mobile: no physical address -> no distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no card repeats the distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: one shared explanation",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: combined unrounded order, no-distance records last (stable)",
+  "passed": true,
+  "detail": "46 with distance, 12 without"
+ },
+ {
+  "check": "mobile: verified and organization destinations interleave in one ranking",
+  "passed": true,
+  "detail": "{'organization_location', 'related_site', 'volunteering_site', 'organization_nearest_site'}"
+ },
+ {
+  "check": "mobile: home reference distance not ranked (not 0 miles)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: one list, one count",
+  "passed": true,
+  "detail": "58 / 58"
+ },
+ {
+  "check": "mobile: 'Other leads' heading and paragraph gone",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: sort hint",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: changing ZIP updates labels and order",
+  "passed": true,
+  "detail": "Organization: New Haven \u00b7 About 1 mile away -> Organization: New Haven \u00b7 About 3.5 miles away"
+ },
+ {
+  "check": "mobile: removing ZIP leaves no stale distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear all clears typed+applied ZIP, sort, messages, distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: town filter unaffected by organization fallback",
+  "passed": true,
+  "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away']"
+ },
+ {
+  "check": "mobile: detail shows organization address and labelled distance",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: detail keeps the other sites",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Compare uses the same place text",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Home cards use the place line",
+  "passed": true,
+  "detail": "['Organization: New Haven', 'North Haven', 'North Branford']"
+ },
+ {
+  "check": "mobile: Find my fit ZIP untouched",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no page errors",
+  "passed": true,
+  "detail": ""
+ }
+]

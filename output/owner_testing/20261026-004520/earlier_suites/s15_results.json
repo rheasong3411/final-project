@@ -1,0 +1,232 @@
+[
+ {
+  "check": "desktop: sort options",
+  "passed": true,
+  "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+ },
+ {
+  "check": "desktop: distance prerequisite explained",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear all disabled at defaults",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Organization name A\u2013Z sorts",
+  "passed": true,
+  "detail": "['Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club']"
+ },
+ {
+  "check": "desktop: sorting alone enables Clear all",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear all resets sorting",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: closest option enabled with supported ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: distance sorting works (Session 16: one combined list)",
+  "passed": true,
+  "detail": "[1.0, 1.0, 1.0, 1.0, 6.0, 6.0]"
+ },
+ {
+  "check": "desktop: changing ZIP updates distances",
+  "passed": true,
+  "detail": "['Organization: New Haven \u00b7 About 1 mile away'] -> ['Organization: New Haven \u00b7 About 3.5 miles away']"
+ },
+ {
+  "check": "desktop: removing ZIP leaves no stale distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: ZIP alone enables Clear all",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: invalid draft shows a message",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear all clears typed and applied ZIP, messages and distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: navigation does not restore the cleared ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: empty state shown",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear all from the empty state restores defaults and clears ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Explore ZIP is separate from Find my fit's answers",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: clearing Explore keeps the confirmed Find my fit ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: One-time in Greater New Haven: none",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: One-time incl. other Connecticut: the CHS group project",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: town filter offers only published role towns",
+  "passed": true,
+  "detail": "['', 'Newington', 'North Branford', 'North Haven', 'Norwalk']"
+ },
+ {
+  "check": "desktop: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no page errors",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: sort options",
+  "passed": true,
+  "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+ },
+ {
+  "check": "mobile: distance prerequisite explained",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear all disabled at defaults",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Organization name A\u2013Z sorts",
+  "passed": true,
+  "detail": "['Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club']"
+ },
+ {
+  "check": "mobile: sorting alone enables Clear all",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear all resets sorting",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: closest option enabled with supported ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: distance sorting works (Session 16: one combined list)",
+  "passed": true,
+  "detail": "[1.0, 1.0, 1.0, 1.0, 6.0, 6.0]"
+ },
+ {
+  "check": "mobile: changing ZIP updates distances",
+  "passed": true,
+  "detail": "['Organization: New Haven \u00b7 About 1 mile away'] -> ['Organization: New Haven \u00b7 About 3.5 miles away']"
+ },
+ {
+  "check": "mobile: removing ZIP leaves no stale distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: ZIP alone enables Clear all",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: invalid draft shows a message",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear all clears typed and applied ZIP, messages and distances",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: navigation does not restore the cleared ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: empty state shown",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear all from the empty state restores defaults and clears ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Explore ZIP is separate from Find my fit's answers",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: clearing Explore keeps the confirmed Find my fit ZIP",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: One-time in Greater New Haven: none",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: One-time incl. other Connecticut: the CHS group project",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: town filter offers only published role towns",
+  "passed": true,
+  "detail": "['', 'Newington', 'North Branford', 'North Haven', 'Norwalk']"
+ },
+ {
+  "check": "mobile: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no page errors",
+  "passed": true,
+  "detail": ""
+ }
+]

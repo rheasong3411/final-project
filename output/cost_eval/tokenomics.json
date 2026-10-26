@@ -1,0 +1,80 @@
+{
+  "rates_usd_per_1M": {
+    "input": 0.1,
+    "cached": 0.01,
+    "cache_write": 0.125,
+    "output": 0.5
+  },
+  "rate_source": "Course Lecture 11 (Tokenomics) slides and vibe page, https://zlisto.github.io/mgt_409_fa26/lectures/slides/lec11-slides.html, which cite https://developers.openai.com/api/docs/pricing; both accessed 2026-10-25. gpt-6-luna, Standard tier, short context (<=272K): input $0.10, cached input $0.01, 30-minute cache write $0.125, output $0.50 per 1M tokens (USD). No date is printed on either page.",
+  "assumptions": {
+    "typical_run": "mean of the 6 fresh compact-profile runs (3 synthetic cases x 2 reps)",
+    "runs_per_user_month": 4.0,
+    "excluded": [
+      "hosting/server costs",
+      "Portkey gateway fees",
+      "any course billing arrangement",
+      "development and testing runs",
+      "provider-filtered requests (0 tokens reported)",
+      "possible Azure OpenAI price differences (the provider behind Portkey)",
+      "taxes",
+      "long-context, batch or priority tiers"
+    ]
+  },
+  "groups": {
+    "cost_eval:baseline": {
+      "n": 6,
+      "mean_requests": 4.7,
+      "mean_input": 30484,
+      "mean_cached": 22993.3,
+      "mean_cache_write": 6902.7,
+      "mean_uncached": 588,
+      "mean_output": 1489.5,
+      "mean_usd_per_run": 0.0018963166666666666,
+      "min_usd": 0.0013844600000000001,
+      "max_usd": 0.002308985
+    },
+    "cost_eval:compact": {
+      "n": 6,
+      "mean_requests": 4.3,
+      "mean_input": 23552.3,
+      "mean_cached": 19013.5,
+      "mean_cache_write": 3992.8,
+      "mean_uncached": 546,
+      "mean_output": 1068.5,
+      "mean_usd_per_run": 0.0012780891666666666,
+      "min_usd": 0.00068395,
+      "max_usd": 0.00220285
+    },
+    "earlier_real_runs_sessions3to6": {
+      "n": 16,
+      "mean_requests": 4.4,
+      "mean_input": 26989.2,
+      "mean_cached": 19267.1,
+      "mean_cache_write": 7163,
+      "mean_uncached": 559.1,
+      "mean_output": 1496.1,
+      "mean_usd_per_run": 0.00189199,
+      "min_usd": 0.001258035,
+      "max_usd": 0.002627
+    }
+  },
+  "projection": {
+    "per_run_usd": 0.0012780891666666666,
+    "per_user_month_usd": 0.0051123566666666665,
+    "users_100_month_usd": 0.5112356666666666,
+    "users_10000_month_usd": 51.12356666666666,
+    "sensitivity_per_user_month_usd": {
+      "1_runs": 0.0012780891666666666,
+      "4_runs": 0.0051123566666666665,
+      "10_runs": 0.012780891666666665,
+      "20_runs": 0.02556178333333333
+    }
+  },
+  "optimization_effect": {
+    "baseline_usd_per_run": 0.0018963166666666666,
+    "compact_usd_per_run": 0.0012780891666666666,
+    "saving_pct": 32.6014906089876,
+    "users_10000_month_baseline_usd": 75.85266666666666,
+    "users_10000_month_compact_usd": 51.12356666666666
+  }
+}

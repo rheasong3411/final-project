@@ -1,0 +1,36 @@
+availability_turn1_desktop -> True ['gpt-6-luna-global'] I found one Greater New Haven dog-walking option that may fit. Its listed weekly-hours and 12-month requirements appear on an older application form and need co
+PASS desktop: turn 1 answered by gpt-6-luna — ['gpt-6-luna-global']
+PASS desktop: turn 1 recorded 2 h/week and 12 months — {'available_hours': 2.0, 'hours_period': 'week', 'commitment_months': 12.0}
+availability_turn2_desktop -> True ['gpt-6-luna-global'] I couldn't find a confirmed one-time opportunity matching your requirements.
+PASS desktop: turn 2 answered
+PASS desktop: withdrawn hours, period and months are cleared (no invented replacement) — {'available_hours': None, 'hours_period': None, 'commitment_months': None}
+FAIL desktop: one-time only and the 3-hour session limit are kept — {'commitment_required': 'one_time', 'max_session_hours': None}
+PASS desktop: age, town, ZIP and dog interest preserved — {'age': 24, 'town': 'New Haven', 'interests': ['dog_walking']}
+PASS desktop: response reports the withdrawn fields — ['available_hours', 'commitment_months', 'hours_period']
+PASS desktop: no option shows a match based on the withdrawn hours or months
+PASS desktop: no green fit resting on an uncertain rule
+PASS desktop: no green requirement line next to an uncertainty note
+PASS desktop: Your answers no longer list hours or months — ['Can only do', 'Town where you live', 'ZIP code', 'Age', 'Interests']
+PASS desktop: Your answers list the removal — ["Removed at your request: Available hours, Hours per, Months you can commit. These are now unknown, not replaced with a guess.\n\nYou wrote “can't commit weekly”\n\nYou wrote “can't commit weekly or for 12 months”"]
+PASS desktop: latest exchange visible, earlier one collapsed
+FAIL desktop: form populated with the current effective answers — {'age': '24', 'town': 'New Haven', 'zip': '06510', 'hours': '', 'period': '', 'months': '', 'session': ''}
+PASS desktop: form marks answers from chat
+PASS desktop: opening the form confirmed nothing
+PASS desktop: saving one field confirms only that field — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Age'
+FAIL desktop: unrelated answers preserved after the partial save — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Age'
+unsaved_edit_survives_reply_desktop -> True ['gpt-6-luna-global'] I couldn't find a confirmed one-time opportunity matching your requirements. I couldn't find a confirmed one-time dog-walking opportunity matching your requirem
+PASS desktop: unsaved form edit survives an arriving reply
+PASS desktop: third turn did not restore withdrawn values — {'age': 25, 'guardian_available': None, 'town': 'New Haven', 'zip_code': '06510', 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], '
+PASS desktop: Remove makes the value unknown everywhere
+PASS desktop: Explore Clear all removes browsing ZIP and distance sort
+PASS desktop: chat profile untouched by Explore Clear all — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Age': '25 confirmedEdit AgeRemove Age'}
+PASS desktop: Clear my session empties answers, removals and the form
+PASS desktop: no horizontal overflow (Find my fit)
+age15_parent_desktop -> True ['gpt-6-luna-global'] I didn’t find a Greater New Haven dog-walking role that matches your age; having a parent attend does not change the published minimum-age rules. There is a dog
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-rhea-Desktop-MGT409-AI/aa4719d0-536a-475a-bedb-3d17d365be2f/scratchpad/owner_checks.py", line 153, in <module>
+    nm = dict(r["non_matches"])
+              ~^^^^^^^^^^^^^^^
+KeyError: 'non_matches'
+
+[exited with code 0]

@@ -1,0 +1,389 @@
+{
+ "what": "Session 15 (2026-10-25): sorting, Clear all filters, browsing-ZIP separation, shared filters, strict one-time requests. Production build; synthetic inputs; ZIPs are test values.",
+ "explore_sort_clear_no_ai": {
+  "passed": 46,
+  "total": 46,
+  "checks": [
+   {
+    "check": "desktop: sort options",
+    "passed": true,
+    "detail": "[['Default order', False], ['Organization name A–Z', False], ['Closest estimated volunteering site (needs a ZIP code)', True]]"
+   },
+   {
+    "check": "desktop: distance prerequisite explained",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Clear all disabled at defaults",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Organization name A–Z sorts",
+    "passed": true,
+    "detail": "['Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club']"
+   },
+   {
+    "check": "desktop: sorting alone enables Clear all",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Clear all resets sorting",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: closest option enabled with supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: distance sorting works (verified sites only)",
+    "passed": true,
+    "detail": "[6.0, 6.0, 6.0, 6.0, 6.0, 9.0]"
+   },
+   {
+    "check": "desktop: changing ZIP updates distances",
+    "passed": true,
+    "detail": "['About 6 miles to volunteering site'] -> ['About 4 miles to volunteering site']"
+   },
+   {
+    "check": "desktop: removing ZIP leaves no stale distances",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: ZIP alone enables Clear all",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: invalid draft shows a message",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Clear all clears typed and applied ZIP, messages and distances",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: navigation does not restore the cleared ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: empty state shown",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Clear all from the empty state restores defaults and clears ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Explore ZIP is separate from Find my fit's answers",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: clearing Explore keeps the confirmed Find my fit ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: One-time in Greater New Haven: none",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: One-time incl. other Connecticut: the CHS group project",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: town filter offers only published role towns",
+    "passed": true,
+    "detail": "['', 'Newington', 'North Branford', 'North Haven', 'Norwalk']"
+   },
+   {
+    "check": "desktop: no horizontal overflow",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no page errors",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: sort options",
+    "passed": true,
+    "detail": "[['Default order', False], ['Organization name A–Z', False], ['Closest estimated volunteering site (needs a ZIP code)', True]]"
+   },
+   {
+    "check": "mobile: distance prerequisite explained",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Clear all disabled at defaults",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Organization name A–Z sorts",
+    "passed": true,
+    "detail": "['Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club', 'Branford Compassion Club']"
+   },
+   {
+    "check": "mobile: sorting alone enables Clear all",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Clear all resets sorting",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: closest option enabled with supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: distance sorting works (verified sites only)",
+    "passed": true,
+    "detail": "[6.0, 6.0, 6.0, 6.0, 6.0, 9.0]"
+   },
+   {
+    "check": "mobile: changing ZIP updates distances",
+    "passed": true,
+    "detail": "['About 6 miles to volunteering site'] -> ['About 4 miles to volunteering site']"
+   },
+   {
+    "check": "mobile: removing ZIP leaves no stale distances",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: ZIP alone enables Clear all",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: invalid draft shows a message",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Clear all clears typed and applied ZIP, messages and distances",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: navigation does not restore the cleared ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: empty state shown",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Clear all from the empty state restores defaults and clears ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Explore ZIP is separate from Find my fit's answers",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: clearing Explore keeps the confirmed Find my fit ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: One-time in Greater New Haven: none",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: One-time incl. other Connecticut: the CHS group project",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: town filter offers only published role towns",
+    "passed": true,
+    "detail": "['', 'Newington', 'North Branford', 'North Haven', 'Norwalk']"
+   },
+   {
+    "check": "mobile: no horizontal overflow",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no page errors",
+    "passed": true,
+    "detail": ""
+   }
+  ]
+ },
+ "find_my_fit_real_ai": {
+  "passed": 16,
+  "total": 16,
+  "checks": [
+   {
+    "check": "desktop: answered",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: states the gap with the exact sentence",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no recommendations or alternatives offered as one-time matches",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: agrees with Explore's one-time candidates in Greater New Haven",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no 'Options to consider' section",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: offers (not performs) expansion to other Connecticut locations",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: hard constraint recorded; 'a few hours' not turned into a number",
+    "passed": true,
+    "detail": "{'interests': ['group_project'], 'commitment_required': 'one_time'}"
+   },
+   {
+    "check": "town limit: every offered match is an Explore candidate for town = North Haven",
+    "passed": true,
+    "detail": "['ah_cat_socializing', 'ah_shelter_cleaning'] vs ['ah_building_maintenance', 'ah_cat_socializing', 'ah_dog_walking', 'ah_gardening', 'ah_shelter_cleaning']"
+   },
+   {
+    "check": "mobile: answered",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: states the gap with the exact sentence",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no recommendations or alternatives offered as one-time matches",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: agrees with Explore's one-time candidates in Greater New Haven",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no 'Options to consider' section",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: uncertain activities in their own labelled section",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: offers (not performs) expansion to other Connecticut locations",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: hard constraint recorded; 'a few hours' not turned into a number",
+    "passed": true,
+    "detail": "{'commitment_required': 'one_time'}"
+   }
+  ],
+  "turns": [
+   {
+    "viewport": "desktop",
+    "case": "one_time",
+    "answer": "I couldn't find a confirmed one-time opportunity matching your requirements. A matching group project appears elsewhere in Connecticut; would you like me to expand the search beyond Greater New Haven?",
+    "follow_up_questions": [
+     "A matching opportunity exists elsewhere in Connecticut. Would you like to include other Connecticut locations?"
+    ],
+    "recommendations": [],
+    "alternatives": [],
+    "ask_about": [],
+    "profile_used": {
+     "interests": [
+      "group_project"
+     ],
+     "commitment_required": "one_time"
+    },
+    "run_id": "2c3ad9e01edb"
+   },
+   {
+    "viewport": "desktop",
+    "case": "town_limit",
+    "answer": "I found two cat-related volunteer roles located in North Haven. The published commitment length and some current requirements need confirmation; application availability is also unconfirmed.",
+    "offered": [
+     "ah_cat_socializing",
+     "ah_shelter_cleaning"
+    ],
+    "explore_candidates": [
+     "ah_building_maintenance",
+     "ah_cat_socializing",
+     "ah_dog_walking",
+     "ah_gardening",
+     "ah_shelter_cleaning"
+    ],
+    "run_id": "dcee83079ec4"
+   },
+   {
+    "viewport": "mobile",
+    "case": "one_time",
+    "answer": "I couldn't find a confirmed one-time opportunity matching your requirements. One event-help activity has an unknown commitment, and its published application lists a 12-month minimum that needs confirmation; a group project appeared in Newington, outside the current search area.",
+    "follow_up_questions": [
+     "Would you like me to include other Connecticut locations?",
+     "About how many continuous hours can your group volunteer?"
+    ],
+    "recommendations": [],
+    "alternatives": [],
+    "ask_about": [
+     [
+      "ah_fundraising_events",
+      "One-time participation and group availability need confirmation"
+     ]
+    ],
+    "profile_used": {
+     "commitment_required": "one_time"
+    },
+    "run_id": "0d492dbcdeb0"
+   }
+  ],
+  "note": "Final run after two fixes; earlier attempts (6 traces) are in output/agent_runs/session15_superseded/."
+ },
+ "earlier_ui_check_no_ai": {
+  "passed": 42,
+  "total": 42,
+  "note": "town check moved from Branford to North Haven (Branford is no longer offered as a role town)."
+ }
+}

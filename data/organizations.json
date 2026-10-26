@@ -1,0 +1,273 @@
+[
+  {
+    "organization_id": "fnhas",
+    "name": "Friends of the New Haven Animal Shelter",
+    "official_website": "https://findafriendforlife.org/",
+    "physical_address": "Robin I. Kroogman New Haven Animal Shelter, 81 Fournier Street, New Haven, CT 06511",
+    "town": "New Haven",
+    "geographic_scope": "greater_new_haven",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://findafriendforlife.org/index.html",
+    "source_ids": [
+      "fnhas_volunteer",
+      "fnhas_home"
+    ],
+    "locations": [
+      {
+        "label": "Robin I. Kroogman New Haven Animal Shelter (city shelter where Friends volunteers work)",
+        "address": "81 Fournier Street, New Haven, CT 06511",
+        "town": "New Haven",
+        "source_id": "fnhas_volunteer"
+      }
+    ],
+    "notes": "A 501(c)(3) volunteer group for the city shelter, not the shelter or animal control itself. The P.O. Box (Brewery St. Station) is a mailing address only. Adoption events take place at various Greater New Haven locations that are not listed.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "fnhas_volunteer",
+        "evidence": "Location ... The Robin I. Kroogman New Haven Animal Shelter 81 Fournier Street New Haven, CT 06511",
+        "scope": "organization"
+      },
+      {
+        "field": "notes",
+        "source_id": "fnhas_home",
+        "evidence": "we are the 501(c)(3) volunteer group for the Robin I. Kroogman New Haven Animal Shelter and not the animal shelter/animal control",
+        "scope": "organization"
+      }
+    ]
+  },
+  {
+    "organization_id": "animal_haven",
+    "name": "The Animal Haven",
+    "official_website": "https://theanimalhavenct.org/",
+    "physical_address": "89 Mill Road, North Haven, CT 06473",
+    "town": "North Haven",
+    "geographic_scope": "greater_new_haven",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://theanimalhavenct.org/contact/",
+    "source_ids": [
+      "ah_volunteer",
+      "ah_application",
+      "ah_contact",
+      "ah_point_signup",
+      "ah_foster_page_guess",
+      "ah_foster_form"
+    ],
+    "locations": [
+      {
+        "label": "The Animal Haven shelter",
+        "address": "89 Mill Road, North Haven, CT 06473",
+        "town": "North Haven",
+        "source_id": "ah_contact"
+      }
+    ],
+    "notes": "Identity check: the North Haven, CT address appears on every page inspected (not a similarly named out-of-state rescue). A foster application form exists, but the foster role is not described, so no foster opportunity record was created.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "ah_contact",
+        "evidence": "Address 89 Mill Road North Haven, CT 06473",
+        "scope": "organization"
+      }
+    ]
+  },
+  {
+    "organization_id": "bcc",
+    "name": "Branford Compassion Club",
+    "official_website": "https://branfordcompassionclub.org/",
+    "physical_address": "Feline Rescue and Adoption Center, 2037 Foxon Road, North Branford, CT 06471",
+    "town": "North Branford",
+    "geographic_scope": "greater_new_haven",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://branfordcompassionclub.org/contact-us/",
+    "source_ids": [
+      "bcc_volunteer",
+      "bcc_contact",
+      "bcc_foster",
+      "bcc_youth",
+      "bcc_faq",
+      "bcc_about",
+      "bcc_volunteer_form"
+    ],
+    "locations": [
+      {
+        "label": "Feline Rescue and Adoption Center",
+        "address": "2037 Foxon Road, North Branford, CT 06471",
+        "town": "North Branford",
+        "source_id": "bcc_contact"
+      }
+    ],
+    "notes": "Despite the name, the adoption center is in North Branford. P.O. Box 768, Branford is a mailing address only. A cat-only rescue. It is a different organization from the Town of Branford's Dan Cosgrove Animal Shelter.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "bcc_contact",
+        "evidence": "Physical Address ... Feline Rescue and Adoption Center 2037 Foxon Road North Branford, CT 06471",
+        "scope": "organization"
+      }
+    ]
+  },
+  {
+    "organization_id": "branford_shelter",
+    "name": "Dan Cosgrove Animal Shelter (Town of Branford)",
+    "official_website": "https://www.branford-ct.gov/170/Animal-Shelter",
+    "physical_address": "749 East Main Street, Branford, CT 06405",
+    "town": "Branford",
+    "geographic_scope": "greater_new_haven",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://www.branford-ct.gov/170/Animal-Shelter",
+    "source_ids": [
+      "branford_volunteering",
+      "branford_shelter_home",
+      "branford_about",
+      "branford_volgistics_form_1",
+      "branford_volgistics_form_2"
+    ],
+    "locations": [
+      {
+        "label": "Dan Cosgrove Animal Shelter",
+        "address": "749 East Main Street, Branford, CT 06405",
+        "town": "Branford",
+        "source_id": "branford_volunteering"
+      }
+    ],
+    "notes": "Municipal shelter and animal control run by the Town of Branford. It is a different organization from Branford Compassion Club. Tails to Trails dog walks go to off-site trails that are not named.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "branford_volunteering",
+        "evidence": "Volunteer classes takes place at our shelter located at 749 East Main Street Branford CT, 06405",
+        "scope": "organization"
+      }
+    ]
+  },
+  {
+    "organization_id": "gnhcp",
+    "name": "The Greater New Haven Cat Project, Inc.",
+    "official_website": "https://www.gnhcp.org/",
+    "physical_address": "1874 Middletown Avenue, Northford, CT",
+    "town": "Northford (village of North Branford)",
+    "geographic_scope": "greater_new_haven",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://www.gnhcp.org/contact-us",
+    "source_ids": [
+      "gnhcp_volunteer",
+      "gnhcp_home",
+      "gnhcp_contact",
+      "gnhcp_adoptions",
+      "gnhcp_ways_to_support",
+      "gnhcp_application_form"
+    ],
+    "locations": [
+      {
+        "label": "GNHCP Center (relocated from New Haven in 2025)",
+        "address": "1874 Middletown Avenue, Northford, CT",
+        "town": "Northford (village of North Branford)",
+        "source_id": "gnhcp_home"
+      }
+    ],
+    "notes": "The Center moved from New Haven (State Street) to Northford in 2025; volunteer-page testimonials still describe the old location. The physical address on the home page has no ZIP code. P.O. Box 118, Northford is a mailing address only. The town label 'village of North Branford' is our own gloss and is not sourced.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "gnhcp_home",
+        "evidence": "We moved to1874 Middletown Avenue in Northford, CT",
+        "scope": "organization"
+      }
+    ]
+  },
+  {
+    "organization_id": "cat_tales",
+    "name": "Cat Tales (CATALES, Inc.)",
+    "official_website": "https://cattalesct.org/",
+    "physical_address": null,
+    "town": null,
+    "geographic_scope": "wider_connecticut",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://cattalesct.org/contact/",
+    "source_ids": [
+      "cattales_volunteer",
+      "cattales_contact",
+      "cattales_shelter_application"
+    ],
+    "locations": [],
+    "notes": "Only a mailing address (P.O. Box 901, Middletown, CT 06457) was found, so the shelter location is unknown and the mailing town is not used as the volunteer location. The Middletown, CT P.O. box rules out out-of-state rescues with similar names.",
+    "field_evidence": []
+  },
+  {
+    "organization_id": "chs",
+    "name": "Connecticut Humane Society",
+    "official_website": "https://cthumane.org/",
+    "physical_address": null,
+    "town": null,
+    "geographic_scope": "wider_connecticut",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://cthumane.org/volunteer/",
+    "source_ids": [
+      "chs_volunteer",
+      "chs_newington_openings",
+      "chs_foster_care"
+    ],
+    "locations": [
+      {
+        "label": "CHS Newington",
+        "address": "701 Russell Road, Newington, CT 06111",
+        "town": "Newington",
+        "source_id": "chs_volunteer"
+      },
+      {
+        "label": "CHS Waterford",
+        "address": "169 Old Colchester Road, Quaker Hill, CT 06375",
+        "town": "Waterford (Quaker Hill)",
+        "source_id": "chs_volunteer"
+      },
+      {
+        "label": "CHS Wilton",
+        "address": "863 Danbury Road, Wilton, CT 06897",
+        "town": "Wilton",
+        "source_id": "chs_volunteer"
+      }
+    ],
+    "notes": "Multi-site organization. physical_address is left null on purpose so that roles are not assigned to headquarters; each opportunity names its own site. Administrative offices are in Newington.",
+    "field_evidence": []
+  },
+  {
+    "organization_id": "paws",
+    "name": "PAWS (Norwalk)",
+    "official_website": "https://www.pawsct.org/",
+    "physical_address": "504 Main Avenue, Norwalk, CT 06851",
+    "town": "Norwalk",
+    "geographic_scope": "wider_connecticut",
+    "latitude": null,
+    "longitude": null,
+    "contact_page_url": "https://www.pawsct.org/contact",
+    "source_ids": [
+      "paws_volunteer",
+      "paws_volunteer_flyer"
+    ],
+    "locations": [
+      {
+        "label": "PAWS shelter",
+        "address": "504 Main Avenue, Norwalk, CT 06851",
+        "town": "Norwalk",
+        "source_id": "paws_volunteer"
+      }
+    ],
+    "notes": "The Norwalk, CT address rules out similarly named PAWS groups in other states.",
+    "field_evidence": [
+      {
+        "field": "physical_address",
+        "source_id": "paws_volunteer",
+        "evidence": "Visit Us: 504 Main Avenue Norwalk, CT 06851",
+        "scope": "organization"
+      }
+    ]
+  }
+]

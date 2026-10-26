@@ -1,0 +1,155 @@
+{
+ "checks": [
+  {
+   "check": "desktop: home loads with featured cards",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T1: Explore lists opportunities",
+   "passed": true,
+   "detail": "24"
+  },
+  {
+   "check": "desktop T1: detail page has the organization's own links",
+   "passed": true,
+   "detail": "['https://findafriendforlife.org/volunteer.html', 'https://findafriendforlife.org/index.html']"
+  },
+  {
+   "check": "desktop T1: detail page has a next step and Check my fit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T2: Compare shows two opportunities",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T3: example prompts offered",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T3: real reply from gpt-6-luna",
+   "passed": true,
+   "detail": "(None, ['gpt-6-luna-global'])"
+  },
+  {
+   "check": "desktop T3: reply has option cards and a short answer",
+   "passed": true,
+   "detail": "I found three cat-focused possibilities in Greater New Haven. Availability and specific placements aren\u2019t confirmed; there are also cat options elsewhere in Connecticut if you\u2019d like me to expand the search. You can optionally share a ZIP code for approximate distance estimates; it isn\u2019t required."
+  },
+  {
+   "check": "desktop T3: Your answers filled from the message",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T3: confirming details works",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop T4: cards show the organization's page link",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: Clear my session leaves a fresh start",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: About page loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: unknown address shows a friendly page",
+   "passed": true,
+   "detail": "This page doesn't exist\n\nThe link may be mistyped.\n\nGo to the home page"
+  },
+  {
+   "check": "desktop: no horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: no page or console errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop: no failed requests to the app",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: home loads with featured cards",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile T1: Explore lists opportunities",
+   "passed": true,
+   "detail": "24"
+  },
+  {
+   "check": "mobile T1: detail page has the organization's own links",
+   "passed": true,
+   "detail": "['https://findafriendforlife.org/volunteer.html', 'https://findafriendforlife.org/index.html']"
+  },
+  {
+   "check": "mobile T1: detail page has a next step and Check my fit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile T2: Compare shows two opportunities",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile T3: example prompts offered",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: About page loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: unknown address shows a friendly page",
+   "passed": true,
+   "detail": "This page doesn't exist\n\nThe link may be mistyped.\n\nGo to the home page"
+  },
+  {
+   "check": "mobile: no horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: no page or console errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: no failed requests to the app",
+   "passed": true,
+   "detail": "[]"
+  }
+ ],
+ "real_assistant_usage_api_reported": {
+  "requests": 4,
+  "input_tokens": 31801,
+  "cached_input_tokens": 26936,
+  "cache_write_input_tokens": 4361,
+  "uncached_input_tokens": 504,
+  "output_tokens": 1135,
+  "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+ },
+ "passed": 28,
+ "total": 28
+}

@@ -1,0 +1,492 @@
+[
+  {
+    "source_id": "fnhas_volunteer",
+    "organization_id": "fnhas",
+    "url": "https://findafriendforlife.org/volunteer.html",
+    "page_title": "Volunteer: Friends of the New Haven Animal Shelter",
+    "accessed_at": "2026-10-25T15:50:44-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer page. Applications for dog handlers, cat handlers and fosters are closed; applications are only taken during an enrollment period, when a link is posted. Volunteers must be 18+, commit to 12 months and at least 8 hours a month. Animal-handling volunteers must be available Mon-Sat 12:30-4:30 p.m. Lists tasks: walking/socializing animals, bathing dogs before adoption events, first-Saturday adoption events, van loading, transportation, fostering, fundraisers and educational programs. Shelter location 81 Fournier Street, New Haven; separate P.O. Box mailing address.",
+    "conflicts_or_stale_information": [
+      "No application link is posted; the page says applications are taken only during an enrollment period, and no enrollment dates are given.",
+      "The page footer says (c) 2013. That is a copyright year, not an update date."
+    ]
+  },
+  {
+    "source_id": "fnhas_home",
+    "organization_id": "fnhas",
+    "url": "https://findafriendforlife.org/index.html",
+    "page_title": "Friends of the New Haven Animal Shelter",
+    "accessed_at": "2026-10-25T15:51:22-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Home page. States the Friends group is the 501(c)(3) volunteer group for the Robin I. Kroogman New Haven Animal Shelter and is not the shelter/animal control itself. Repeats shelter location and mailing address. Includes a Google Maps link, but no coordinates are stated in page text.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "ah_volunteer",
+    "organization_id": "animal_haven",
+    "url": "https://theanimalhavenct.org/volunteer/",
+    "page_title": "Volunteer – The Animal Haven",
+    "accessed_at": "2026-10-25T15:50:44-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer page. Directs applicants to POINT, a third-party volunteer management system, to create an account and submit an application. Describes dog walking on 'seven acres', cat socializing, fundraising events, administrative work, building maintenance, gardening and shelter cleaning. States: 'You have to be at least 21 years old to volunteer at The Animal Haven.' Address 89 Mill Road, North Haven, CT 06473.",
+    "conflicts_or_stale_information": [
+      "Age rule (21+ for all volunteering) conflicts with the on-site application page (18+ general, 21+ for dog walking)."
+    ]
+  },
+  {
+    "source_id": "ah_application",
+    "organization_id": "animal_haven",
+    "url": "https://theanimalhavenct.org/volunteer-application/",
+    "page_title": "Volunteer Application – The Animal Haven",
+    "accessed_at": "2026-10-25T15:50:45-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [
+      "possibly_superseded"
+    ],
+    "evidence_notes": "On-site volunteer application form (not submitted). Lists interest areas, including 'Cleaning the Shelter (Morning Availability Required)' and 'Dog Walking (requires a weekly commitment of at least 2 hrs)'. States: 'You must be at least 18 years old to volunteer ... and at least 21 years old to walk the dogs. We also require a one-year commitment.'",
+    "conflicts_or_stale_information": [
+      "The volunteer page now sends applicants to POINT instead of this form, so this page may be a legacy form. Its rules may not be current.",
+      "Its 18+ general age rule conflicts with the volunteer page's 21+ rule."
+    ]
+  },
+  {
+    "source_id": "ah_contact",
+    "organization_id": "animal_haven",
+    "url": "https://theanimalhavenct.org/contact/",
+    "page_title": "Contact – The Animal Haven",
+    "accessed_at": "2026-10-25T15:51:22-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Contact page: phone, staff email, 89 Mill Road, North Haven, CT 06473; adoption visits by appointment only.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "ah_point_signup",
+    "organization_id": "animal_haven",
+    "url": "https://dash.pointapp.org/sign-up?widgetUuid=true&organization_id=8878",
+    "page_title": "Dashboard | POINT",
+    "accessed_at": "2026-10-25T15:51:24-04:00",
+    "access_result": "accessible_dynamic_content_not_rendered",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "POINT sign-up page linked from the volunteer page. Only the page title 'Dashboard | POINT' was returned; the content is rendered by JavaScript. No account was created and nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "Whatever POINT shows about roles, openings or age rules could not be inspected."
+    ]
+  },
+  {
+    "source_id": "ah_foster_page_guess",
+    "organization_id": "animal_haven",
+    "url": "https://theanimalhavenct.org/foster/",
+    "page_title": "Page not found – The Animal Haven",
+    "accessed_at": "2026-10-25T15:51:23-04:00",
+    "access_result": "not_found_404",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "https://theanimalhavenct.org/foster/ returned 404. The site's 'Foster' menu item actually links to a ShelterManager form (see ah_foster_form).",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "ah_foster_form",
+    "organization_id": "animal_haven",
+    "url": "https://service.sheltermanager.com/asmservice?account=zz0751&method=online_form_html&formid=19",
+    "page_title": "Foster Care Application and Agreement",
+    "accessed_at": "2026-10-25T15:53:01-04:00",
+    "access_result": "accessible_form_only",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Foster Care Application and Agreement form (not submitted). It asks about current pets, vet records, housing, home checks and household members, but it does not describe the foster role, its requirements or its commitment. Not used to create an opportunity record.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_volunteer",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/how-to-help/volunteer/",
+    "page_title": "Volunteer - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:50:46-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer page. Volunteers clean and feed at the shelter twice a day, feed feral colony cats, help with fundraising, socialize shy cats, provide foster care, contribute to bake sales, represent the shelter at off-site events and craft items to sell. Links to a Shelterluv volunteer application.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_contact",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/contact-us/",
+    "page_title": "Contact Us - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:50:48-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Contact page. Volunteering email; 'Volunteers must be 18 years of age to work directly with our cats.' Mailing address P.O. Box 768, Branford (a mailing address, not a volunteer site). Physical address: Feline Rescue and Adoption Center, 2037 Foxon Road, North Branford, CT 06471. 'We are CLOSED to new intakes until the end of 2026' refers to animal intake, not volunteering.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_foster",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/how-to-help/foster/",
+    "page_title": "Foster - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:51:24-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Foster page. Foster families must live close to BCC's veterinary hospitals (13 towns listed); pet vet records must be uploaded with the application; 'Fostering is usually a 2 to 4 month commitment.'",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_youth",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/school-engagement/",
+    "page_title": "Youth Engagement - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:51:26-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Youth Engagement page. 'Our direct care service is limited to volunteers age 18+.' Lists ways younger advocates can help: school food/supply drives, art for advocacy, kindness education. Directs schools and youth groups to the fundraising email.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_faq",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/about/frequently-asked-questions/",
+    "page_title": "Frequently Asked Questions - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:51:27-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "FAQ. BCC is a volunteer-based rescue serving Branford and the surrounding shoreline. Open House is on the second Saturday of each month, 11am-2pm (a visitor event, not a volunteer schedule).",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_about",
+    "organization_id": "bcc",
+    "url": "https://branfordcompassionclub.org/about/",
+    "page_title": "About Branford Compassion Club - Branford Compassion Club",
+    "accessed_at": "2026-10-25T15:51:28-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "About page. The Feline Rescue and Adoption Center, opened in 2011, is at 2037 Foxon Road, North Branford, CT. More than 100 volunteers.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "bcc_volunteer_form",
+    "organization_id": "bcc",
+    "url": "https://new.shelterluv.com/form/volunteer/BFD/87593-volunteer",
+    "page_title": "Branford Compassion Club | Volunteer",
+    "accessed_at": "2026-10-25T15:51:30-04:00",
+    "access_result": "accessible_form_only",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Shelterluv volunteer form, first step only (contact fields). Later steps need input, so they were not inspected. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "The form's later steps may contain requirements we have not seen."
+    ]
+  },
+  {
+    "source_id": "branford_volunteering",
+    "organization_id": "branford_shelter",
+    "url": "https://www.branford-ct.gov/178/Volunteering",
+    "page_title": "Volunteering | Branford, CT",
+    "accessed_at": "2026-10-25T15:50:49-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Town of Branford animal shelter Volunteering page. Next general volunteer orientation: 'Sunday, October 11 at 2 pm' (no year), at 749 East Main Street, Branford. General volunteers: minimum 4 hours per month. All ages welcome, but under-16s must be with a parent or guardian at all times. $50 fee for non-Branford residents. Tails to Trails off-site dog-walking program session on October 11, 2-3:30 pm. Orientation links are posted one month before each orientation, and orientations run monthly in spring and fall. No-call/no-shows are barred from signing up again for 1 year. Links to two Volgistics application forms.",
+    "conflicts_or_stale_information": [
+      "The posted orientation date (Sunday, October 11, no year given) had passed when accessed on 2026-10-25 (Oct 11, 2026 was a Sunday). The next date was not posted.",
+      "The general orientation and the Tails to Trails session are listed at the same date and start time (Oct 11, 2 pm). It is unclear whether they are the same session."
+    ]
+  },
+  {
+    "source_id": "branford_shelter_home",
+    "organization_id": "branford_shelter",
+    "url": "https://www.branford-ct.gov/170/Animal-Shelter",
+    "page_title": "Animal Shelter | Branford, CT",
+    "accessed_at": "2026-10-25T15:51:31-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Animal Shelter department page: Director contact, 749 E Main Street, Branford, CT 06405; public hours Mon-Sat 10-4, Sun 10-2. Calendar shows no published events this month.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "branford_about",
+    "organization_id": "branford_shelter",
+    "url": "https://www.branford-ct.gov/171/About-Us",
+    "page_title": "About Us | Branford, CT",
+    "accessed_at": "2026-10-25T15:51:31-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "About Us page. Shelter name is the Dan Cosgrove Animal Shelter, operating since April 2003, with guinea pigs, chinchillas, rabbits, dogs and cats. The page also advertises a paid children's Animal Camp ($200-$300/week). That is a paid program, not volunteering, so it is excluded.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "branford_volgistics_form_1",
+    "organization_id": "branford_shelter",
+    "url": "https://www.volgistics.com/appform/1979656492",
+    "page_title": "AppForm",
+    "accessed_at": "2026-10-25T15:51:32-04:00",
+    "access_result": "accessible_dynamic_content_not_rendered",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volgistics application form linked from the Volunteering page. Only the title 'AppForm' was returned, because the content is rendered by JavaScript. Which program (general or Tails to Trails) this form is for could not be confirmed. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "Contents not inspectable with a static fetch."
+    ]
+  },
+  {
+    "source_id": "branford_volgistics_form_2",
+    "organization_id": "branford_shelter",
+    "url": "https://www.volgistics.com/appform/1737989068",
+    "page_title": "AppForm",
+    "accessed_at": "2026-10-25T15:51:33-04:00",
+    "access_result": "accessible_dynamic_content_not_rendered",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Second Volgistics application form linked from the Volunteering page. Same limitation as form 1.",
+    "conflicts_or_stale_information": [
+      "Contents not inspectable with a static fetch."
+    ]
+  },
+  {
+    "source_id": "gnhcp_volunteer",
+    "organization_id": "gnhcp",
+    "url": "https://www.gnhcp.org/volunteer",
+    "page_title": "Volunteer — The Greater New Haven Cat Project, Inc",
+    "accessed_at": "2026-10-25T15:50:50-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [
+      "partially_outdated"
+    ],
+    "evidence_notes": "Volunteer page. Volunteers provide direct care of foster cats awaiting adoption, grant writing, event organizing, awareness raising through websites, social media and community outreach, cat food drives and workshops, and rescues and TNR. 'Volunteers must be at least 21 years of age.' Board testimonials mention Saturday shifts, direct-care shifts, fostering and remote work. These are personal anecdotes, not published requirements, so they are not used as schedule or remote-work facts.",
+    "conflicts_or_stale_information": [
+      "Testimonials describe the former Center on State Street in New Haven; the Center moved to Northford in 2025 (see gnhcp_home)."
+    ]
+  },
+  {
+    "source_id": "gnhcp_home",
+    "organization_id": "gnhcp",
+    "url": "https://www.gnhcp.org/",
+    "page_title": "The Greater New Haven Cat Project, Inc",
+    "accessed_at": "2026-10-25T15:51:37-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Home page timeline: '2025 GNHCP Center relocated from New Haven to Northford.' Notice: 'has moved to a new home as of Fall 20205' [sic] ... 'We moved to 1874 Middletown Avenue in Northford, CT'. New mailing address P.O. Box 118, Northford, CT 06472.",
+    "conflicts_or_stale_information": [
+      "The page says 'Fall 20205' (a typo); the timeline gives 2025."
+    ]
+  },
+  {
+    "source_id": "gnhcp_contact",
+    "organization_id": "gnhcp",
+    "url": "https://www.gnhcp.org/contact-us",
+    "page_title": "Contact Us — The Greater New Haven Cat Project, Inc",
+    "accessed_at": "2026-10-25T15:51:33-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Contact page. Links to the volunteer application; office open only 1 day per week; temporary hold on new tame and TNR assistance requests. Mailing address P.O. Box 118, Northford. Phone (203) 782-2287.",
+    "conflicts_or_stale_information": [
+      "The hold on new TNR assistance requests may affect how much rescue/TNR volunteer work is available. This is not confirmed."
+    ]
+  },
+  {
+    "source_id": "gnhcp_adoptions",
+    "organization_id": "gnhcp",
+    "url": "https://www.gnhcp.org/adoptions",
+    "page_title": "Adoptions — The Greater New Haven Cat Project, Inc",
+    "accessed_at": "2026-10-25T15:51:33-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Adoptions page: 'The cats and kittens featured on this page reside in foster homes or at the GNHCP Center.' Used only to show where foster cats are housed.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "gnhcp_ways_to_support",
+    "organization_id": "gnhcp",
+    "url": "https://www.gnhcp.org/ways-to-support",
+    "page_title": "Other Ways To Support GNCP — The Greater New Haven Cat Project, Inc",
+    "accessed_at": "2026-10-25T15:51:37-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Other Ways to Support page: wishlists and shopping referrals. These are donation channels, not volunteer roles, so no opportunities were created from it.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "gnhcp_application_form",
+    "organization_id": "gnhcp",
+    "url": "https://airtable.com/shrMIIEJHgtQD6JhQ",
+    "page_title": "GNHCP Volunteer Application Form",
+    "accessed_at": "2026-10-25T15:51:34-04:00",
+    "access_result": "accessible_dynamic_content_not_rendered",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Airtable volunteer application form (redirected to an airtable.com/app... URL). Only the title was returned, because the content is rendered by JavaScript. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "Form questions and any stated requirements could not be inspected."
+    ]
+  },
+  {
+    "source_id": "cattales_volunteer",
+    "organization_id": "cat_tales",
+    "url": "https://cattalesct.org/volunteer/",
+    "page_title": "Volunteer - Cat Tales CT",
+    "accessed_at": "2026-10-25T15:50:51-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer page. '1 hour or 40 hours per week'. Direct animal care at the shelter has a 3-hour minimum per week. Other roles: foster, feral colony feeding, vet transport, plumber/electrician/carpenter, adoption appointments, donor correspondence, fundraiser help, returning phone calls, community advocate. 'Volunteers must be 15 years or older to help during a shelter shift'; under-15s can run school fundraisers. Two applications: working with cats, and managerial/clerical. 'Sponsor a cat' is a donation and is excluded.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "cattales_contact",
+    "organization_id": "cat_tales",
+    "url": "https://cattalesct.org/contact/",
+    "page_title": "Contact Us - Cat Tales CT",
+    "accessed_at": "2026-10-25T15:52:23-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Contact page lists only P.O. Box 901, Middletown, CT 06457 and phone. No physical shelter address is published here.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "cattales_shelter_application",
+    "organization_id": "cat_tales",
+    "url": "https://cattalesct.org/shelter-application/",
+    "page_title": "Shelter Application - Cat Tales CT",
+    "accessed_at": "2026-10-25T15:52:24-04:00",
+    "access_result": "accessible_dynamic_content_not_rendered",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "'Working with cats' shelter application page. The form body did not render in a static fetch; only site navigation and footer were returned. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "Application contents not inspectable."
+    ]
+  },
+  {
+    "source_id": "chs_volunteer",
+    "organization_id": "chs",
+    "url": "https://cthumane.org/volunteer/",
+    "page_title": "Volunteer – Connecticut Humane Society",
+    "accessed_at": "2026-10-25T15:50:52-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer hub. 'On-site volunteers must be 18 years or older.' FAQ: 'Volunteers must be 18 years old to participate in most volunteer programs'; 'CHS requires volunteers to make a 6-month commitment to the organization'; openings are updated often. Young people can run supply drives, craft projects or fundraisers. Locations: Newington (701 Russell Road), Waterford (169 Old Colchester Road, Quaker Hill), Wilton (863 Danbury Road).",
+    "conflicts_or_stale_information": [
+      "The banner mentions a Wednesday, September 30 closure; that date was already past when accessed."
+    ]
+  },
+  {
+    "source_id": "chs_newington_openings",
+    "organization_id": "chs",
+    "url": "https://cthumane.org/volunteer/newington-volunteer-opportunities/",
+    "page_title": "Newington Volunteer Opportunities – Connecticut Humane Society",
+    "accessed_at": "2026-10-25T15:52:24-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Newington Volunteer Opportunities: 'View our current volunteer openings below.' Lists Group Opportunity (trail/play-yard maintenance), Laundry Room Assistants and Professional Dog Trainers, each with requirements, commitment and open shifts.",
+    "conflicts_or_stale_information": [
+      "The group opportunity is a one-time 3-4 hour commitment, which differs from the organization-wide 6-month commitment in the FAQ. It is recorded as a role-specific rule."
+    ]
+  },
+  {
+    "source_id": "chs_newington_openings_recheck",
+    "organization_id": "chs",
+    "url": "https://cthumane.org/volunteer/newington-volunteer-opportunities/",
+    "page_title": "Newington Volunteer Opportunities – Connecticut Humane Society",
+    "accessed_at": "2026-10-25T16:15:56-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Second fetch of the CHS Newington opportunities page, done during the correction pass to recheck the group project. The role section is identical to the first fetch (chs_newington_openings). The Group Opportunity says the center needs 'one-time volunteer groups' and gives 'Commitment: 3-4 hours, one time.'",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "chs_foster_care",
+    "organization_id": "chs",
+    "url": "https://cthumane.org/volunteer/foster-care/",
+    "page_title": "Foster Care – Connecticut Humane Society",
+    "accessed_at": "2026-10-25T15:52:25-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Foster Care page. 'CHS Newington is not accepting foster applications at this time. CHS Waterford is not accepting foster applications at this time. CHS Wilton is accepting foster applications.' 'All foster care applicants must be over 18 years old but children can assist their parents.' Assignments range from a few days to several months. CHS provides supplies and medical care.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "paws_volunteer",
+    "organization_id": "paws",
+    "url": "https://www.pawsct.org/volunteer",
+    "page_title": "Volunteer to help Dogs and Cats at PAWS in Norwalk, CT",
+    "accessed_at": "2026-10-25T15:50:52-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Volunteer page. 'We are now accepting new volunteers!' Application, then orientation at the shelter, then training. 'Most volunteer positions require a minimum commitment of 2 hours per week.' Roles: animal care/socialization (cat volunteers, dog walkers), Families for Felines (ages 13-17 with parent/guardian), adoption counselor, fundraising (off-site events), office administration, foster cats/kittens, Junior Volunteer Program (under 18), and Reading to Rescues (grades 1-5 with parent attending). Address 504 Main Avenue, Norwalk, CT 06851.",
+    "conflicts_or_stale_information": []
+  },
+  {
+    "source_id": "paws_volunteer_flyer",
+    "organization_id": "paws",
+    "url": "https://www.pawsct.org/_files/ugd/ec3572_3d9716b5fb9e4ed2a9d719ea17c64887.pdf",
+    "page_title": "PAWS Volunteering flyer (PDF)",
+    "accessed_at": "2026-10-25T15:53:02-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [
+      "undated"
+    ],
+    "evidence_notes": "Volunteer flyer PDF linked from the volunteer page: 'Volunteers must be at least 18 years of age in order to work directly with the animals; however we do have off-site volunteer opportunities for those under 18.'",
+    "conflicts_or_stale_information": [
+      "The flyer has no date. Its 18+ rule for direct animal work is narrower than the web page's Families for Felines program (ages 13-17 with a parent or guardian). We record this as a program exception, not a conflict."
+    ]
+  },
+  {
+    "source_id": "branford_volgistics_form_1_recheck",
+    "organization_id": "branford_shelter",
+    "url": "https://www.volgistics.com/appform/1979656492",
+    "page_title": "DCAS General Volunteer Application (Volgistics), rechecked",
+    "accessed_at": "2026-10-25T20:31:15-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Recheck on 2026-10-25, rendered read-only in a browser (the earlier static fetch could not read it). Titled 'DCAS General Volunteer Application'. It says the form is currently disabled and that the Sunday, October 11, 2026 general orientation is full; sign-ups for the next orientation will be posted on the shelter's Facebook page and website. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "The town Volunteering page still says to use the Application Form link to sign up; the form itself says it is currently disabled."
+    ]
+  },
+  {
+    "source_id": "branford_volgistics_form_2_recheck",
+    "organization_id": "branford_shelter",
+    "url": "https://www.volgistics.com/appform/1737989068",
+    "page_title": "DCAS Tails to Trails Application (Volgistics), rechecked",
+    "accessed_at": "2026-10-25T20:32:02-04:00",
+    "access_result": "accessible",
+    "published_update_date": null,
+    "reliability_flags": [],
+    "evidence_notes": "Recheck on 2026-10-25, rendered read-only in a browser. Titled 'DCAS Tails to Trails Application'; the form was open. It states: age 25 or older with your own transportation; Tails to Trails orientation plus 3 Dog Handling and Safety Classes and a kennel cleaning session; a commitment of at least 4 hours of volunteering a month; able to lift 50 pounds; a one-time $50 donation for non-Branford residents within 24 hours of applying; driver's license and car insurance card uploads. It offers one orientation choice: Sunday, Nov 15, 2026, 2:00-3:30 pm. An open form is not evidence of a vacancy. Nothing was submitted.",
+    "conflicts_or_stale_information": [
+      "The town Volunteering page's 'All ages are welcome' sentence sits under the general orientation; this form requires age 25 for Tails to Trails.",
+      "The town page calls the $50 a fee; the form calls it a requested one-time donation that must be made within 24 hours or the application is removed."
+    ]
+  }
+]

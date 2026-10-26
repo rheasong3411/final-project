@@ -1,0 +1,256 @@
+{
+  "base": "http://127.0.0.1:8001",
+  "checks": [
+    {
+      "check": "direct load /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /explore",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /about",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /find-my-fit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /compare",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /opportunities/chs_newington_group_trails",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "direct load /no-such-page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "nav link Explore",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "nav Find my fit button",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "home shows 3 real opportunities",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "check": "no horizontal overflow: desktop /",
+      "passed": true,
+      "detail": "scrollWidth=1440 innerWidth=1440"
+    },
+    {
+      "check": "town filter changes results",
+      "passed": true,
+      "detail": "24 results -> 5 results"
+    },
+    {
+      "check": "active filter chip shown",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "clear all restores default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "empty state shown",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "other-Connecticut opt-in labelled on cards",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no horizontal overflow: desktop /explore",
+      "passed": true,
+      "detail": "scrollWidth=1440 innerWidth=1440"
+    },
+    {
+      "check": "fourth compare disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "compare tray shows 3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "compare table has 3 columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "remove from compare",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence source link opens safely",
+      "passed": true,
+      "detail": "noopener noreferrer"
+    },
+    {
+      "check": "access-date explanation shown",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "past notice labelled not upcoming",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "official page button labelled with destination",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no horizontal overflow: desktop /opportunities/branford_general_volunteer",
+      "passed": true,
+      "detail": "scrollWidth=1440 innerWidth=1440"
+    },
+    {
+      "check": "fit check: unknown guardian -> needs confirmation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fit check: missing hours -> needs confirmation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fit check: application status shown separately",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "backend-unavailable message shown (simulated)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "draft preserved after failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no fake recommendations after failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "first Tab reaches skip link",
+      "passed": true,
+      "detail": "Skip to main content"
+    },
+    {
+      "check": "focus ring visible on tabbed controls",
+      "passed": true,
+      "detail": "[True, True, True, True]"
+    },
+    {
+      "check": "no horizontal overflow: mobile /",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    },
+    {
+      "check": "no horizontal overflow: mobile /explore",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    },
+    {
+      "check": "no horizontal overflow: mobile /opportunities/chs_newington_group_trails",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    },
+    {
+      "check": "no horizontal overflow: mobile /find-my-fit",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    },
+    {
+      "check": "no horizontal overflow: mobile /about",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    },
+    {
+      "check": "mobile menu opens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "mobile compare uses stacked cards",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no horizontal overflow: mobile /compare",
+      "passed": true,
+      "detail": "scrollWidth=390 innerWidth=390"
+    }
+  ],
+  "console_errors": [
+    "[error] Failed to load resource: net::ERR_FAILED"
+  ],
+  "overflow": {
+    "desktop /": [
+      1440,
+      1440
+    ],
+    "desktop /explore": [
+      1440,
+      1440
+    ],
+    "desktop /opportunities/branford_general_volunteer": [
+      1440,
+      1440
+    ],
+    "mobile /": [
+      390,
+      390
+    ],
+    "mobile /explore": [
+      390,
+      390
+    ],
+    "mobile /opportunities/chs_newington_group_trails": [
+      390,
+      390
+    ],
+    "mobile /find-my-fit": [
+      390,
+      390
+    ],
+    "mobile /about": [
+      390,
+      390
+    ],
+    "mobile /compare": [
+      390,
+      390
+    ]
+  }
+}

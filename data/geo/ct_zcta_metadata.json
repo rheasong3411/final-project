@@ -1,0 +1,19 @@
+{
+  "dataset": "U.S. Census Bureau, 2026 Gazetteer Files: ZIP Code Tabulation Areas (national file)",
+  "download_url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip",
+  "file_inside_zip": "2026_Gaz_zcta_national.txt",
+  "zip_sha256": "f1e9046b91f6e60686a99343cb2752834c02b0764939403b331c78c017e2c54c",
+  "national_rows": 33791,
+  "rows_kept": 289,
+  "rows_kept_rule": "GEOID starts with '06' (Connecticut ZCTAs)",
+  "geography": "2020 Census ZIP Code Tabulation Areas (ZCTAs), as published in the 2026 Gazetteer",
+  "postal_zip_or_zcta": "ZCTA. Census approximations of USPS ZIP Code service areas built from census blocks; not official postal ZIP boundaries. PO Box-only and single-organization ZIP Codes often have no ZCTA.",
+  "coordinates": "INTPTLAT/INTPTLONG: the Census 'internal point' of each ZCTA (a point inside the area, close to its center). Not a household location.",
+  "dataset_date": "2026 Gazetteer; server Last-Modified Tue, 08 Sep 2026 21:00:12 GMT",
+  "downloaded_at": "2026-10-25, about 19:24 EDT (file timestamp of the local download)",
+  "license": "U.S. Government work; public domain in the U.S. (17 U.S.C. 105). No key or account needed.",
+  "documentation": [
+    "https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html",
+    "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html"
+  ]
+}

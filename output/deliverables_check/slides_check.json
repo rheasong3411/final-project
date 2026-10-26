@@ -1,0 +1,102 @@
+{
+ "slides": [
+  {
+   "slideH": 579.8399047851562,
+   "slideW": 1228.7998046875,
+   "contentBottom": 580,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 534.1199951171875,
+   "slideW": 1228.7998046875,
+   "contentBottom": 518,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 17,
+   "overflow": false
+  },
+  {
+   "slideH": 596.0099487304688,
+   "slideW": 1228.7998046875,
+   "contentBottom": 580,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 17,
+   "overflow": false
+  },
+  {
+   "slideH": 631.6799926757812,
+   "slideW": 1228.7998046875,
+   "contentBottom": 632,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 631.3800659179688,
+   "slideW": 1228.7998046875,
+   "contentBottom": 611,
+   "contentRight": 1233,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 640.844970703125,
+   "slideW": 1228.7998046875,
+   "contentBottom": 641,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 467.4599609375,
+   "slideW": 1228.7998046875,
+   "contentBottom": 451,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 17,
+   "overflow": false
+  },
+  {
+   "slideH": 650.8799438476562,
+   "slideW": 1228.7998046875,
+   "contentBottom": 651,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 473.52001953125,
+   "slideW": 1228.7998046875,
+   "contentBottom": 453,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  },
+  {
+   "slideH": 445.7699279785156,
+   "slideW": 1228.7998046875,
+   "contentBottom": 446,
+   "contentRight": 1229,
+   "scale": 0.96,
+   "minFont": 18,
+   "overflow": false
+  }
+ ],
+ "arrow_right_goes_to": 1,
+ "total": 10,
+ "errors": [],
+ "external_requests": [
+  "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css",
+  "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js",
+  "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"
+ ]
+}

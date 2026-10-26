@@ -1,0 +1,96 @@
+{
+  "kind": "clean-copy rehearsal (NOT a fresh GitHub clone)",
+  "started": "2026-10-25T18:19:22-0400",
+  "host_python": "3.14.7",
+  "platform": "macOS-14.7.3-arm64-arm-64bit-Mach-O",
+  "port": 8001,
+  "steps": {
+    "copy_s": 0.27,
+    "venv_s": 2.08,
+    "pip_install_s": 7.13,
+    "server_start_no_key_s": 1.33,
+    "server_start_project_env_s": 0.82,
+    "server_start_parent_env_s": 0.81
+  },
+  "files_copied": 141,
+  "dist_present": true,
+  "node_modules_present": false,
+  "pip_ok": true,
+  "venv_python": "Python 3.14.7",
+  "no_key": {
+    "credentials_present": false,
+    "credential_source": null,
+    "page /": "200 text/html has app root",
+    "page /explore": "200 text/html has app root",
+    "page /opportunities/gnhcp_grant_writing": "200 text/html has app root",
+    "page /find-my-fit": "200 text/html has app root",
+    "api /api/opportunities count": 28,
+    "assistant_error": "credentials_missing"
+  },
+  "project_env": {
+    "credentials_present": true,
+    "credential_source": "project .env",
+    "page /": "200 text/html has app root",
+    "page /explore": "200 text/html has app root",
+    "page /opportunities/gnhcp_grant_writing": "200 text/html has app root",
+    "page /find-my-fit": "200 text/html has app root",
+    "api /api/opportunities count": 28,
+    "assistant": {
+      "http": 200,
+      "ok": true,
+      "error": null,
+      "returned_models": [
+        "gpt-6-luna-global"
+      ],
+      "recommendations": [
+        "bcc_shy_cat_socializing",
+        "ah_cat_socializing"
+      ],
+      "latency_s": 11.55,
+      "usage": {
+        "requests": 4,
+        "input_tokens": 24049,
+        "cached_input_tokens": 19257,
+        "cache_write_input_tokens": 4288,
+        "uncached_input_tokens": 504,
+        "output_tokens": 977,
+        "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+      }
+    }
+  },
+  "parent_env": {
+    "credentials_present": true,
+    "credential_source": "parent-folder .env",
+    "page /": "200 text/html has app root",
+    "page /explore": "200 text/html has app root",
+    "page /opportunities/gnhcp_grant_writing": "200 text/html has app root",
+    "page /find-my-fit": "200 text/html has app root",
+    "api /api/opportunities count": 28,
+    "assistant": {
+      "http": 200,
+      "ok": true,
+      "error": null,
+      "returned_models": [
+        "gpt-6-luna-global"
+      ],
+      "recommendations": [
+        "bcc_shy_cat_socializing",
+        "ah_cat_socializing",
+        "bcc_shelter_care"
+      ],
+      "latency_s": 8.69,
+      "usage": {
+        "requests": 3,
+        "input_tokens": 15829,
+        "cached_input_tokens": 12017,
+        "cache_write_input_tokens": 3434,
+        "uncached_input_tokens": 378,
+        "output_tokens": 893,
+        "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+      }
+    }
+  },
+  "temp_env_files_deleted": true,
+  "total_automated_s": 33.28,
+  "note": "Automated time includes two real assistant requests. Manual credential placement (creating one .env file) is not timed and was simulated by the script."
+}

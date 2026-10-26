@@ -1,0 +1,222 @@
+[
+ {
+  "check": "desktop: status reads 'Availability not confirmed' as text, not a button or link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: old 'Ask about availability' wording gone",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: explanation button is keyboard-focusable",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Enter shows the explanation",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Space hides it again",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: 'Visit volunteer page \u2197' / 'Contact organization \u2197' go to the recorded official pages",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no 'Apply on organization's website' (no destination is an application page)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: links have accessible destination names",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: keyboard adds to comparison",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: bar shows '1 opportunity selected'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: bar shows '2 opportunities selected'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Remove has an accessible name with the title",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: keyboard removal works",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: maximum of three kept",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: bar does not cover the last card's link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: details open while items are selected",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: detail shows Added to comparison + links",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Compare page shows 3, informational status and links",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: Clear empties the selection and hides the bar",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: closed role shows Applications closed and no Apply link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "desktop: no page errors",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: status reads 'Availability not confirmed' as text, not a button or link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: old 'Ask about availability' wording gone",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: explanation button is keyboard-focusable",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Enter shows the explanation",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Space hides it again",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: 'Visit volunteer page \u2197' / 'Contact organization \u2197' go to the recorded official pages",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no 'Apply on organization's website' (no destination is an application page)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: links have accessible destination names",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: keyboard adds to comparison",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: bar shows '1 opportunity selected'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: bar shows '2 opportunities selected'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Remove has an accessible name with the title",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: keyboard removal works",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: maximum of three kept",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: bar does not cover the last card's link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: details open while items are selected",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: detail shows Added to comparison + links",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Compare page shows 3, informational status and links",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: Clear empties the selection and hides the bar",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: closed role shows Applications closed and no Apply link",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no horizontal overflow",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "mobile: no page errors",
+  "passed": true,
+  "detail": ""
+ }
+]

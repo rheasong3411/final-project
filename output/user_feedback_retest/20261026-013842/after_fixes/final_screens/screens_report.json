@@ -1,0 +1,173 @@
+{
+ "checks": [
+  {
+   "check": "desktop: Your answers lists every stated fact, including no car",
+   "passed": true,
+   "detail": "{'Hours you can give': '2–3 (week, month or visit not said yet)', 'Has a car': 'No', 'Town where you live': 'New Haven', 'Age': '25', 'Animals': 'Cats', 'Days': 'Sat, Sun', 'Times of day': 'Morning'}"
+  },
+  {
+   "check": "desktop: card shows the person's weekend mornings on the Schedule line",
+   "passed": true,
+   "detail": "Cat socializer\n\nThe Animal Haven\n\nOne-on-one cat socializing matches your interest; confirm the schedule and whether the listed commitment terms are current.\n\nLocation\nNorth Haven\nDirections ↗\n(opens google.com in a new tab)\nMinimum age\n18+ or 21+ | You: 25 | Needs confirmation (your age meets both "
+  },
+  {
+   "check": "desktop: card has a directions link",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: a warning shared by several lines appears once per card",
+   "passed": true,
+   "detail": "Cat socializer\n\nThe Animal Haven\n\nOne-on-one cat socializing matches your interest; confirm the schedule and whether the listed commitment terms are current.\n\nLocation\nNorth Haven\nDirections ↗\n(opens "
+  },
+  {
+   "check": "desktop: town options follow the scope",
+   "passed": true,
+   "detail": "(['North Branford', 'North Haven'], ['Newington', 'North Branford', 'North Haven', 'Norwalk'])"
+  },
+  {
+   "check": "desktop: turning wider Connecticut off clears an out-of-scope town",
+   "passed": true,
+   "detail": "http://127.0.0.1:8002/explore"
+  },
+  {
+   "check": "desktop: Explore Clear all still clears ZIP and distance sort",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: detail has directions to the verified site",
+   "passed": true,
+   "detail": "Volunteering site verified\n\nVolunteering site: The Animal Haven shelter, 89 Mill Road, North Haven, CT 06473 · Check location in maps\n(opens google.com in a new tab)\n · Directions\n(opens google.com in"
+  },
+  {
+   "check": "desktop: detail age explanation is simple, values kept",
+   "passed": true,
+   "detail": "Minimum age\nNeeds confirmation\n\nPublished: 18+ or 21+ (published minimums differ)\n\nSources conflict — confirm with organization\n\nYour age meets both published minimums; confirm the organization's current rule.\n\nYour answer matches the listed value, but this rule may be outdated or the sources confli"
+  },
+  {
+   "check": "desktop: organization-address directions are labelled as such",
+   "passed": true,
+   "detail": "Activity location may differ\n\nOrganization location (the activity location may differ): Robin I. Kroogman New Haven Animal Shelter, 81 Fournier Street, New Haven, CT 06511 · Check location in maps\n(op"
+  },
+  {
+   "check": "desktop: no page errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: Your answers lists every stated fact, including no car",
+   "passed": true,
+   "detail": "{'Hours you can give': '2–3 (week, month or visit not said yet)', 'Has a car': 'No', 'Town where you live': 'New Haven', 'Age': '25', 'Animals': 'Cats', 'Days': 'Sat, Sun', 'Times of day': 'Morning'}"
+  },
+  {
+   "check": "mobile: card shows the person's weekend mornings on the Schedule line",
+   "passed": true,
+   "detail": "Cat socializer\n\nThe Animal Haven\n\nOne-on-one cat socializing matches your interest; ask whether weekend mornings are possible and confirm the listed commitment details.\n\nLocation\nNorth Haven\nDirections ↗\n(opens google.com in a new tab)\nMinimum age\n18+ or 21+ | You: 25 | Needs confirmation (your age "
+  },
+  {
+   "check": "mobile: card has a directions link",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: a warning shared by several lines appears once per card",
+   "passed": true,
+   "detail": "Cat socializer\n\nThe Animal Haven\n\nOne-on-one cat socializing matches your interest; ask whether weekend mornings are possible and confirm the listed commitment details.\n\nLocation\nNorth Haven\nDirection"
+  },
+  {
+   "check": "mobile: town options follow the scope",
+   "passed": true,
+   "detail": "(['North Branford', 'North Haven'], ['Newington', 'North Branford', 'North Haven', 'Norwalk'])"
+  },
+  {
+   "check": "mobile: turning wider Connecticut off clears an out-of-scope town",
+   "passed": true,
+   "detail": "http://127.0.0.1:8002/explore"
+  },
+  {
+   "check": "mobile: Explore Clear all still clears ZIP and distance sort",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: detail has directions to the verified site",
+   "passed": true,
+   "detail": "Volunteering site verified\n\nVolunteering site: The Animal Haven shelter, 89 Mill Road, North Haven, CT 06473 · Check location in maps\n(opens google.com in a new tab)\n · Directions\n(opens google.com in"
+  },
+  {
+   "check": "mobile: detail age explanation is simple, values kept",
+   "passed": true,
+   "detail": "Minimum age\nNeeds confirmation\n\nPublished: 18+ or 21+ (published minimums differ)\n\nSources conflict — confirm with organization\n\nYour age meets both published minimums; confirm the organization's current rule.\n\nYour answer matches the listed value, but this rule may be outdated or the sources confli"
+  },
+  {
+   "check": "mobile: organization-address directions are labelled as such",
+   "passed": true,
+   "detail": "Activity location may differ\n\nOrganization location (the activity location may differ): Robin I. Kroogman New Haven Animal Shelter, 81 Fournier Street, New Haven, CT 06511 · Check location in maps\n(op"
+  },
+  {
+   "check": "mobile: no page errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "form: a range is saved as a range",
+   "passed": true,
+   "detail": "{'Hours you can give': '2–3 per week'}"
+  }
+ ],
+ "real_model_runs": [
+  {
+   "viewport": "desktop",
+   "run_id": "7206047a1912",
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 33144,
+    "cached_input_tokens": 28216,
+    "cache_write_input_tokens": 4424,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1436,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I found a few cat-focused possibilities. Saturday/Sunday morning availability isn’t published, so check schedules with the organizations; you can optionally share a ZIP for approximate distance estimates, but it isn’t required.",
+   "follow_up_questions": [
+    "When you say 2–3 hours, is that each week, each month, or for a single visit?",
+    "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed."
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "run_id": "d29384b42e23",
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 33615,
+    "cached_input_tokens": 28568,
+    "cache_write_input_tokens": 4543,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1640,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "Three cat-focused roles look worth checking, but the published information doesn’t confirm whether your weekend-morning availability works; some schedule or commitment details need confirmation. You may optionally share a ZIP code for approximate distance estimates, but it isn’t required.",
+   "follow_up_questions": [
+    "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+    "Do you need to stay within New Haven, or can you travel to nearby towns?"
+   ]
+  }
+ ],
+ "usage_total_api_reported": {
+  "requests": 8,
+  "input_tokens": 66759,
+  "cached_input_tokens": 56784,
+  "cache_write_input_tokens": 8967,
+  "uncached_input_tokens": 1008,
+  "output_tokens": 3076
+ },
+ "passed": 23,
+ "total": 23
+}

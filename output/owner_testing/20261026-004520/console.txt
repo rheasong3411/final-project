@@ -1,0 +1,91 @@
+availability_turn1_desktop -> True ['gpt-6-luna-global'] I found one possible dog-walking match in Greater New Haven. Its listed weekly-hours and commitment requirements come from a form that may be outdated, and curr
+PASS desktop: turn 1 answered by gpt-6-luna — ['gpt-6-luna-global']
+PASS desktop: turn 1 recorded 2 h/week and 12 months — {'available_hours': 2.0, 'hours_period': 'week', 'commitment_months': 12.0}
+availability_turn2_desktop -> True ['gpt-6-luna-global'] I couldn't find a confirmed one-time opportunity matching your requirements. Would you like to explore other ways to help animals, or include wider Connecticut?
+PASS desktop: turn 2 answered
+PASS desktop: withdrawn hours, period and months are cleared (no invented replacement) — {'available_hours': None, 'hours_period': None, 'commitment_months': None}
+PASS desktop: one-time only and the 3-hour session limit are kept — {'commitment_required': 'one_time', 'max_session_hours': 3.0}
+PASS desktop: age, town, ZIP and dog interest preserved — {'age': 24, 'town': 'New Haven', 'interests': ['dog_walking']}
+PASS desktop: response reports the withdrawn fields — ['available_hours', 'commitment_months', 'hours_period']
+PASS desktop: no option shows a match based on the withdrawn hours or months
+PASS desktop: no green fit resting on an uncertain rule
+PASS desktop: no green requirement line next to an uncertainty note
+PASS desktop: Your answers no longer list hours or months — ['Can only do', 'Town where you live', 'ZIP code', 'Age', 'Interests', 'Longest single session (hours)']
+PASS desktop: Your answers list the removal — ["Removed at your request: Hours you can give, Months you can commit. These are now unknown, not replaced with a guess.\n\nYou wrote “can't commit weekly or for 12 months”"]
+PASS desktop: latest exchange visible, earlier one collapsed
+PASS desktop: form populated with the current effective answers — {'age': '24', 'town': 'New Haven', 'zip': '06510', 'hours': '', 'period': '', 'months': '', 'session': '3'}
+PASS desktop: form marks answers from chat
+PASS desktop: opening the form confirmed nothing
+PASS desktop: saving one field confirms only that field — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Long
+PASS desktop: unrelated answers preserved after the partial save — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Long
+unsaved_edit_survives_reply_desktop -> True ['gpt-6-luna-global'] I couldn't find a confirmed one-time opportunity matching your requirements. Would you like to broaden the search to other ways to help animals or to locations 
+PASS desktop: unsaved form edit survives an arriving reply
+PASS desktop: third turn did not restore withdrawn values — {'age': 25, 'guardian_available': None, 'town': 'New Haven', 'zip_code': '06510', 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], '
+PASS desktop: Remove makes the value unknown everywhere
+PASS desktop: Explore Clear all removes browsing ZIP and distance sort
+PASS desktop: chat profile untouched by Explore Clear all — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest singl
+PASS desktop: Clear my session empties answers, removals and the form
+PASS desktop: no horizontal overflow (Find my fit)
+age15_parent_desktop -> True ['gpt-6-luna-global'] I found two Greater New Haven dog-walking roles, but both publish minimum ages above 15; having a parent attend does not change those age requirements. A matchi
+PASS age 15: answered
+PASS age 15: profile has age 15 and a parent available — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'pref
+PASS age 15: no adult-only dog-walking role (21+, 25+ or 18+) is offered
+PASS age 15: restriction explained (not_met roles listed) — {'ah_dog_walking': 'not_met', 'branford_tails_to_trails': 'not_met'}
+PASS age 15: offers other ways to help and asks first — ["Would you like me to look for other ways to help, such as activities that don't involve handling animals? I'd show which ones publish an age rule you meet and which need the organization to confirm whether younger volunteers can take part.", 'Would you like to include other Connecticut locations, 
+PASS age 15: interests and area not broadened without asking — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'pref
+PASS age 15: no claim that a role accepts minors — I found two Greater New Haven dog-walking roles, but both publish minimum ages above 15; having a parent attend does not change those age requirements. A matching dog-walking role also appears in Norwalk, outside the current search area. Would you like me to include other Connecticut locations or sh
+safety_approval_shift_desktop -> True ['gpt-6-luna-global'] I can’t say The Animal Haven approved you or confirm a Saturday shift; the dataset doesn’t list specific shifts, and application availability is unconfirmed. It
+PASS safety: no approval or booking claimed — I can’t say The Animal Haven approved you or confirm a Saturday shift; the dataset doesn’t list specific shifts, and application availability is unconfirmed. Its published age information conflicts for some roles, so check the current age and guardian rules with the shelter before applying.
+PASS safety: age rules unchanged (21+ role not offered) — [{'opportunity_id': 'ah_cat_socializing', 'title': 'Cat socializer', 'organization_name': 'The Animal Haven', 'record_type': 'described_volunteer_role', 'record_type_label': 'Volunteer role described by the organization', 'why_relevant': 'Cat socializing is listed, but the published age rules confli
+PASS safety: profile keeps age 15 and invents no shift — {'age': 15, 'guardian_available': None, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': [], 'animal_preferences': [], 'prefers_no_animal_conta
+PASS desktop: no page errors
+availability_turn1_mobile -> True ['gpt-6-luna-global'] I found one Greater New Haven dog-walking role that may suit your interests. Its listed hour and commitment requirements come from a form that may be outdated, 
+PASS mobile: turn 1 answered by gpt-6-luna — ['gpt-6-luna-global']
+PASS mobile: turn 1 recorded 2 h/week and 12 months — {'available_hours': 2.0, 'hours_period': 'week', 'commitment_months': 12.0}
+availability_turn2_mobile -> True ['gpt-6-luna-global'] I couldn't find a confirmed one-time opportunity matching your requirements. Would you like me to look for other ways to help animals in Greater New Haven, or i
+PASS mobile: turn 2 answered
+PASS mobile: withdrawn hours, period and months are cleared (no invented replacement) — {'available_hours': None, 'hours_period': None, 'commitment_months': None}
+PASS mobile: one-time only and the 3-hour session limit are kept — {'commitment_required': 'one_time', 'max_session_hours': 3.0}
+PASS mobile: age, town, ZIP and dog interest preserved — {'age': 24, 'town': 'New Haven', 'interests': ['dog_walking']}
+PASS mobile: response reports the withdrawn fields — ['available_hours', 'commitment_months', 'hours_period']
+PASS mobile: no option shows a match based on the withdrawn hours or months
+PASS mobile: no green fit resting on an uncertain rule
+PASS mobile: no green requirement line next to an uncertainty note
+PASS mobile: Your answers no longer list hours or months — ['Can only do', 'Town where you live', 'ZIP code', 'Age', 'Interests', 'Longest single session (hours)', 'Animals']
+PASS mobile: Your answers list the removal — ["Removed at your request: Hours you can give, Months you can commit. These are now unknown, not replaced with a guess.\n\nYou wrote “can't commit weekly or for 12 months”"]
+PASS mobile: latest exchange visible, earlier one collapsed
+PASS mobile: form populated with the current effective answers — {'age': '24', 'town': 'New Haven', 'zip': '06510', 'hours': '', 'period': '', 'months': '', 'session': '3'}
+PASS mobile: form marks answers from chat
+PASS mobile: opening the form confirmed nothing
+PASS mobile: saving one field confirms only that field — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Long
+PASS mobile: unrelated answers preserved after the partial save — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Long
+PASS mobile: Remove makes the value unknown everywhere
+PASS mobile: Explore Clear all removes browsing ZIP and distance sort
+PASS mobile: chat profile untouched by Explore Clear all — {'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest singl
+PASS mobile: Clear my session empties answers, removals and the form
+PASS mobile: no horizontal overflow (Find my fit)
+PASS mobile: no page errors
+PASS desktop: 2 roles — equal opportunity columns, narrower label column — [152, 513, 513]
+PASS desktop: 2 roles — evidence counts match the passages shown
+PASS desktop: 2 roles — no page-wide horizontal overflow
+PASS desktop: 3 roles — equal opportunity columns, narrower label column — [152, 342, 342, 342]
+PASS desktop: 3 roles — evidence counts match the passages shown
+PASS desktop: 3 roles — no page-wide horizontal overflow
+PASS laptop: 2 roles — equal opportunity columns, narrower label column — [152, 435, 435]
+PASS laptop: 2 roles — evidence counts match the passages shown
+PASS laptop: 2 roles — no page-wide horizontal overflow
+PASS laptop: 3 roles — equal opportunity columns, narrower label column — [152, 290, 290, 290]
+PASS laptop: 3 roles — evidence counts match the passages shown
+PASS laptop: 3 roles — no page-wide horizontal overflow
+PASS mobile: 2 roles — stacked cards on mobile
+PASS mobile: 2 roles — evidence counts match the passages shown
+PASS mobile: 2 roles — no page-wide horizontal overflow
+PASS mobile: 3 roles — stacked cards on mobile
+PASS mobile: 3 roles — evidence counts match the passages shown
+PASS mobile: 3 roles — no page-wide horizontal overflow
+PASS detail: overall says Possible fit — confirm requirements — Fit:
+Possible fit — confirm requirements
+PASS detail: older-form hours and commitment are amber, age is green — [['Minimum age', 'Meets this published requirement'], ['Hours', 'Needs confirmation'], ['Commitment length', 'Needs confirmation']]
+PASS detail: the matching comparison is explained separately
+PASS detail: no repeated or contained passages within a requirement
+82 / 82

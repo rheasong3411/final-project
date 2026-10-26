@@ -1,0 +1,39 @@
+# Secrets: real env files are never committed; the template is.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+service-account*.json
+
+# Local environments and dependencies
+.venv/
+venv/
+node_modules/
+
+# Python and OS clutter
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Local personal data (user-test notes, chat transcripts, exported logs with personal info)
+private/
+local_data/
+*.local.json
+
+# Backup and packaged archives (kept on the Mac, never committed or packaged)
+backup*.zip
+*backup*.zip
+Final_Project*.zip
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Generated build metadata
+*.tsbuildinfo

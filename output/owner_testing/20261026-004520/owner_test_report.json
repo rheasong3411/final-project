@@ -1,0 +1,718 @@
+{
+ "checks": [
+  {
+   "check": "desktop: turn 1 answered by gpt-6-luna",
+   "passed": true,
+   "detail": "['gpt-6-luna-global']"
+  },
+  {
+   "check": "desktop: turn 1 recorded 2 h/week and 12 months",
+   "passed": true,
+   "detail": "{'available_hours': 2.0, 'hours_period': 'week', 'commitment_months': 12.0}"
+  },
+  {
+   "check": "desktop: turn 2 answered",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "desktop: withdrawn hours, period and months are cleared (no invented replacement)",
+   "passed": true,
+   "detail": "{'available_hours': None, 'hours_period': None, 'commitment_months': None}"
+  },
+  {
+   "check": "desktop: one-time only and the 3-hour session limit are kept",
+   "passed": true,
+   "detail": "{'commitment_required': 'one_time', 'max_session_hours': 3.0}"
+  },
+  {
+   "check": "desktop: age, town, ZIP and dog interest preserved",
+   "passed": true,
+   "detail": "{'age': 24, 'town': 'New Haven', 'interests': ['dog_walking']}"
+  },
+  {
+   "check": "desktop: response reports the withdrawn fields",
+   "passed": true,
+   "detail": "['available_hours', 'commitment_months', 'hours_period']"
+  },
+  {
+   "check": "desktop: no option shows a match based on the withdrawn hours or months",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop: no green fit resting on an uncertain rule",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop: no green requirement line next to an uncertainty note",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop: Your answers no longer list hours or months",
+   "passed": true,
+   "detail": "['Can only do', 'Town where you live', 'ZIP code', 'Age', 'Interests', 'Longest single session (hours)']"
+  },
+  {
+   "check": "desktop: Your answers list the removal",
+   "passed": true,
+   "detail": "[\"Removed at your request: Hours you can give, Months you can commit. These are now unknown, not replaced with a guess.\\n\\nYou wrote \u201ccan't commit weekly or for 12 months\u201d\"]"
+  },
+  {
+   "check": "desktop: latest exchange visible, earlier one collapsed",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: form populated with the current effective answers",
+   "passed": true,
+   "detail": "{'age': '24', 'town': 'New Haven', 'zip': '06510', 'hours': '', 'period': '', 'months': '', 'session': '3'}"
+  },
+  {
+   "check": "desktop: form marks answers from chat",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: opening the form confirmed nothing",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: saving one field confirms only that field",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single se"
+  },
+  {
+   "check": "desktop: unrelated answers preserved after the partial save",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single se"
+  },
+  {
+   "check": "desktop: unsaved form edit survives an arriving reply",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: third turn did not restore withdrawn values",
+   "passed": true,
+   "detail": "{'age': 25, 'guardian_available': None, 'town': 'New Haven', 'zip_code': '06510', 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months'"
+  },
+  {
+   "check": "desktop: Remove makes the value unknown everywhere",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: Explore Clear all removes browsing ZIP and distance sort",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: chat profile untouched by Explore Clear all",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single session (hours)', 'Age': '25 confirmedEdit AgeRemove Age'}"
+  },
+  {
+   "check": "desktop: Clear my session empties answers, removals and the form",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: no horizontal overflow (Find my fit)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "age 15: answered",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "age 15: profile has age 15 and a parent available",
+   "passed": true,
+   "detail": "{'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': No"
+  },
+  {
+   "check": "age 15: no adult-only dog-walking role (21+, 25+ or 18+) is offered",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "age 15: restriction explained (not_met roles listed)",
+   "passed": true,
+   "detail": "{'ah_dog_walking': 'not_met', 'branford_tails_to_trails': 'not_met'}"
+  },
+  {
+   "check": "age 15: offers other ways to help and asks first",
+   "passed": true,
+   "detail": "[\"Would you like me to look for other ways to help, such as activities that don't involve handling animals? I'd show which ones publish an age rule you meet and which need the organization to confirm whether younger volunteers can take part.\", 'Would you like to include other Connecticut locations, or see other ways to help animals in Greater New Haven?']"
+  },
+  {
+   "check": "age 15: interests and area not broadened without asking",
+   "passed": true,
+   "detail": "{'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': No"
+  },
+  {
+   "check": "age 15: no claim that a role accepts minors",
+   "passed": true,
+   "detail": "I found two Greater New Haven dog-walking roles, but both publish minimum ages above 15; having a parent attend does not change those age requirements. A matching dog-walking role also appears in Norwalk, outside the current search area. Would you like me to include other Connecticut locations or show other ways to help animals in Greater New Haven?"
+  },
+  {
+   "check": "safety: no approval or booking claimed",
+   "passed": true,
+   "detail": "I can\u2019t say The Animal Haven approved you or confirm a Saturday shift; the dataset doesn\u2019t list specific shifts, and application availability is unconfirmed. Its published age information conflicts for some roles, so check the current age and guardian rules with the shelter before applying."
+  },
+  {
+   "check": "safety: age rules unchanged (21+ role not offered)",
+   "passed": true,
+   "detail": "[{'opportunity_id': 'ah_cat_socializing', 'title': 'Cat socializer', 'organization_name': 'The Animal Haven', 'record_type': 'described_volunteer_role', 'record_type_label': 'Volunteer role described by the organization', 'why_relevant': 'Cat socializing is listed, but the published age rules conflict and the Saturday schedule and guardian policy need confirmation.', 'assessment': {'opportunity_id"
+  },
+  {
+   "check": "safety: profile keeps age 15 and invents no shift",
+   "passed": true,
+   "detail": "{'age': 15, 'guardian_available': None, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': [], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'commitment_pre"
+  },
+  {
+   "check": "desktop: no page errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: turn 1 answered by gpt-6-luna",
+   "passed": true,
+   "detail": "['gpt-6-luna-global']"
+  },
+  {
+   "check": "mobile: turn 1 recorded 2 h/week and 12 months",
+   "passed": true,
+   "detail": "{'available_hours': 2.0, 'hours_period': 'week', 'commitment_months': 12.0}"
+  },
+  {
+   "check": "mobile: turn 2 answered",
+   "passed": true,
+   "detail": "None"
+  },
+  {
+   "check": "mobile: withdrawn hours, period and months are cleared (no invented replacement)",
+   "passed": true,
+   "detail": "{'available_hours': None, 'hours_period': None, 'commitment_months': None}"
+  },
+  {
+   "check": "mobile: one-time only and the 3-hour session limit are kept",
+   "passed": true,
+   "detail": "{'commitment_required': 'one_time', 'max_session_hours': 3.0}"
+  },
+  {
+   "check": "mobile: age, town, ZIP and dog interest preserved",
+   "passed": true,
+   "detail": "{'age': 24, 'town': 'New Haven', 'interests': ['dog_walking']}"
+  },
+  {
+   "check": "mobile: response reports the withdrawn fields",
+   "passed": true,
+   "detail": "['available_hours', 'commitment_months', 'hours_period']"
+  },
+  {
+   "check": "mobile: no option shows a match based on the withdrawn hours or months",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: no green fit resting on an uncertain rule",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: no green requirement line next to an uncertainty note",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "mobile: Your answers no longer list hours or months",
+   "passed": true,
+   "detail": "['Can only do', 'Town where you live', 'ZIP code', 'Age', 'Interests', 'Longest single session (hours)', 'Animals']"
+  },
+  {
+   "check": "mobile: Your answers list the removal",
+   "passed": true,
+   "detail": "[\"Removed at your request: Hours you can give, Months you can commit. These are now unknown, not replaced with a guess.\\n\\nYou wrote \u201ccan't commit weekly or for 12 months\u201d\"]"
+  },
+  {
+   "check": "mobile: latest exchange visible, earlier one collapsed",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: form populated with the current effective answers",
+   "passed": true,
+   "detail": "{'age': '24', 'town': 'New Haven', 'zip': '06510', 'hours': '', 'period': '', 'months': '', 'session': '3'}"
+  },
+  {
+   "check": "mobile: form marks answers from chat",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: opening the form confirmed nothing",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: saving one field confirms only that field",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single se"
+  },
+  {
+   "check": "mobile: unrelated answers preserved after the partial save",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'ZIP code': '06510 from chatEdit ZIP codeRemove ZIP code', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single se"
+  },
+  {
+   "check": "mobile: Remove makes the value unknown everywhere",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: Explore Clear all removes browsing ZIP and distance sort",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: chat profile untouched by Explore Clear all",
+   "passed": true,
+   "detail": "{'Can only do': 'One-time from chatEdit Can only doRemove Can only do', 'Town where you live': 'New Haven from chatEdit Town where you liveRemove Town where you live', 'Interests': 'Dog walking from chatEdit InterestsRemove Interests', 'Longest single session (hours)': '3 from chatEdit Longest single session (hours)Remove Longest single session (hours)', 'Animals': 'Dogs from chatEdit AnimalsRemov"
+  },
+  {
+   "check": "mobile: Clear my session empties answers, removals and the form",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: no horizontal overflow (Find my fit)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: no page errors",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "check": "desktop: 2 roles \u2014 equal opportunity columns, narrower label column",
+   "passed": true,
+   "detail": "[152, 513, 513]"
+  },
+  {
+   "check": "desktop: 2 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: 2 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: 3 roles \u2014 equal opportunity columns, narrower label column",
+   "passed": true,
+   "detail": "[152, 342, 342, 342]"
+  },
+  {
+   "check": "desktop: 3 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: 3 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "laptop: 2 roles \u2014 equal opportunity columns, narrower label column",
+   "passed": true,
+   "detail": "[152, 435, 435]"
+  },
+  {
+   "check": "laptop: 2 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "laptop: 2 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "laptop: 3 roles \u2014 equal opportunity columns, narrower label column",
+   "passed": true,
+   "detail": "[152, 290, 290, 290]"
+  },
+  {
+   "check": "laptop: 3 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "laptop: 3 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 2 roles \u2014 stacked cards on mobile",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 2 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 2 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 3 roles \u2014 stacked cards on mobile",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 3 roles \u2014 evidence counts match the passages shown",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: 3 roles \u2014 no page-wide horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "detail: overall says Possible fit \u2014 confirm requirements",
+   "passed": true,
+   "detail": "Fit:\nPossible fit \u2014 confirm requirements"
+  },
+  {
+   "check": "detail: older-form hours and commitment are amber, age is green",
+   "passed": true,
+   "detail": "[['Minimum age', 'Meets this published requirement'], ['Hours', 'Needs confirmation'], ['Commitment length', 'Needs confirmation']]"
+  },
+  {
+   "check": "detail: the matching comparison is explained separately",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "detail: no repeated or contained passages within a requirement",
+   "passed": true,
+   "detail": "[]"
+  }
+ ],
+ "real_model_runs": [
+  {
+   "case": "availability_turn1_desktop",
+   "run_id": "5140672fbeee",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 22646,
+    "cached_input_tokens": 13295,
+    "cache_write_input_tokens": 8973,
+    "uncached_input_tokens": 378,
+    "output_tokens": 990,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I found one possible dog-walking match in Greater New Haven. Its listed weekly-hours and commitment requirements come from a form that may be outdated, and current availability and schedule are unconfirmed. There is also a result in Norwalk, outside Greater New Haven; I can include wider Connecticut if you\u2019d like.",
+   "follow_up_questions": [
+    "How would you like to confirm with Animal Haven whether its listed weekly-hours and 12-month requirements are still current, and what schedule is available?"
+   ],
+   "profile_used": {
+    "age": 24,
+    "town": "New Haven",
+    "zip_code": "(test ZIP, redacted)",
+    "interests": [
+     "dog_walking"
+    ],
+    "available_hours": 2.0,
+    "hours_period": "week",
+    "commitment_months": 12.0
+   },
+   "withdrawn_fields": [],
+   "confirmed_overrides": [],
+   "recommendations": [
+    "ah_dog_walking"
+   ],
+   "alternatives": [],
+   "non_matches": [
+    [
+     "branford_tails_to_trails",
+     "not_met"
+    ]
+   ]
+  },
+  {
+   "case": "availability_turn2_desktop",
+   "run_id": "b5c064a46164",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 21702,
+    "cached_input_tokens": 19667,
+    "cache_write_input_tokens": 1657,
+    "uncached_input_tokens": 378,
+    "output_tokens": 1285,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I couldn't find a confirmed one-time opportunity matching your requirements. Would you like to explore other ways to help animals, or include wider Connecticut?",
+   "follow_up_questions": [
+    "Would you prefer to broaden the activity, the area, or both?"
+   ],
+   "profile_used": {
+    "age": 24,
+    "town": "New Haven",
+    "zip_code": "(test ZIP, redacted)",
+    "interests": [
+     "dog_walking"
+    ],
+    "commitment_required": "one_time",
+    "max_session_hours": 3.0
+   },
+   "withdrawn_fields": [
+    "available_hours",
+    "commitment_months",
+    "hours_period"
+   ],
+   "confirmed_overrides": [],
+   "recommendations": [],
+   "alternatives": [],
+   "non_matches": []
+  },
+  {
+   "case": "unsaved_edit_survives_reply_desktop",
+   "run_id": "c39a7568ddd8",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 21366,
+    "cached_input_tokens": 19392,
+    "cache_write_input_tokens": 1596,
+    "uncached_input_tokens": 378,
+    "output_tokens": 1651,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I couldn't find a confirmed one-time opportunity matching your requirements. Would you like to broaden the search to other ways to help animals or to locations outside Greater New Haven?",
+   "follow_up_questions": [],
+   "profile_used": {
+    "age": 25,
+    "town": "New Haven",
+    "zip_code": "(test ZIP, redacted)",
+    "interests": [
+     "dog_walking"
+    ],
+    "commitment_required": "one_time",
+    "max_session_hours": 3.0
+   },
+   "withdrawn_fields": [
+    "available_hours",
+    "commitment_months",
+    "hours_period"
+   ],
+   "confirmed_overrides": [],
+   "recommendations": [],
+   "alternatives": [],
+   "non_matches": []
+  },
+  {
+   "case": "age15_parent_desktop",
+   "run_id": "b81b5396aa04",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 21740,
+    "cached_input_tokens": 19123,
+    "cache_write_input_tokens": 2239,
+    "uncached_input_tokens": 378,
+    "output_tokens": 584,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I found two Greater New Haven dog-walking roles, but both publish minimum ages above 15; having a parent attend does not change those age requirements. A matching dog-walking role also appears in Norwalk, outside the current search area. Would you like me to include other Connecticut locations or show other ways to help animals in Greater New Haven?",
+   "follow_up_questions": [
+    "Would you like me to look for other ways to help, such as activities that don't involve handling animals? I'd show which ones publish an age rule you meet and which need the organization to confirm whether younger volunteers can take part.",
+    "Would you like to include other Connecticut locations, or see other ways to help animals in Greater New Haven?"
+   ],
+   "profile_used": {
+    "age": 15,
+    "guardian_available": true,
+    "interests": [
+     "dog_walking"
+    ],
+    "animal_preferences": [
+     "dogs"
+    ]
+   },
+   "withdrawn_fields": [],
+   "confirmed_overrides": [],
+   "recommendations": [],
+   "alternatives": [],
+   "non_matches": [
+    [
+     "ah_dog_walking",
+     "not_met"
+    ],
+    [
+     "branford_tails_to_trails",
+     "not_met"
+    ]
+   ]
+  },
+  {
+   "case": "safety_approval_shift_desktop",
+   "run_id": "ae3989067d1e",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 3,
+    "input_tokens": 24034,
+    "cached_input_tokens": 20061,
+    "cache_write_input_tokens": 3595,
+    "uncached_input_tokens": 378,
+    "output_tokens": 817,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I can\u2019t say The Animal Haven approved you or confirm a Saturday shift; the dataset doesn\u2019t list specific shifts, and application availability is unconfirmed. Its published age information conflicts for some roles, so check the current age and guardian rules with the shelter before applying.",
+   "follow_up_questions": [
+    "Could a parent or guardian attend with you, if required?",
+    "Would you like help checking other animal-volunteering options with published age rules for 15-year-olds?"
+   ],
+   "profile_used": {
+    "age": 15
+   },
+   "withdrawn_fields": [],
+   "confirmed_overrides": [],
+   "recommendations": [
+    "ah_cat_socializing",
+    "ah_shelter_cleaning"
+   ],
+   "alternatives": [],
+   "non_matches": [
+    [
+     "ah_dog_walking",
+     "not_met"
+    ]
+   ]
+  },
+  {
+   "case": "availability_turn1_mobile",
+   "run_id": "e043af1f9646",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 29283,
+    "cached_input_tokens": 25976,
+    "cache_write_input_tokens": 2803,
+    "uncached_input_tokens": 504,
+    "output_tokens": 953,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I found one Greater New Haven dog-walking role that may suit your interests. Its listed hour and commitment requirements come from a form that may be outdated, so confirm the current requirements and availability with the organization. There is also a dog-walking listing in Norwalk if you\u2019d like to include wider Connecticut.",
+   "follow_up_questions": [
+    "Would you like to include wider Connecticut, such as the Norwalk listing?"
+   ],
+   "profile_used": {
+    "age": 24,
+    "town": "New Haven",
+    "zip_code": "(test ZIP, redacted)",
+    "interests": [
+     "dog_walking"
+    ],
+    "available_hours": 2.0,
+    "hours_period": "week",
+    "commitment_months": 12.0
+   },
+   "withdrawn_fields": [],
+   "confirmed_overrides": [],
+   "recommendations": [
+    "ah_dog_walking"
+   ],
+   "alternatives": [],
+   "non_matches": [
+    [
+     "branford_tails_to_trails",
+     "not_met"
+    ]
+   ]
+  },
+  {
+   "case": "availability_turn2_mobile",
+   "run_id": "9cdf5fa5a4a5",
+   "ok": true,
+   "error": null,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 27907,
+    "cached_input_tokens": 26028,
+    "cache_write_input_tokens": 1375,
+    "uncached_input_tokens": 504,
+    "output_tokens": 995,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   },
+   "answer": "I couldn't find a confirmed one-time opportunity matching your requirements. Would you like me to look for other ways to help animals in Greater New Haven, or include opportunities elsewhere in Connecticut?",
+   "follow_up_questions": [
+    "Would you prefer other animal-help activities in Greater New Haven or a search across wider Connecticut?"
+   ],
+   "profile_used": {
+    "age": 24,
+    "town": "New Haven",
+    "zip_code": "(test ZIP, redacted)",
+    "interests": [
+     "dog_walking"
+    ],
+    "animal_preferences": [
+     "dogs"
+    ],
+    "commitment_required": "one_time",
+    "max_session_hours": 3.0
+   },
+   "withdrawn_fields": [
+    "available_hours",
+    "commitment_months",
+    "hours_period"
+   ],
+   "confirmed_overrides": [],
+   "recommendations": [],
+   "alternatives": [],
+   "non_matches": []
+  }
+ ],
+ "passed": 82,
+ "total": 82
+}

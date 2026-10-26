@@ -1,0 +1,105 @@
+age15_turn1_desktop -> True ['gpt-6-luna-global'] I found two dog-walking roles in Greater New Haven, but both publish minimum ages above 15; having a parent attend does not change those listed age requirements. There is another dog-walking listing o
+PASS desktop: turn 1 answered by gpt-6-luna — ['gpt-6-luna-global']
+PASS desktop: turn 1 profile age 15 with a parent — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': ['dogs'], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': No
+PASS desktop turn 1: rendered cards inspected — [("Roles that don't fit rig", 'ah_dog_walking', "21+ | You: 15 | Doesn't meet requirement", 'Fit: Does not meet a published requirement'), ("Roles that don't fit rig", 'branford_tails_to_trails', "25+ | You: 15 | Doesn't meet requirement", 'Fit: Does not meet a published requirement')]
+PASS desktop turn 1: no role whose every published age is above 15 is offered (rendered cards)
+PASS desktop turn 1: no offered card has a failed age rule
+PASS desktop turn 1: structured response agrees (no offered card is not_met on age)
+PASS desktop turn 1: supported vs needs-confirmation ages distinguished on cards — {'age_supported_green': [], 'age_needs_confirmation_amber': [], 'no_age_line': []}
+FAIL desktop: turn 1 offers other ways to help and asks first — ['Would you like me to include dog-walking options outside Greater New Haven, such as Norwalk?']
+age15_turn2_other_ways_desktop -> True ['gpt-6-luna-global'] Here are some other ways to support cats that don’t involve animal handling. These are not guaranteed placements; minimum-age requirements and availability are not confirmed, so check with the organiz
+PASS desktop: turn 2 answered
+PASS desktop: turn 2 keeps age 15 and the parent answer — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'c
+PASS desktop turn 2: rendered cards inspected — [('Other ways to help', 'bcc_youth_art_advocacy', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit — confirm requirements'), ('Other ways to help', 'bcc_youth_supply_drives', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit — confirm requirements'), ('Other ways to help', 'bcc_crafting', 'No minimum age published | You: 15 | Needs confirmat
+PASS desktop turn 2: no role whose every published age is above 15 is offered (rendered cards)
+PASS desktop turn 2: no offered card has a failed age rule
+PASS desktop turn 2: structured response agrees (no offered card is not_met on age)
+PASS desktop turn 2: supported vs needs-confirmation ages distinguished on cards — {'age_supported_green': [], 'age_needs_confirmation_amber': ['bcc_youth_art_advocacy', 'bcc_youth_supply_drives', 'bcc_crafting'], 'no_age_line': []}
+PASS desktop: turn 2 actually returned other ways to help as cards — ['Other ways to help', 'Other ways to help', 'Other ways to help']
+PASS desktop: no claim that an activity accepts minors without evidence — Here are some other ways to support cats that don’t involve animal handling. These are not guaranteed placements; minimum-age requirements and availability are not confirmed, so check with the organization before planning to participate.
+safety_repeat_desktop -> True ['gpt-6-luna-global'] I can’t say The Animal Haven approved you or confirm a Saturday shift; no specific shifts are published, and availability is unconfirmed. The Animal Haven’s dog-walking listing has a minimum age above
+PASS safety repeat: rendered cards inspected — [("Roles that don't fit rig", 'ah_dog_walking', "21+ | You: 15 | Doesn't meet requirement", 'Fit: Does not meet a published requirement'), ("Roles that don't fit rig", 'ah_cat_socializing', "Sources say 18, 21+ (conflicting published ages) | You: 15 | Doesn't meet requirement ⚠ Sources disagree; confirm with the organization.", 'Fit: Does not meet a published requirement'), ("Roles that don't fit 
+PASS safety repeat: no role whose every published age is above 15 is offered (rendered cards)
+PASS safety repeat: no offered card has a failed age rule
+PASS safety repeat: structured response agrees (no offered card is not_met on age)
+PASS safety repeat: supported vs needs-confirmation ages distinguished on cards — {'age_supported_green': [], 'age_needs_confirmation_amber': [], 'no_age_line': []}
+PASS safety repeat: ah_cat_socializing explained with the conflict kept — {'section': "Roles that don't fit right now", 'id': 'ah_cat_socializing', 'age': "Sources say 18, 21+ (conflicting published ages) | You: 15 | Doesn't meet requirement ⚠ Sources disagree; confirm with the organization.", 'age_class': 'fit-word fit-not_met', 'fit': 'Fit: Does not meet a published requirement'}
+PASS safety repeat: no approval or booking claimed — I can’t say The Animal Haven approved you or confirm a Saturday shift; no specific shifts are published, and availability is unconfirmed. The Animal Haven’s dog-walking listing has a minimum age above yours; its cat-care age listings conflict but both published ages are above 15. I also checked related Greater New Haven shelter-care options and found no suitable match at your age.
+PASS safety repeat: age 15 kept, no shift invented — {'age': 15, 'guardian_available': None, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': [], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'commitment_pre
+PASS desktop: no page errors
+age15_turn1_mobile -> True ['gpt-6-luna-global'] I found two Greater New Haven dog-walking roles, but both list minimum ages above 15; having a parent attend does not change those published age limits. There is also a dog-walking listing in Norwalk,
+PASS mobile: turn 1 answered by gpt-6-luna — ['gpt-6-luna-global']
+PASS mobile: turn 1 profile age 15 with a parent — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'c
+PASS mobile turn 1: rendered cards inspected — [("Roles that don't fit rig", 'ah_dog_walking', "21+ | You: 15 | Doesn't meet requirement", 'Fit: Does not meet a published requirement'), ("Roles that don't fit rig", 'branford_tails_to_trails', "25+ | You: 15 | Doesn't meet requirement", 'Fit: Does not meet a published requirement')]
+PASS mobile turn 1: no role whose every published age is above 15 is offered (rendered cards)
+PASS mobile turn 1: no offered card has a failed age rule
+PASS mobile turn 1: structured response agrees (no offered card is not_met on age)
+PASS mobile turn 1: supported vs needs-confirmation ages distinguished on cards — {'age_supported_green': [], 'age_needs_confirmation_amber': [], 'no_age_line': []}
+PASS mobile: turn 1 offers other ways to help and asks first — ["Would you like me to look for other ways to help, such as activities that don't involve handling animals? I'd show which ones publish an age rule you meet and which need the organization to confirm whether younger volunteers can take part.", 'Would you like me to include other Connecticut locations, such as Norwalk?']
+age15_turn2_other_ways_mobile -> True ['gpt-6-luna-global'] Here are some other ways to support Branford Compassion Club that don’t involve animal handling. These are independent activities, not confirmed shifts or placements; the organization has not publishe
+PASS mobile: turn 2 answered
+PASS mobile: turn 2 keeps age 15 and the parent answer — {'age': 15, 'guardian_available': True, 'town': None, 'zip_code': None, 'prefers_not_to_share_zip': None, 'has_car': None, 'wants_nearby': None, 'nearby_towns_ok': None, 'volunteer_only_in': None, 'include_wider_connecticut': False, 'interests': ['dog_walking'], 'animal_preferences': [], 'prefers_no_animal_contact': None, 'available_hours': None, 'hours_period': None, 'commitment_months': None, 'c
+PASS mobile turn 2: rendered cards inspected — [('Other ways to help', 'bcc_youth_art_advocacy', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit — confirm requirements'), ('Other ways to help', 'bcc_youth_supply_drives', 'No minimum age published | You: 15 | Needs confirmation', 'Fit: Possible fit — confirm requirements'), ('Other ways to help', 'bcc_crafting', 'No minimum age published | You: 15 | Needs confirmat
+PASS mobile turn 2: no role whose every published age is above 15 is offered (rendered cards)
+PASS mobile turn 2: no offered card has a failed age rule
+PASS mobile turn 2: structured response agrees (no offered card is not_met on age)
+PASS mobile turn 2: supported vs needs-confirmation ages distinguished on cards — {'age_supported_green': [], 'age_needs_confirmation_amber': ['bcc_youth_art_advocacy', 'bcc_youth_supply_drives', 'bcc_crafting'], 'no_age_line': []}
+PASS mobile: turn 2 actually returned other ways to help as cards — ['Other ways to help', 'Other ways to help', 'Other ways to help']
+PASS mobile: no claim that an activity accepts minors without evidence — Here are some other ways to support Branford Compassion Club that don’t involve animal handling. These are independent activities, not confirmed shifts or placements; the organization has not published age or guardian rules for them, so please check whether you can participate at 15 with your parent.
+PASS mobile: no page errors
+PASS detail desktop age 15: age 'Does not meet', overall 'Does not meet' — ('Does not meet this published requirement', 'Fit:\nDoes not meet a published requirement')
+PASS detail desktop age 15: conflict and both versions still shown — Minimum age
+Does not meet this published requirement
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+Both published age requirements are above your age; confirm the current rule with the organization. (You are 15; the conflicting pu
+PASS detail desktop age 19: age 'Needs confirmation', overall 'Possible fit' — ('Needs confirmation', 'Fit:\nPossible fit — confirm requirements')
+PASS detail desktop age 19: conflict and both versions still shown — Minimum age
+Needs confirmation
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+You are 19. Sources disagree (see field_evidence entries marked conflict). The normalized value is left null and the volunteer should confirm with the or
+PASS detail desktop age 24: age 'Needs confirmation', overall 'Possible fit' — ('Needs confirmation', 'Fit:\nPossible fit — confirm requirements')
+PASS detail desktop age 24: conflict and both versions still shown — Minimum age
+Needs confirmation
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+You are 24, which meets even the strictest published version (21). Sources disagree (see field_evidence entries marked conflict). The normalized value is
+PASS detail mobile age 15: age 'Does not meet', overall 'Does not meet' — ('Does not meet this published requirement', 'Fit:\nDoes not meet a published requirement')
+PASS detail mobile age 15: conflict and both versions still shown — Minimum age
+Does not meet this published requirement
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+Both published age requirements are above your age; confirm the current rule with the organization. (You are 15; the conflicting pu
+PASS detail mobile age 19: age 'Needs confirmation', overall 'Possible fit' — ('Needs confirmation', 'Fit:\nPossible fit — confirm requirements')
+PASS detail mobile age 19: conflict and both versions still shown — Minimum age
+Needs confirmation
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+You are 19. Sources disagree (see field_evidence entries marked conflict). The normalized value is left null and the volunteer should confirm with the or
+PASS detail mobile age 24: age 'Needs confirmation', overall 'Possible fit' — ('Needs confirmation', 'Fit:\nPossible fit — confirm requirements')
+PASS detail mobile age 24: conflict and both versions still shown — Minimum age
+Needs confirmation
+
+Published: Published versions: 18, 21+ (conflicting published ages)
+
+Sources conflict — confirm with organization
+
+You are 24, which meets even the strictest published version (21). Sources disagree (see field_evidence entries marked conflict). The normalized value is
+USAGE {'requests': 20, 'input_tokens': 188504, 'cached_input_tokens': 161779, 'cache_write_input_tokens': 24205, 'uncached_input_tokens': 2520, 'output_tokens': 5031}
+55 / 56

@@ -1,0 +1,458 @@
+{
+ "session": 16,
+ "date": "2026-10-25",
+ "build": "frontend/dist index-DSj66yw6.js served by the project server on port 8001",
+ "synthetic": "Test ZIPs 06511 and 06513; synthetic Find my fit message; no forms submitted, no organizations contacted.",
+ "suites": {
+  "session16_location_display_no_ai": {
+   "passed": 62,
+   "total": 62,
+   "checks": [
+    {
+     "check": "desktop: no ZIP -> no distances on any card",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no ZIP place labels",
+     "passed": true,
+     "detail": "[['fnhas_adoption_events', 'Organization: New Haven', ['Activity location may differ', 'Greater New Haven']], ['chs_collection_drive', 'Organization sites: Newington, Waterford, Wilton', ['Activity location may differ', 'Other Connecticut location']]]"
+    },
+    {
+     "check": "desktop: sort options; only distance disabled without ZIP",
+     "passed": true,
+     "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+    },
+    {
+     "check": "desktop: short explanation of the prerequisite",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: A\u2013Z sorting without a ZIP",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: every card renders the backend label (verified/org/nearest/home/unknown)",
+     "passed": true,
+     "detail": "[]"
+    },
+    {
+     "check": "desktop: verified site",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: organization fallback + small note",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: multi-site with role association",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: multi-site without association -> nearest named site",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: home-based keeps 'Help from your home' primary; reference distance secondary",
+     "passed": true,
+     "detail": "['bcc_foster', 'Help from your home', ['Organization: North Branford \u00b7 About 9 miles away (for reference; no travel is stated)', 'Greater New Haven']]"
+    },
+    {
+     "check": "desktop: no physical address -> no distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no card repeats the distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: one shared explanation",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: combined unrounded order, no-distance records last (stable)",
+     "passed": true,
+     "detail": "46 with distance, 12 without"
+    },
+    {
+     "check": "desktop: verified and organization destinations interleave in one ranking",
+     "passed": true,
+     "detail": "{'organization_location', 'related_site', 'organization_nearest_site', 'volunteering_site'}"
+    },
+    {
+     "check": "desktop: home reference distance not ranked (not 0 miles)",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: one list, one count",
+     "passed": true,
+     "detail": "58 / 58"
+    },
+    {
+     "check": "desktop: 'Other leads' heading and paragraph gone",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: sort hint",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: changing ZIP updates labels and order",
+     "passed": true,
+     "detail": "Organization: New Haven \u00b7 About 1 mile away -> Organization: New Haven \u00b7 About 3.5 miles away"
+    },
+    {
+     "check": "desktop: removing ZIP leaves no stale distances",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: Clear all clears typed+applied ZIP, sort, messages, distances",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: town filter unaffected by organization fallback",
+     "passed": true,
+     "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away']"
+    },
+    {
+     "check": "desktop: detail shows organization address and labelled distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: detail keeps the other sites",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: Compare uses the same place text",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: Home cards use the place line",
+     "passed": true,
+     "detail": "['Organization: New Haven', 'North Haven', 'North Branford']"
+    },
+    {
+     "check": "desktop: Find my fit ZIP untouched",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no horizontal overflow",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no page errors",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no ZIP -> no distances on any card",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no ZIP place labels",
+     "passed": true,
+     "detail": "[['fnhas_adoption_events', 'Organization: New Haven', ['Activity location may differ', 'Greater New Haven']], ['chs_collection_drive', 'Organization sites: Newington, Waterford, Wilton', ['Activity location may differ', 'Other Connecticut location']]]"
+    },
+    {
+     "check": "mobile: sort options; only distance disabled without ZIP",
+     "passed": true,
+     "detail": "[['Default order', False], ['Organization name A\u2013Z', False], ['Distance: nearest first (needs a ZIP code)', True]]"
+    },
+    {
+     "check": "mobile: short explanation of the prerequisite",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: A\u2013Z sorting without a ZIP",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: every card renders the backend label (verified/org/nearest/home/unknown)",
+     "passed": true,
+     "detail": "[]"
+    },
+    {
+     "check": "mobile: verified site",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: organization fallback + small note",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: multi-site with role association",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: multi-site without association -> nearest named site",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: home-based keeps 'Help from your home' primary; reference distance secondary",
+     "passed": true,
+     "detail": "['bcc_foster', 'Help from your home', ['Organization: North Branford \u00b7 About 9 miles away (for reference; no travel is stated)', 'Greater New Haven']]"
+    },
+    {
+     "check": "mobile: no physical address -> no distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no card repeats the distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: one shared explanation",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: combined unrounded order, no-distance records last (stable)",
+     "passed": true,
+     "detail": "46 with distance, 12 without"
+    },
+    {
+     "check": "mobile: verified and organization destinations interleave in one ranking",
+     "passed": true,
+     "detail": "{'organization_location', 'related_site', 'organization_nearest_site', 'volunteering_site'}"
+    },
+    {
+     "check": "mobile: home reference distance not ranked (not 0 miles)",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: one list, one count",
+     "passed": true,
+     "detail": "58 / 58"
+    },
+    {
+     "check": "mobile: 'Other leads' heading and paragraph gone",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: sort hint",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: changing ZIP updates labels and order",
+     "passed": true,
+     "detail": "Organization: New Haven \u00b7 About 1 mile away -> Organization: New Haven \u00b7 About 3.5 miles away"
+    },
+    {
+     "check": "mobile: removing ZIP leaves no stale distances",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: Clear all clears typed+applied ZIP, sort, messages, distances",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: town filter unaffected by organization fallback",
+     "passed": true,
+     "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away']"
+    },
+    {
+     "check": "mobile: detail shows organization address and labelled distance",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: detail keeps the other sites",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: Compare uses the same place text",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: Home cards use the place line",
+     "passed": true,
+     "detail": "['Organization: New Haven', 'North Haven', 'North Branford']"
+    },
+    {
+     "check": "mobile: Find my fit ZIP untouched",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no horizontal overflow",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no page errors",
+     "passed": true,
+     "detail": ""
+    }
+   ]
+  },
+  "session16_find_my_fit_real_ai": {
+   "model": "gpt-6-luna via Portkey (returned gpt-6-luna-global), fresh calls, test server port 8002",
+   "passed": 14,
+   "total": 14,
+   "checks": [
+    {
+     "check": "desktop: answered",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no mileage in the prose",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: every option's Location row renders the backend label",
+     "passed": true,
+     "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'Organization: New Haven \u00b7 About 1 mile away']"
+    },
+    {
+     "check": "desktop: sort control renamed",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: each section is one list sorted by distance, no-distance last",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: shared explanation shown once",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "desktop: no page errors",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: answered",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no mileage in the prose",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: every option's Location row renders the backend label",
+     "passed": true,
+     "detail": "['North Haven \u00b7 About 6 miles away', 'North Haven \u00b7 About 6 miles away', 'Organization: New Haven \u00b7 About 1 mile away']"
+    },
+    {
+     "check": "mobile: sort control renamed",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: each section is one list sorted by distance, no-distance last",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: shared explanation shown once",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "check": "mobile: no page errors",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "turns": [
+    {
+     "viewport": "desktop",
+     "answer": "I found dog- and cat-related roles that may suit your interests. Their availability isn\u2019t confirmed, and the published time and commitment requirements need checking against what you can offer.",
+     "run_id": "ebe558ab2121",
+     "recommendations": [
+      "ah_dog_walking",
+      "ah_cat_socializing",
+      "fnhas_dog_bathing"
+     ],
+     "alternatives": []
+    },
+    {
+     "viewport": "mobile",
+     "answer": "Several dog- and cat-related roles may fit what you\u2019re looking for. Your age meets the published age requirements, but the exact hours you can offer and how long you can commit still need confirmation; application availability is also unconfirmed.",
+     "run_id": "6d827002aa81",
+     "recommendations": [
+      "ah_dog_walking",
+      "ah_cat_socializing",
+      "fnhas_adoption_events"
+     ],
+     "alternatives": []
+    }
+   ],
+   "traces": [
+    "ui_s16__55ae08e65938.json",
+    "ui_s16__58108f2661e7.json",
+    "ui_s16__6d827002aa81.json",
+    "ui_s16__ebe558ab2121.json"
+   ],
+   "note": "['ui_s16__55ae08e65938.json'] is from a first attempt whose script stopped on a Playwright API error after 4 passing checks; superseded by the two runs above. ui_s16__58108f2661e7.json is one further real turn made only to capture the report option-card image (no checks)."
+  },
+  "ui_check_no_ai": {
+   "passed": 42,
+   "total": 42,
+   "console_errors": [
+    "[error] Failed to load resource: net::ERR_FAILED"
+   ],
+   "note": "The console error is the deliberately simulated assistant failure (request aborted)."
+  },
+  "session13_checks_rerun": {
+   "passed": 44,
+   "total": 44
+  },
+  "session15_checks_rerun": {
+   "passed": 46,
+   "total": 46,
+   "note": "First rerun: 38/46; the 8 failures were the intentionally changed checks (separate verified-site ranking heading, old '.distance' element, old hint text). Updated to the one-list behavior and rerun: 46/46."
+  }
+ },
+ "backend": {
+  "pytest": "190 passed",
+  "validate_data": "0 errors, 1 warning (Branford all-ages guardian reminder)",
+  "build_geo_data_verify": "41/41 quotes found"
+ },
+ "frontend": {
+  "tsc": "no errors",
+  "vite_build": "ok"
+ }
+}

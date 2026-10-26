@@ -1,0 +1,1871 @@
+{
+ "what": "Session 10 website tests, run 2026-10-25 against the production build served by FastAPI. All inputs SYNTHETIC; ZIP codes used (06511, 06513, 06520, 06501, 10001, 6511) are test values and are redacted where they would identify a person's input. Real assistant turns: gpt-6-luna via Portkey on a separate test server (port 8002) with AVF_SAVE_TRACES=1 and AVF_CACHE_FORCE_REFRESH=1 (every model call fresh, gateway status REFRESH).",
+ "explore_and_detail_no_ai": {
+  "passed": 48,
+  "total": 48,
+  "checks": [
+   {
+    "check": "desktop: URL commitment_type=unknown removed",
+    "passed": true,
+    "detail": "http://127.0.0.1:8001/explore"
+   },
+   {
+    "check": "desktop: commitment options exactly four",
+    "passed": true,
+    "detail": "['Any commitment', 'One-time', 'Ongoing', 'Flexible / varies']"
+   },
+   {
+    "check": "desktop: select shows Any commitment",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: unknown-commitment cards say ask organization",
+    "passed": true,
+    "detail": "28 results"
+   },
+   {
+    "check": "desktop: no 'Commitment not published' anywhere",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: 'One-time' filter applies",
+    "passed": true,
+    "detail": "0 results"
+   },
+   {
+    "check": "desktop: 'Ongoing' filter applies",
+    "passed": true,
+    "detail": "9 results"
+   },
+   {
+    "check": "desktop: 'Flexible / varies' filter applies",
+    "passed": true,
+    "detail": "1 result"
+   },
+   {
+    "check": "desktop: More ways to help + wider toggle beside location",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: invalid ZIP format message",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: ZIP absent from dataset explained",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: non-CT ZIP explains coverage",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: sort disabled without supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: leading zero kept",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: sort enabled with supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: cards show estimates and unavailable",
+    "passed": true,
+    "detail": "9 estimated, 19 unavailable"
+   },
+   {
+    "check": "desktop: closest sort ascending, unknown last",
+    "passed": true,
+    "detail": "[1.0, 1.0, 6.0, 6.0, 6.0, 6.0, 6.0, 9.0, 9.0]"
+   },
+   {
+    "check": "desktop: unknown-proximity note shown",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: sort param in URL but ZIP not in URL",
+    "passed": true,
+    "detail": "http://127.0.0.1:8001/explore?sort=closest"
+   },
+   {
+    "check": "desktop: no horizontal overflow (Explore)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: detail maps link = destination address only (no origin, no user ZIP)",
+    "passed": true,
+    "detail": "https://www.google.com/maps/search/?api=1&query=81+Fournier+Street%2C+New+Haven%2C+CT+06511"
+   },
+   {
+    "check": "desktop: detail distance with explanation",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: unverified location says Distance unavailable",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no page errors",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: URL commitment_type=unknown removed",
+    "passed": true,
+    "detail": "http://127.0.0.1:8001/explore"
+   },
+   {
+    "check": "mobile: commitment options exactly four",
+    "passed": true,
+    "detail": "['Any commitment', 'One-time', 'Ongoing', 'Flexible / varies']"
+   },
+   {
+    "check": "mobile: select shows Any commitment",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: unknown-commitment cards say ask organization",
+    "passed": true,
+    "detail": "28 results"
+   },
+   {
+    "check": "mobile: no 'Commitment not published' anywhere",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: 'One-time' filter applies",
+    "passed": true,
+    "detail": "0 results"
+   },
+   {
+    "check": "mobile: 'Ongoing' filter applies",
+    "passed": true,
+    "detail": "9 results"
+   },
+   {
+    "check": "mobile: 'Flexible / varies' filter applies",
+    "passed": true,
+    "detail": "1 result"
+   },
+   {
+    "check": "mobile: More ways to help + wider toggle beside location",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: invalid ZIP format message",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: ZIP absent from dataset explained",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: non-CT ZIP explains coverage",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: sort disabled without supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: leading zero kept",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: sort enabled with supported ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: cards show estimates and unavailable",
+    "passed": true,
+    "detail": "9 estimated, 19 unavailable"
+   },
+   {
+    "check": "mobile: closest sort ascending, unknown last",
+    "passed": true,
+    "detail": "[1.0, 1.0, 6.0, 6.0, 6.0, 6.0, 6.0, 9.0, 9.0]"
+   },
+   {
+    "check": "mobile: unknown-proximity note shown",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: sort param in URL but ZIP not in URL",
+    "passed": true,
+    "detail": "http://127.0.0.1:8001/explore?sort=closest"
+   },
+   {
+    "check": "mobile: no horizontal overflow (Explore)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: detail maps link = destination address only (no origin, no user ZIP)",
+    "passed": true,
+    "detail": "https://www.google.com/maps/search/?api=1&query=81+Fournier+Street%2C+New+Haven%2C+CT+06511"
+   },
+   {
+    "check": "mobile: detail distance with explanation",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: unverified location says Distance unavailable",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no page errors",
+    "passed": true,
+    "detail": ""
+   }
+  ]
+ },
+ "conversation_real_ai": {
+  "passed": 118,
+  "total": 119,
+  "checks": [
+   {
+    "check": "decline t1: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "0"
+   },
+   {
+    "check": "decline t1: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "decline t1: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "decline t1: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "decline t2: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "1"
+   },
+   {
+    "check": "decline t2: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "decline t2: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "decline t2: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (1 earlier message)"
+   },
+   {
+    "check": "decline t2: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "decline: ZIP not asked again",
+    "passed": true,
+    "detail": [
+     "Do you need to stay within Hamden, or can you travel to nearby towns?",
+     "How many months could you commit?"
+    ]
+   },
+   {
+    "check": "decline: recorded as declined",
+    "passed": true,
+    "detail": {
+     "status": "declined",
+     "message": "The person chose not to share a ZIP code. Don't ask again."
+    }
+   },
+   {
+    "check": "decline: results still shown without distances",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t1: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "0"
+   },
+   {
+    "check": "desktop t1: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t1: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t1: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "desktop t1: asks which town they live in",
+    "passed": true,
+    "detail": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "What town do you live in?",
+     "How many hours per week or month can you volunteer?",
+     "How many months could you commit?"
+    ]
+   },
+   {
+    "check": "desktop t1: offers optional ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t2: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "1"
+   },
+   {
+    "check": "desktop t2: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t2: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t2: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (1 earlier message)"
+   },
+   {
+    "check": "desktop t2: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "desktop t2: town remembered",
+    "passed": true,
+    "detail": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null,
+     "rules": "Distances are straight-line estimates from the ZIP area's center, only for roles at a verified site. Quote `distance` text exactly; never estimate a distance, travel time, walkability or transit."
+    }
+   },
+   {
+    "check": "desktop t2: asks stay-within question",
+    "passed": true,
+    "detail": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per week or month can you volunteer, and for how many months?"
+    ]
+   },
+   {
+    "check": "desktop t3: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "2"
+   },
+   {
+    "check": "desktop t3: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t3: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t3: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (2 earlier messages)"
+   },
+   {
+    "check": "desktop t3: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "desktop t3: town not asked again",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t3: no ZIP inferred from 'next to Yale SOM'",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t3: no distances shown yet",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t3: asks for optional ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t4: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "3"
+   },
+   {
+    "check": "desktop t4: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t4: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t4: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (3 earlier messages)"
+   },
+   {
+    "check": "desktop t4: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "desktop t4: ZIP accepted with leading zero",
+    "passed": true,
+    "detail": {
+     "status": "supported",
+     "message": "Using the Census area for your ZIP code to estimate distances."
+    }
+   },
+   {
+    "check": "desktop t4: town still remembered, not re-asked",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t4: distance estimates shown on cards",
+    "passed": true,
+    "detail": "2"
+   },
+   {
+    "check": "desktop t4: recommended ah_dog_walking is not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t4: recommended branford_tails_to_trails is not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "4"
+   },
+   {
+    "check": "desktop t5: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (4 earlier messages)"
+   },
+   {
+    "check": "desktop t5: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "desktop t5: New Haven limit remembered",
+    "passed": true,
+    "detail": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": "New Haven",
+     "rules": "Distances are straight-line estimates from the ZIP area's center, only for roles at a verified site. Quote `distance` text exactly; never estimate a distance, travel time, walkability or transit."
+    }
+   },
+   {
+    "check": "desktop t5: recommendations/alternatives all confirmed in New Haven",
+    "passed": true,
+    "detail": "[]"
+   },
+   {
+    "check": "desktop t5: says honestly that nothing suitable is confirmed in New Haven",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: outside options only in labelled section",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: outside section heading",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: town not asked again",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: offered branford_tails_to_trails not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop t5: offered ah_dog_walking not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: previous conversation reopens with 4 earlier messages",
+    "passed": true,
+    "detail": "4"
+   },
+   {
+    "check": "desktop: memory note in previous conversation",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: changing ZIP refreshes estimates",
+    "passed": true,
+    "detail": "['Distance unavailable', '', 'Approx. 6 miles from your ZIP area', '', 'Approx. 1 mile from your ZIP area', ''] -> ['Distance unavailable', '', 'Approx. 4 miles from your ZIP area', '', 'Approx. 3.5 miles from your ZIP area', '']"
+   },
+   {
+    "check": "desktop: form rejects invalid ZIP format",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: failed send keeps the draft",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: failed send hides stale results until reopened",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: reopened results labelled as based on earlier answers",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no horizontal overflow (Find my fit)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: Clear my session removes conversation and profile",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "desktop: no page errors",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t1: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "0"
+   },
+   {
+    "check": "mobile t1: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t1: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t1: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "mobile t1: asks which town they live in",
+    "passed": true,
+    "detail": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Which town do you live in?",
+     "How many volunteer hours can you offer, and is that per week or per month?",
+     "How many months could you commit?"
+    ]
+   },
+   {
+    "check": "mobile t1: offers optional ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t2: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "1"
+   },
+   {
+    "check": "mobile t2: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t2: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t2: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (1 earlier message)"
+   },
+   {
+    "check": "mobile t2: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "mobile t2: town remembered",
+    "passed": true,
+    "detail": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null,
+     "rules": "Distances are straight-line estimates from the ZIP area's center, only for roles at a verified site. Quote `distance` text exactly; never estimate a distance, travel time, walkability or transit."
+    }
+   },
+   {
+    "check": "mobile t2: asks stay-within question",
+    "passed": true,
+    "detail": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per month could you volunteer?",
+     "How many months could you commit?"
+    ]
+   },
+   {
+    "check": "mobile t3: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "2"
+   },
+   {
+    "check": "mobile t3: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t3: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t3: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (2 earlier messages)"
+   },
+   {
+    "check": "mobile t3: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "mobile t3: town not asked again",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t3: no ZIP inferred from 'next to Yale SOM'",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t3: no distances shown yet",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t3: asks for optional ZIP",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t4: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "3"
+   },
+   {
+    "check": "mobile t4: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t4: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t4: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (3 earlier messages)"
+   },
+   {
+    "check": "mobile t4: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "mobile t4: ZIP accepted with leading zero",
+    "passed": true,
+    "detail": {
+     "status": "supported",
+     "message": "Using the Census area for your ZIP code to estimate distances."
+    }
+   },
+   {
+    "check": "mobile t4: town still remembered, not re-asked",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t4: distance estimates shown on cards",
+    "passed": true,
+    "detail": "6"
+   },
+   {
+    "check": "mobile t4: recommended ah_dog_walking is not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t4: recommended branford_general_volunteer is not closed/not_met",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t5: while loading, 'Updating your results' shown and earlier answer not shown as current",
+    "passed": true,
+    "detail": "4"
+   },
+   {
+    "check": "mobile t5: assistant answered (ok)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t5: latest message is the current one",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t5: earlier messages collapsed",
+    "passed": true,
+    "detail": "Previous conversation (4 earlier messages)"
+   },
+   {
+    "check": "mobile t5: new answer scrolled into view below sticky header",
+    "passed": true,
+    "detail": "top=92"
+   },
+   {
+    "check": "mobile t5: New Haven limit remembered",
+    "passed": true,
+    "detail": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": "New Haven",
+     "rules": "Distances are straight-line estimates from the ZIP area's center, only for roles at a verified site. Quote `distance` text exactly; never estimate a distance, travel time, walkability or transit."
+    }
+   },
+   {
+    "check": "mobile t5: recommendations/alternatives all confirmed in New Haven",
+    "passed": true,
+    "detail": "[]"
+   },
+   {
+    "check": "mobile t5: says honestly that nothing suitable is confirmed in New Haven",
+    "passed": false,
+    "detail": "",
+    "manual_review": "Automated wording regex did not match. Manual review of the saved answer: it says the New Haven dog-handler role 'isn't an available option to apply to now' (applications closed) and 'I found no other unclosed dog-volunteering role with its own published location in New Haven'; the deterministic follow-up offered a different activity or widening the area. Left as FAIL in the automated count."
+   },
+   {
+    "check": "mobile t5: outside options only in labelled section",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile t5: town not asked again",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: previous conversation reopens with 4 earlier messages",
+    "passed": true,
+    "detail": "4"
+   },
+   {
+    "check": "mobile: memory note in previous conversation",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: changing ZIP refreshes estimates",
+    "passed": true,
+    "detail": "['Approx. 1 mile from your ZIP area', ''] -> ['Approx. 3.5 miles from your ZIP area', '']"
+   },
+   {
+    "check": "mobile: form rejects invalid ZIP format",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: failed send keeps the draft",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: failed send hides stale results until reopened",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: reopened results labelled as based on earlier answers",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no horizontal overflow (Find my fit)",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: Clear my session removes conversation and profile",
+    "passed": true,
+    "detail": ""
+   },
+   {
+    "check": "mobile: no page errors",
+    "passed": true,
+    "detail": ""
+   }
+  ],
+  "turns": [
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Two cat-related roles to consider are at The Animal Haven in North Haven: **Cat socializer** (one-on-one time with cats) and **Shelter cleaning and animal care** (includes cleaning cat cages and feeding animals). Both are listed as “Confirm with organization,” which does not confirm a current opening. Your age meets the published age versions, but the sources conflict (18+ versus 21+), so confirm the current rule. Both also list a 12-month commitment; the currentness of that requirement needs confirmation. For cleaning, the listing says morning availability is required, but days and hours aren’t specified. No shifts are listed.\n\nHow close these are for you can’t be estimated without an optional ZIP code; distance estimates are approximate, not travel distances. You never need to share one.",
+    "follow_up_questions": [
+     "Do you need to stay within Hamden, or can you travel to nearby towns? You may optionally share a ZIP code for approximate distance estimates; it is never required.",
+     "How many months could you commit?",
+     "What days/times are you available, and could mornings work for you? "
+    ],
+    "location_context": {
+     "lives_in_town": "Hamden",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_cat_socializing",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "ah_shelter_cleaning",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 30,
+     "town": "Hamden",
+     "wants_nearby": true,
+     "interests": [
+      "animal_socialization"
+     ],
+     "animal_preferences": [
+      "cats"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "30a1076b4825",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 37209,
+     "cached_input_tokens": 31337,
+     "cache_write_input_tokens": 5242,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1729,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 1,
+    "viewport": "decline",
+    "message": "I'm 30, I live in Hamden and don't have a car. I need something close, I like cats."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "No problem—I won’t ask for your ZIP again. I can’t estimate which option is closest without it, but here are cat-focused possibilities in nearby towns; locations don’t guarantee that travel will be convenient without a car.\n\n- **Cat socializer — The Animal Haven, North Haven:** Spend time one-on-one with cats. Your age meets both conflicting published age versions, but confirm the current rule. A 12-month commitment appears on an older form and needs confirmation. The application status is “Confirm with organization.”\n- **Shy cat socializer — Branford Compassion Club:** Help shy cats build trust. Your age meets the published minimum. The precise volunteer location is unconfirmed, and openings aren’t confirmed.\n\nDo you need to stay within Hamden, or can you travel to nearby towns? How many months could you commit?",
+    "follow_up_questions": [
+     "Do you need to stay within Hamden, or can you travel to nearby towns?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "Hamden",
+     "zip_area": {
+      "status": "declined",
+      "message": "The person chose not to share a ZIP code. Don't ask again."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_cat_socializing",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "bcc_shy_cat_socializing",
+      "towns": [
+       "North Branford"
+      ],
+      "fit": "meets_published_requirements_checked",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 30,
+     "town": "Hamden",
+     "prefers_not_to_share_zip": true,
+     "wants_nearby": true,
+     "interests": [
+      "animal_socialization",
+      "animal_care_cleaning"
+     ],
+     "animal_preferences": [
+      "cats"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "6a7b25408344",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 33859,
+     "cached_input_tokens": 28355,
+     "cache_write_input_tokens": 4874,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1790,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 2,
+    "viewport": "decline",
+    "message": "I'd rather not share my ZIP code."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Your age meets The Animal Haven’s published minimum of 21. Two dog-focused possibilities surfaced, but I can’t tell what’s close without knowing your town. The Animal Haven’s dog-walking role is at its North Haven site; an older on-site form lists 2 hours per week and a 12-month commitment, and the organization should confirm whether those still apply. Tails to Trails is through the Branford shelter, with walks at staff-approved off-site trails; its location and time commitment aren’t published. Both listings say to confirm with the organization, which doesn’t guarantee an opening. You can optionally share a ZIP for approximate distance estimates; it’s not required.\n\nWhat town do you live in? How many hours per week or month can you volunteer, and for how many months?",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "What town do you live in?",
+     "How many hours per week or month can you volunteer?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": null,
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "branford_tails_to_trails",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 23,
+     "wants_nearby": true,
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "ebd31f1f2961",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 34746,
+     "cached_input_tokens": 29510,
+     "cache_write_input_tokens": 4606,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1399,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 1,
+    "viewport": "desktop",
+    "message": "I'm 23, love dogs, and don't have a car. I need something close to where I live."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks—I’ve noted that you live in New Haven. Dog-walking listings are at The Animal Haven in North Haven and through the Branford shelter (walks at staff-approved off-site trails; the specific trail location isn’t published). Both say to confirm with the organization, so an opening isn’t confirmed. A New Haven dog-handler listing is currently closed. I can’t estimate distance without an optional ZIP code; any estimate would be straight-line from the ZIP area, not travel distance.\n\nDo you need to stay within New Haven, or can you travel to nearby towns? You can optionally share a ZIP for an approximate distance estimate. Also, how many hours per week or month can you volunteer, and for how many months?",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per week or month can you volunteer, and for how many months?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "branford_tails_to_trails",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "8b6be800c18b",
+    "usage": {
+     "requests": 4,
+     "input_tokens": 25756,
+     "cached_input_tokens": 21605,
+     "cache_write_input_tokens": 3647,
+     "uncached_input_tokens": 504,
+     "output_tokens": 2370,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 2,
+    "viewport": "desktop",
+    "message": "I live in New Haven."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks. Yale SOM tells me you’re in New Haven, but I can’t infer a ZIP or estimate distance from the landmark. The Animal Haven dog-walking role is at its North Haven site; its older form lists 2 hours weekly and a 12-month commitment, which need confirmation. Tails to Trails walks are at staff-approved off-site trails, so the location isn’t specified; its listing notes a $50 fee for New Haven residents. Neither listing confirms an opening, and I can’t determine whether either is close without a ZIP-based estimate or the organization’s location details. The New Haven dog-handler listing is currently closed.\n\nDo you need to stay within New Haven, or can you travel to nearby towns? How many hours per week or month can you volunteer, and for how many months?",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per week or month can you volunteer?",
+     "How many months can you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "branford_tails_to_trails",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "8483dddb2b35",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 33626,
+     "cached_input_tokens": 28876,
+     "cache_write_input_tokens": 4120,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1940,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 3,
+    "viewport": "desktop",
+    "message": "Right next to Yale SOM."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks—ZIP [ZIP redacted] is supported, so I can give an approximate distance for verified sites. The Animal Haven dog-walking site is listed as “Approx. 6 miles from your ZIP area.” That is a straight-line estimate from the ZIP area’s center, not a travel distance; I can’t determine whether it’s practical without a car. An older form lists 2 hours per week and a 12-month commitment, but both need confirmation. Tails to Trails uses staff-approved off-site trails, whose locations aren’t published, so no distance estimate is available; the listing says a $50 fee applies to New Haven residents. Both opportunities say to confirm with the organization, which doesn’t confirm an opening.",
+    "follow_up_questions": [
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per week or month can you volunteer?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Approx. 6 miles from your ZIP area",
+      "in_area": null
+     },
+     {
+      "id": "branford_tails_to_trails",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Distance unavailable",
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "zip_code": "[ZIP redacted]",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "74a3d4469ed9",
+    "usage": {
+     "requests": 4,
+     "input_tokens": 26011,
+     "cached_input_tokens": 22519,
+     "cache_write_input_tokens": 2988,
+     "uncached_input_tokens": 504,
+     "output_tokens": 1222,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 4,
+    "viewport": "desktop",
+    "message": "My ZIP code is [ZIP redacted]."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "There’s no currently available dog-walking option confirmed within New Haven. The New Haven shelter’s dog-handler listing is **closed**; its site is “Approx. 1 mile from your ZIP area” (a straight-line estimate from the ZIP area’s center, not a travel distance). Your age meets its published minimum, but it also lists 8 hours per month and a 12-month commitment, and I don’t know whether you can meet those.\n\nIf you decide to widen your area, The Animal Haven in North Haven is “Approx. 6 miles from your ZIP area”; its listing says to confirm with the organization, and the hours and commitment requirements need clarification. Tails to Trails is associated with Branford, but walks are at staff-approved off-site trails and the location isn’t published. Neither listing confirms an opening. I can’t determine whether these are practical without a car.\n\nWould you consider widening your area? If so, how many hours per week or month and how many months could you commit?",
+    "follow_up_questions": [
+     "Would you consider widening your area for opportunities outside New Haven?",
+     "How many hours per week or month could you volunteer?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": "New Haven"
+    },
+    "recommendations": [],
+    "alternatives": [],
+    "outside_area": [
+     {
+      "id": "branford_tails_to_trails",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Distance unavailable",
+      "in_area": false
+     },
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Approx. 6 miles from your ZIP area",
+      "in_area": false
+     }
+    ],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": "Approx. 1 mile from your ZIP area",
+      "in_area": true
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "zip_code": "[ZIP redacted]",
+     "wants_nearby": true,
+     "volunteer_only_in": "New Haven",
+     "interests": [
+      "dog_walking"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "6155c586b80d",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 35197,
+     "cached_input_tokens": 29990,
+     "cache_write_input_tokens": 4577,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1692,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 5,
+    "viewport": "desktop",
+    "message": "I need to stay in New Haven."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Your age meets the published minimum for these dog-related roles, but I can’t tell what’s close without knowing your town. Since you don’t have a car, share your town and I can narrow the search. You may optionally share a ZIP for approximate distance estimates; it’s never required.\n\nPossible leads (none is confirmed open): The Animal Haven’s dog-walker role is at its verified site in North Haven; its listed minimum is 2 hours per week and a 12-month commitment, both of which still need checking against what you can offer. Friends of the New Haven Animal Shelter lists monthly adoption-event help and pre-event dog bathing in New Haven, but the specific venues aren’t confirmed. Its published schedule is first Saturdays for events and the preceding Friday for bathing. Their application status is “confirm with organization.”",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Which town do you live in?",
+     "How many volunteer hours can you offer, and is that per week or per month?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": null,
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "fnhas_adoption_events",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "fnhas_dog_bathing",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 23,
+     "wants_nearby": true,
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "6c3d3444d426",
+    "usage": {
+     "requests": 4,
+     "input_tokens": 26683,
+     "cached_input_tokens": 22113,
+     "cache_write_input_tokens": 4066,
+     "uncached_input_tokens": 504,
+     "output_tokens": 1312,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 1,
+    "viewport": "mobile",
+    "message": "I'm 23, love dogs, and don't have a car. I need something close to where I live."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks—New Haven is your home town, so I searched Greater New Haven rather than treating it as a limit. Two possible New Haven-area leads are pre-event dog bathing and adoption-event help, but the bathing site is unconfirmed and the event venues aren’t published, so I can’t tell whether either is close to you. Both list 8 hours per month and a 12-month commitment; their application status is “confirm with organization,” not confirmed open. The direct New Haven dog-handler role is currently listed as closed.\n\nDo you need to stay within New Haven, or can you travel to nearby towns? You may optionally share a ZIP code for approximate distance estimates; it’s never required. How many hours per month could you volunteer, and how many months could you commit?",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per month could you volunteer?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "fnhas_dog_bathing",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     },
+     {
+      "id": "fnhas_adoption_events",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking",
+      "animal_socialization",
+      "animal_care_cleaning",
+      "events",
+      "adoption_support"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "3c81bd8c06e8",
+    "usage": {
+     "requests": 4,
+     "input_tokens": 28234,
+     "cached_input_tokens": 22681,
+     "cache_write_input_tokens": 5049,
+     "uncached_input_tokens": 504,
+     "output_tokens": 1854,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 2,
+    "viewport": "mobile",
+    "message": "I live in New Haven."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks—that’s useful context. I can’t infer a ZIP code or measure distance from Yale SOM, so I can’t confirm what’s close based on the landmark alone. One dog-walking lead is The Animal Haven in North Haven. Its published minimums are 2 hours per week and a 12-month commitment; your age meets its minimum, but your available time and commitment still need to be checked. The application status is “confirm with organization,” not confirmed open. You can optionally share your ZIP for an approximate distance estimate; it’s not required.",
+    "follow_up_questions": [
+     "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours could you volunteer per week or month?",
+     "How many months could you commit?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "not_provided",
+      "message": "No ZIP code given. Distances are optional."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": null,
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking",
+      "animal_socialization",
+      "animal_care_cleaning",
+      "events",
+      "adoption_support"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "653eb6446e6b",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 34959,
+     "cached_input_tokens": 29760,
+     "cache_write_input_tokens": 4569,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1836,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 3,
+    "viewport": "mobile",
+    "message": "Right next to Yale SOM."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Thanks—ZIP [ZIP redacted] is supported for approximate distance estimates. The closest listed verified-site dog role is Friends of the New Haven Animal Shelter, about 1 mile from your ZIP area, but its applications are closed. That estimate—and the others below—is a straight-line estimate from the ZIP area's center, not a travel distance.\n\nThe Animal Haven’s dog-walking site in North Haven is “Approx. 6 miles from your ZIP area.” Your age meets its published minimum; its 2 hours per week and 12-month commitment still need checking against what you can offer. Applications are listed as “Confirm with organization,” not confirmed open.\n\nDan Cosgrove Animal Shelter in Branford is “Approx. 9 miles from your ZIP area”; dog work there depends on requirements that aren’t published, and a $50 non-resident fee is listed. Its application status is also “Confirm with organization.”\n\nDo you need to stay within New Haven, or can you travel to nearby towns? How many hours per week or month could you offer, and for how many months?",
+    "follow_up_questions": [
+     "Do you need to stay within New Haven, or can you travel to nearby towns?",
+     "How many hours per week or month could you offer, and for how many months?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": null
+    },
+    "recommendations": [
+     {
+      "id": "ah_dog_walking",
+      "towns": [
+       "North Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Approx. 6 miles from your ZIP area",
+      "in_area": null
+     },
+     {
+      "id": "branford_general_volunteer",
+      "towns": [
+       "Branford"
+      ],
+      "fit": "needs_confirmation",
+      "status": "needs_confirmation",
+      "distance": "Approx. 9 miles from your ZIP area",
+      "in_area": null
+     }
+    ],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": "Approx. 1 mile from your ZIP area",
+      "in_area": null
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "zip_code": "[ZIP redacted]",
+     "wants_nearby": true,
+     "interests": [
+      "dog_walking",
+      "animal_socialization",
+      "animal_care_cleaning",
+      "events",
+      "adoption_support"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "7c08538ab23c",
+    "usage": {
+     "requests": 4,
+     "input_tokens": 27737,
+     "cached_input_tokens": 22606,
+     "cache_write_input_tokens": 4627,
+     "uncached_input_tokens": 504,
+     "output_tokens": 1750,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 4,
+    "viewport": "mobile",
+    "message": "My ZIP code is [ZIP redacted]."
+   },
+   {
+    "ok": true,
+    "error": null,
+    "answer": "Understood—you need to stay in New Haven. The New Haven dog-handler role is a match for your dog interest and is listed at a verified site “Approx. 1 mile from your ZIP area.” That is a straight-line estimate from the ZIP area’s center, not a travel distance. However, applications are explicitly closed, so it isn’t an available option to apply to now. The published minimums are 8 hours per month and a 12-month commitment; those would need checking if applications reopen. I found no other unclosed dog-volunteering role with its own published location in New Haven. I can help look again if you’d like, or search if your location limits change.",
+    "follow_up_questions": [
+     "Nothing open is confirmed in New Haven right now. Would you like to look at a different kind of activity, or widen the area beyond New Haven?"
+    ],
+    "location_context": {
+     "lives_in_town": "New Haven",
+     "zip_area": {
+      "status": "supported",
+      "message": "Using the Census area for your ZIP code to estimate distances."
+     },
+     "has_car": false,
+     "wants_nearby": true,
+     "nearby_towns_ok": null,
+     "volunteer_only_in": "New Haven"
+    },
+    "recommendations": [],
+    "alternatives": [],
+    "outside_area": [],
+    "non_matches": [
+     {
+      "id": "fnhas_dog_handler",
+      "towns": [
+       "New Haven"
+      ],
+      "fit": "needs_confirmation",
+      "status": "explicitly_closed",
+      "distance": "Approx. 1 mile from your ZIP area",
+      "in_area": true
+     }
+    ],
+    "profile_used": {
+     "age": 23,
+     "town": "New Haven",
+     "zip_code": "[ZIP redacted]",
+     "wants_nearby": true,
+     "volunteer_only_in": "New Haven",
+     "interests": [
+      "dog_walking",
+      "animal_socialization",
+      "animal_care_cleaning",
+      "events",
+      "adoption_support"
+     ],
+     "animal_preferences": [
+      "dogs"
+     ]
+    },
+    "returned_models": [
+     "gpt-6-luna-global"
+    ],
+    "run_id": "02468c5403be",
+    "usage": {
+     "requests": 5,
+     "input_tokens": 35337,
+     "cached_input_tokens": 30680,
+     "cache_write_input_tokens": 4027,
+     "uncached_input_tokens": 630,
+     "output_tokens": 1285,
+     "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+    },
+    "step": 5,
+    "viewport": "mobile",
+    "message": "I need to stay in New Haven."
+   }
+  ]
+ },
+ "existing_ui_check_no_ai": {
+  "passed": 42,
+  "total": 42,
+  "note": "scripts/ui_check.py --no-ai; screenshots written to a scratch folder so earlier evidence was not overwritten. The one console error is the deliberately aborted request of the simulated 'server unavailable' check."
+ }
+}
