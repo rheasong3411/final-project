@@ -12,6 +12,9 @@ The key feature is the explanation. For each opportunity the assistant says **wh
 fit**, citing the organization's published rules. It flags information that is **missing or
 conflicting**, and when someone can't meet a requirement it suggests **another way to help**.
 
+**Deliverables:** [`report.html`](report.html) (the report) and [`slides.html`](slides.html) (the reveal.js deck), both
+self-contained HTML in this folder. PDFs and PNGs under `output/` are only renders used to check them.
+
 ## Quick start (about 1 minute of commands; Python 3.11+, no Node needed)
 
 ```bash
