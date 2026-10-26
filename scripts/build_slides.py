@@ -16,7 +16,9 @@ import build_report as R  # noqa: E402  (reuses evidence numbers, crops and the 
 C, B, P = R.C, R.B, R.P
 IMG = dict(R.IMG)
 # tighter, larger crops for slide size (left conversation column only)
-IMG["detail_slide"] = R.shot("session16/s16_detail_organization_desktop.png", (880, 155, 1312, 840), width=432, q=90)
+# Slide 5: final-build captures (synthetic browsing, test ZIP 06511), saved in screenshots/final_build_20261026-040843/
+IMG["detail_slide"] = R.shot("../screenshots/final_build_20261026-040843/detail_location_next_step.png", (0, 0, 868, 505), width=700, q=90)
+IMG["compare_slide"] = R.shot("../screenshots/final_build_20261026-040843/compare_three_roles_1000px.png", (0, 0, 2000, 940), width=1500, q=90)
 IMG["fit_slide"] = R.shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_2_option_card.png", (0, 0, 1330, 1240), width=665, q=90)
 IMG["safety_slide"] = R.shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/safety_reply_full.png", (0, 0, 1430, 1840), width=900, q=88)
 REVEAL = "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0"
@@ -116,12 +118,12 @@ s.append(f"""<section>
 {notes("Six tools: search, details, assess (fixed rules), alternatives, checklist, and update_location_preferences, which records where someone lives, how they travel and where they'll volunteer. A definite 'not met' is allowed only for a requirement marked published_applicable, with one exception: when every conflicting published minimum age is above the person's age, the role is kept out of recommendations and alternatives, while the source conflict stays visible and unresolved. Distances, fit labels and application status are rendered from structured results, never from the model's prose. Explore and the search tool use the same filter function, and a hard constraint such as 'I can only do a one-time project' is applied to every search; unknown commitments are only 'activities to ask about'. gpt-6-luna is called through Portkey's Responses API with no fallback model.", "portkey_resp")}
 </section>""")
 s.append(f"""<section>
-<div class="kicker">The working app</div><h2>Verified locations, honest estimates, a clear next step</h2>
-<div class="row c2" style="grid-template-columns:0.62fr 1.38fr"><img class="shot" src="{IMG['detail_slide']}" alt="Detail panel: Activity location may differ, the organization's address with a maps link, and Estimated distance: Organization: New Haven, About 1 mile away" style="max-height:400px">
-<img class="shot" src="{IMG['compare']}" alt="Compare page with three opportunities: Organization: New Haven with Activity location may differ, North Haven, and Help from your home, each with Visit volunteer page and Contact organization links and Availability not confirmed" style="max-height:400px"></div>
+<div class="kicker">The working app · final-build screenshots: detail page and Compare</div><h2>Verified locations, honest estimates, a clear next step</h2>
+<div class="row c2" style="grid-template-columns:0.62fr 1.38fr;align-items:start"><img class="shot" src="{IMG['detail_slide']}" alt="Detail page, Where it takes place: Activity location may differ; the organization's address (Robin I. Kroogman New Haven Animal Shelter, 81 Fournier Street) with Check location in maps and Directions links; Estimated distance: Organization: New Haven, About 1 mile away" style="max-height:370px">
+<img class="shot" src="{IMG['compare_slide']}" alt="Compare with three roles side by side: Adoption event helper (Organization: New Haven, activity location may differ), Dog walker (North Haven), Foster home for cats and kittens (Help from your home); each Availability not confirmed; minimum age 18 or older, 21 or older, and Unclear, confirm with organization, with evidence links" style="max-height:370px"></div>
 <p class="small" style="margin-top:12px">Distance goes to the verified site ({R.KIND_N['verified_site']}: "North Haven · About 6 miles away"), else the organization's location ({R.KIND_N['organization_location']}: "Organization: New Haven · About 1 mile away" + "Activity location may differ"); {R.KIND_N['home_based']} home-based, {R.KIND_N['unknown']} unknown. One list, "Distance: nearest first". Closed roles ({R.N_CLOSED}) are left out of lists but explained if asked about. Status reads "Availability not confirmed"; links name the organization's page; "Compare requirements" is optional (up to 3).</p>
 {srcline("census_gaz", "census_geo", "gmaps")}
-{notes("Screenshots come from the running app (Session 16 build) with synthetic inputs and a test ZIP. Closeness never changes fit or application status.", "census_gaz", "census_zcta", "census_geo", "gmaps")}
+{notes("Both screenshots come from the final build (October 26, 2026) with synthetic browsing and a test ZIP: the detail page of the FNHAS adoption event helper (organization-location fallback, distance and directions) and Compare with three roles (top rows shown). Closeness never changes fit or application status.", "census_gaz", "census_zcta", "census_geo", "gmaps")}
 </section>""")
 steps = "".join(f"<li><strong>Request {n}:</strong> {', '.join(names) or 'final answer'} <span class='small'>({u['input_tokens']:,} in / {u['output_tokens']:,} out)</span></li>" for n, names, u in R.steps)
 s.append(f"""<section>

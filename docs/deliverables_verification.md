@@ -186,3 +186,10 @@ Report 15 pages (required section order, 6 embedded images, 0 external requests)
 diagram, no overflow, reveal.js from the CDN). Both were opened via `file://`, all 26 links returned 200, and the facts
 were checked against the code. Slide 4's notes and the app's About page now state the conflicting-age exception. Evidence:
 `output/final_submission/20261026-035418_final_consistency/`.
+
+## Slide 5 screenshots replaced (2026-10-26)
+
+Slide 5 now uses final-build captures (`output/screenshots/final_build_20261026-040843/`): the detail page's location panel, and Compare with three roles. Checks:
+`slides.html` has 10 slides with no overflow; 5 images, all embedded and loading from `file://`; the SVG diagram; arrow
+keys work. Every slide was inspected. `report.html` is unchanged (15 pages, 6 images). Historical Session 16 screenshots
+are kept.

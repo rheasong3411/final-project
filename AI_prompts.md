@@ -3300,3 +3300,41 @@ Evidence: `output/final_submission/20261026-035418_final_consistency/`.
 ### Follow-up prompts
 
 None yet.
+
+## Session 28 — 2026-10-26 — Slide 5 screenshots from the final build
+
+### Prompt (verbatim)
+
+```text
+please replace slide 5’s Session 16 screenshots with current app screenshots showing the same features. use synthetic test inputs, keep all text readable, and update captions and speaker notes to identify the new screenshots accurately.
+1. preserve the historical screenshots and save new ones in a timestamped folder.
+2. rebuild slides.html and verify all 10 slides visually, with no clipping or overflow and all screenshots embedded. keep the assignment-supported reveal.js setup.
+3. keep the Impact limitation that no manual-search comparison was timed. retain the confirmed human feedback and do not imply measured time savings.
+4. commit and push the changes, update Desktop/Submission/slides.html, and verify it matches the repository version. update the clean ZIP and verification record without touching backup.zip.
+5. report the final commit and checks actually completed.
+
+then repushed the latest version to github - make sure everything else is ready for submission
+```
+
+### What happened
+
+**New screenshots:** slide 5's two Session 16 images were replaced with final-build captures, made with synthetic
+browsing and a test ZIP. They're saved in `output/screenshots/final_build_20261026-040843/`; the historical originals are unchanged.
+- the detail page's "Where it takes place" panel: the organization-location fallback, distance and directions;
+- Compare with three roles (top rows), captured at a 1000 px window so the text is readable.
+
+**Slide text:**
+- The kicker and speaker notes now identify the screenshots as final-build captures.
+- The Impact slide still says no manual search was timed; the participant's feedback and quotes are unchanged.
+
+**Checks:**
+- **Slides:** 10, no overflow. 5 images, all embedded and loading from `file://`. The SVG diagram is present and the
+  arrow keys work; reveal.js still comes from the CDN. All 10 slides were inspected.
+- **Report:** still 15 pages and 6 embedded images; it wasn't changed.
+
+**Synchronised:** pushed to GitHub, copied to `Desktop/Submission/slides.html` (checked identical to GitHub's copy), and
+the ZIP was rebuilt; `backup.zip` was untouched.
+
+### Follow-up prompts
+
+None yet.
