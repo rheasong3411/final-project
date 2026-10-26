@@ -146,4 +146,4 @@ no task timing or before/after measurement (5); the app is local, not hosted.
 - 2026-10-26 (later): added a measured "reading effort" comparison to Impact (13 pages across 5 organizations; 15 of 28 roles
   split across 2–4 pages; median 22 s per Find my fit reply over 10 fresh runs) and a captioned demo-video draft. A timed
   manual-vs-app comparison is prepared (`docs/timed_comparison_kit.md`) but not run.
-
+- 2026-10-26 (later): one manual-search test (reported by Rhea) took at least 25 minutes; added to Impact as an indication. The app task was not timed end to end, so no measured saving is claimed.

@@ -93,3 +93,10 @@ no bus routes or travel times were claimed; Animal Haven's commitment was descri
 - Model behaviour varies between runs; the fixes above are enforced by code where possible.
 - The participant's own words point to a limit the app doesn't remove: “I'd still have to visit three websites and
   probably email them.” The app prepares people to apply; confirming openings still means contacting organizations.
+
+## Manual-search time (added 2026-10-26, reported by Rhea)
+
+In one manual-search test, finding and comparing similar opportunities across several organizations' websites took
+**at least 25 minutes**. This was one test, so the result may vary. The same task was not timed in the app (only the
+app's reply time was measured: median 22 s over 10 fresh runs), so no measured time saving is claimed.
+

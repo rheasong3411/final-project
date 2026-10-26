@@ -193,3 +193,7 @@ Slide 5 now uses final-build captures (`output/screenshots/final_build_20261026-
 `slides.html` has 10 slides with no overflow; 5 images, all embedded and loading from `file://`; the SVG diagram; arrow
 keys work. Every slide was inspected. `report.html` is unchanged (15 pages, 6 images). Historical Session 16 screenshots
 are kept.
+
+## Manual-search time added (2026-10-26)
+
+Report §7 and slide 9 now include one manual-search test of at least 25 minutes (single test; not a measured saving). Report 15 pages; slides 10, no overflow.

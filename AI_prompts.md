@@ -3338,3 +3338,28 @@ the ZIP was rebuilt; `backup.zip` was untouched.
 ### Follow-up prompts
 
 None yet.
+
+## Session 29 — 2026-10-26 — Manual-search time added
+
+### Prompt (verbatim)
+
+```text
+for time saved comparison: in a manual-search test, finding and comparing similar opportunities across multiple organizations’ websites took at least 25 minutes. this was one test, so the result may vary.
+```
+
+### What happened
+
+**Added:** the reported time went into the report (§7 Impact), slide 9 and `docs/user_test_findings.md`. One
+manual-search test took at least 25 minutes; it was a single test, so results may vary.
+
+**Not claimed as a saving:** the same task was not timed end to end in the app; only its reply time was measured (a
+median of 22 s). So the time is presented as an indication, not a measured time saving.
+
+**Keeping the limits:** to stay within 15 pages, the "Reach of the data" bullet was removed from Impact; the same counts
+appear in §1, §3 and the diagram. Slide 9's wording was tightened after it first overflowed.
+
+**Checks:** report 15 pages, slides 10, no overflow; both changed pages were inspected.
+
+### Follow-up prompts
+
+None yet.
