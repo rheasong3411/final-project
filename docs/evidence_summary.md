@@ -145,3 +145,11 @@ Kept separate on purpose:
 New traced runs on the final build with screenshots from the same runs (walkthrough `da50c35fac69`, safety
 `cdb992fe4e6c`), an in-app "Run details" token screenshot, a cost spot check (10 fresh runs, mean $0.00160), a fixed
 card layout bug and a README quick start. Evidence: `output/final_submission/20261026-023657_grading_fixes/`.
+
+## Impact measurement and demo video (2026-10-26)
+
+- Measured from the dataset: 13 source pages across 5 organizations for Greater New Haven's 28 described roles; 15 roles
+  split across 2–4 pages; 10 with uncertain or conflicting rules. Find my fit median 22 s (10 fresh runs, 16–39 s). No
+  manual search was timed, so no time saving is claimed.
+- Demo video draft: `output/demo_video/20261026-025108/demo_video_draft.webm` (2:27, captioned).
+- Prepared, not run: `docs/timed_comparison_kit.md`.

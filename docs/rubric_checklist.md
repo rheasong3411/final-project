@@ -18,7 +18,7 @@ Last updated: 2026-10-26 (final submission prep: public repo https://github.com/
 | A3 | Solo project | — | — | — | verified (one author; built with Claude Code as stated in the report) | |
 | A4 | Both HTML files self-contained: open by double-click on any computer, all screenshots embedded | — | Open each file from another folder with no network images missing | `report.html`, `slides.html` | implemented but unverified (drafts) | report: 0 external requests, 8 embedded images; slides: 5 embedded images plus diagram, reveal.js from CDN (course instruction) so the library needs internet; `docs/deliverables_verification.md` |
 | A5 | Repo is public, **or** private with `zlisto` added as collaborator | — | GitHub settings screenshot or public URL | GitHub repo (account `rheasong3411`) | **verified: public** (2026-10-26) | https://github.com/rheasong3411/final-project; no collaborator needed |
-| A6 | Optional 2–3 min demo video of a real example, start to finish, narrated | (backup for "It works" and "Look + feel"; not for "staff can run it") | Video file | Canvas upload | not done (optional) | |
+| A6 | Optional 2–3 min demo video of a real example, start to finish, narrated | (backup for "It works" and "Look + feel"; not for "staff can run it") | Video file | Canvas upload | **draft ready** (2:27, captioned, silent; real gpt-6-luna runs); narration and upload are Rhea's choice | `output/demo_video/20261026-025108/demo_video_draft.webm` |
 
 ## B. The idea (21 pts)
 
@@ -143,4 +143,7 @@ the same run (Agent design), current-build safety screenshot, in-app token usage
 check (Tokenomics), a card layout bug, repeated follow-up wording, README quick start at the top. Remaining limits that
 cannot be fixed by code: novelty is a judgment call (Idea, 21); Impact rests on one informal user test with quotes but
 no task timing or before/after measurement (5); the app is local, not hosted.
+- 2026-10-26 (later): added a measured "reading effort" comparison to Impact (13 pages across 5 organizations; 15 of 28 roles
+  split across 2–4 pages; median 22 s per Find my fit reply over 10 fresh runs) and a captioned demo-video draft. A timed
+  manual-vs-app comparison is prepared (`docs/timed_comparison_kit.md`) but not run.
 

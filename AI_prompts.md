@@ -3154,3 +3154,37 @@ if you were to grade this project based on the current version - would it be 100
 ### Follow-up prompts
 
 None yet.
+
+## Session 24 — 2026-10-26 — Toward 100/100: measured impact, demo video, timed-test kit
+
+### Prompt (verbatim)
+
+```text
+so can you fix it to make it 100/100
+```
+
+### What happened
+
+**Answer given:** a 100/100 can't be guaranteed. The idea score is the graders' judgment, and the strongest Impact
+evidence (a timed comparison with a real person) needs a session that Rhea runs. Hosting was not done, because earlier
+sessions said not to deploy and a public server would expose the course key to misuse.
+
+**Done:**
+- **Impact numbers measured from the dataset:**
+  - checking Greater New Haven's 28 described roles by hand means reading 13 pages across 5 organizations;
+  - 15 roles have their rules split across 2–4 pages, and 10 have uncertain or conflicting rules;
+  - a Find my fit reply takes a median of 22 s (10 fresh runs, 16–39 s);
+  - no time saving is claimed.
+
+  These went into report §7. To keep it at 15 pages, the duplicate quote in Limits was removed, the Impact bullets and
+  the "next month" list were tightened, and one Session 6 side note was cut.
+- **Demo video draft:** `output/demo_video/20261026-025108/demo_video_draft.webm`, 2 min 27 s, captioned, with real
+  gpt-6-luna runs (traced). Take 1 was superseded (a caption mismatch and the comparison bar covering the chat) and is
+  kept outside the repository.
+- **Timed comparison kit:** `docs/timed_comparison_kit.md` (prepared, not run).
+
+**Checks:** report 15 pages; slides 10, no overflow.
+
+### Follow-up prompts
+
+None yet.

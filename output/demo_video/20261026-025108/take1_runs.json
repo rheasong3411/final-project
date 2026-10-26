@@ -1,0 +1,38 @@
+{
+ "runs": [
+  {
+   "run_id": "7e0fa385aac6",
+   "ok": true,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage": {
+    "requests": 4,
+    "input_tokens": 34743,
+    "cached_input_tokens": 28807,
+    "cache_write_input_tokens": 5432,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1802,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   }
+  },
+  {
+   "run_id": "65abaa1b620e",
+   "ok": true,
+   "returned_models": [
+    "gpt-6-luna-global"
+   ],
+   "usage": {
+    "requests": 7,
+    "input_tokens": 65374,
+    "cached_input_tokens": 58874,
+    "cache_write_input_tokens": 5618,
+    "uncached_input_tokens": 882,
+    "output_tokens": 1582,
+    "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+   }
+  }
+ ],
+ "recorded_seconds": 174.3,
+ "video": "page@e7334bd6bb250d2b8615f990c99c121c.webm"
+}
