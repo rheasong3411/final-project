@@ -559,7 +559,7 @@ H.append(f"""<section><h2><span class="n">8</span>Limits + next steps</h2>
 <li>Reading facts from chat can still go wrong. A quote can be misread, and in one run the model labelled an inferred preference as stated. Confirmation reduces this; it does not remove it.</li>
 <li>Apart from one informal user session, AI testing uses synthetic inputs. Both cost samples are small (n = 6 per version in Session 6; {CUR['n']} current runs).</li>
 <li>Costs are modeled at published rates. The actual Azure or course billing is unverified.</li>
-<li>The app is not hosted online. <span class="pending">Pending: GitHub repository link and a timed fresh clone from it</span> (only a clean-copy rehearsal has been done).</li>
+<li>The app is not hosted online; it runs locally. A fresh clone from GitHub (commit c3f1e0a, one Mac, Python 3.14, no pip cache) went from <code>git clone</code> to a working app in about 23 s of setup commands, with the key read from the folder above. Typing and reading time is not included.</li>
 <li>Coverage is {len(orgs)} organizations and needs manual curation.</li>
 </ul>
 <h3>With another month</h3>

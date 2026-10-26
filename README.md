@@ -252,14 +252,16 @@ python3 -m venv .venv
 source .venv/bin/activate              # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 # Key: put PORTKEY_API_KEY=... in animal-volunteer/.env OR in the folder above it (../.env)
-uvicorn backend.api:app --port 8000    # use --port 8001 if 8000 is busy
+uvicorn backend.api:app --port 8000    # if port 8000 is busy, use another free port, e.g. --port 8001
 ```
 
-Open **http://localhost:8000**.
+Open **http://localhost:8000** (or the port you chose). Stop with Ctrl+C.
 
-**Rehearsed 2026-10-25** in a clean copy (not yet a GitHub clone): about 33 s automated, with
-`pip install` taking 12 s even without a download cache. Both `.env` locations worked. See
-`output/setup_rehearsal/clean_copy_rehearsal.md`.
+**Fresh clone from GitHub, tested 2026-10-26** (commit `c3f1e0a`, macOS 14.7, Python 3.14.7, pip cache off): the
+commands above took about **23 s** from `git clone` to a running app (clone 5 s, venv 2 s, `pip install` 14 s,
+server start 2 s), with `PORTKEY_API_KEY` read from `../.env`; a `.env` inside the repository folder also worked. Time to
+read and type the steps is extra. See `output/final_submission/20261026-021552/README.md`. (Earlier clean-copy rehearsal:
+`output/setup_rehearsal/clean_copy_rehearsal.md`.)
 
 ### Rebuilding the website (developers only)
 

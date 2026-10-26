@@ -104,7 +104,7 @@ s.append(f"""<section>
 <tr><td>Requirement evidence</td><td>Not found</td><td>Not found</td><td>Quote + source + check date per rule</td></tr>
 <tr><td>Conflicting rules</td><td>Not found</td><td>Not found</td><td>Kept and flagged, not guessed</td></tr>
 <tr><td>Eligibility explanation</td><td>Not found</td><td>Not found</td><td>Meets / doesn't meet / needs confirmation</td></tr>
-<tr><td>Location</td><td>Mile radius</td><td>Not found</td><td>Town + optional ZIP estimate for {R.N_VERIFIED} verified sites</td></tr></table>
+<tr><td>Location</td><td>Mile radius</td><td>Not found</td><td>Town; optional ZIP gives a labelled distance (site, else organization)</td></tr></table>
 <p style="margin-top:18px"><strong>Our contribution:</strong> deep, sourced, rule-by-rule checks for one local cause, with fit kept separate from application status. Chat facts need a verified quotation, and inferred eligibility facts stay suggestions until confirmed. One shared filter; hard limits are never relaxed.</p>
 <p class="small">"Not found" means not described on the pages we read; it doesn't mean the product lacks it.</p>
 {srcline("idealist", "idealist_help", "idealist_vm", "scout", "scout_about")}
@@ -121,11 +121,11 @@ s.append(f"""<section>
 <img class="shot" src="{IMG['compare']}" alt="Compare page with three opportunities: Organization: New Haven with Activity location may differ, North Haven, and Help from your home, each with Visit volunteer page and Contact organization links and Availability not confirmed" style="max-height:400px"></div>
 <p class="small" style="margin-top:12px">Distance goes to the verified site ({R.KIND_N['verified_site']}: "North Haven · About 6 miles away"), else the organization's location ({R.KIND_N['organization_location']}: "Organization: New Haven · About 1 mile away" + "Activity location may differ"); {R.KIND_N['home_based']} home-based, {R.KIND_N['unknown']} unknown. One list, "Distance: nearest first". Closed roles ({R.N_CLOSED}) are left out of lists but explained if asked about. Status reads "Availability not confirmed"; links name the organization's page; "Compare requirements" is optional (up to 3).</p>
 {srcline("census_gaz", "census_geo", "gmaps")}
-{notes("Screenshots come from the running app (final build) with synthetic inputs and a test ZIP. Closeness never changes fit or application status.", "census_gaz", "census_zcta", "census_geo", "gmaps")}
+{notes("Screenshots come from the running app (Session 16 build) with synthetic inputs and a test ZIP. Closeness never changes fit or application status.", "census_gaz", "census_zcta", "census_geo", "gmaps")}
 </section>""")
 steps = "".join(f"<li><strong>Request {n}:</strong> {', '.join(names) or 'final answer'} <span class='small'>({u['input_tokens']:,} in / {u['output_tokens']:,} out)</span></li>" for n, names, u in R.steps)
 s.append(f"""<section>
-<div class="kicker">A real run (website, Session 11) · card: final build, another synthetic query</div><h2>"…I don't have a car." → "My ZIP code is …"</h2>
+<div class="kicker">A real run (website, Session 11) · card: Session 16 build, another synthetic query</div><h2>"…I don't have a car." → "My ZIP code is …"</h2>
 <div class="row c23"><div><ol style="font-size:24px">{steps}</ol>
 <p style="font-size:23px">Remembered New Haven and "no car"; never guessed a ZIP from "next to Yale SOM". The reply is a short opening; each option's facts are lines from the code. The closed role 1 mile away is explained, not offered.</p>
 <p class="small">Run {R.WALK_ID} · turn 4 · gpt-6-luna-global · {R.walk['latency_s']} s · fresh call</p></div>
@@ -168,14 +168,14 @@ s.append(f"""<section>
 <li>Data is a snapshot from Oct 25, 2026; no live openings.</li>
 <li>Distances: straight-line, Connecticut ZIPs; only {R.N_VERIFIED} of {len(R.opps)} records have a distance to the actual site.</li>
 <li>Schedules aren't checked automatically; extracting facts from chat can still go wrong.</li>
-<li>Synthetic testing only; small cost sample; billing unverified.</li>
-<li>Not hosted; <span class="tag q">GitHub link and fresh-clone test pending</span></li></ul></div>
+<li>Mostly synthetic testing plus one informal user test; small cost sample; billing unverified.</li>
+<li>Not hosted; runs locally (fresh GitHub clone: about 23 s of setup commands)</li></ul></div>
 <div><h3>Next</h3><ul style="font-size:26px">
 <li>Test with real volunteers and shelter coordinators.</li>
 <li>Re-check source pages weekly; let organizations confirm their listings.</li>
 <li>Structured schedules; more towns and causes.</li>
 <li>Hosted version with per-user limits; a larger evaluation set.</li></ul></div></div>
-{notes("The repository link and a fresh clone from it are still pending; only a clean-copy rehearsal has been done.")}
+{notes("The repository is public. A fresh clone from GitHub was timed on one Mac (Python 3.14, no pip cache): about 23 seconds of setup commands to a running app.")}
 </section>""")
 assert len(s) <= 10
 

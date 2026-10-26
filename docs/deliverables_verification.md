@@ -146,3 +146,12 @@ survive a rebuild.
   removed from Impact (they remain in Tokenomics and Limits).
 - `report.html`: 15 Letter pages, 0 external requests, section order unchanged. `slides.html`: 10 slides, no overflow.
 - Still pending: GitHub link and timed fresh clone (marked in both).
+
+## Final submission (2026-10-26)
+
+- Repository: https://github.com/rheasong3411/final-project (public). GitHub placeholders replaced in README, report
+  and slides; the app is described as not hosted (runs locally), never as a public localhost link.
+- Fresh clone from GitHub verified: about 23 s of setup commands (pip cache off), both `.env` locations, app checks
+  25/25, one fresh real gpt-6-luna Find my fit run. Evidence: `output/final_submission/`.
+- `report.html` 15 Letter pages, required section order, self-contained; `slides.html` 10 slides, no overflow; every
+  page and slide visually inspected; 26 links returned 200; three slide labels corrected.

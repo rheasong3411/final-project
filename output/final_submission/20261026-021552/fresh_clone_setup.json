@@ -1,0 +1,136 @@
+{
+ "repository": "https://github.com/rheasong3411/final-project",
+ "visibility": "public",
+ "tested_commit": "c3f1e0a5dbbe07ffa683eb2b4879b1cab84bd51e",
+ "environment": {
+  "os": "macOS 14.7.3 (arm64)",
+  "python": "3.14.7 (python.org build)",
+  "pip": "26.2.1",
+  "pip_cache": "disabled (PIP_NO_CACHE_DIR=1) to simulate a machine without cached downloads",
+  "shell_env": "PORTKEY_API_KEY unset for every command, so the key came only from a .env file",
+  "port": "8011 (8000 and 8001 were in use by other servers on this Mac)"
+ },
+ "readme_steps_followed": [
+  "git clone https://github.com/rheasong3411/final-project.git",
+  "cd final-project",
+  "python3 -m venv .venv",
+  "source .venv/bin/activate",
+  "pip install -r requirements.txt",
+  ".env with PORTKEY_API_KEY placed one folder above the clone",
+  "uvicorn backend.api:app --port 8011"
+ ],
+ "timing_seconds_cumulative": {
+  "clone": 5.4,
+  "venv": 7.5,
+  "pip_install_done": 21.6,
+  "server_ready": 23.2,
+  "home_page_served": 23.3
+ },
+ "timing_note": "Command execution only (scripted); a person's reading and typing time is extra. Well under the assignment's 10-minute rule.",
+ "env_loading": {
+  "parent_folder_env": "credentials_present true, source 'parent-folder .env'",
+  "repo_folder_env": "credentials_present true, source 'project .env'",
+  "key_files": "temporary copies, deleted after the test"
+ },
+ "app_checks": {
+  "run2": {
+   "passed": 25,
+   "total": 25
+  },
+  "run3_fresh_call": {
+   "passed": 25,
+   "total": 25
+  }
+ },
+ "real_find_my_fit_runs": [
+  {
+   "run_id": "8fdbafd85aa9",
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 34364,
+    "cached_input_tokens": 28657,
+    "cache_write_input_tokens": 5203,
+    "uncached_input_tokens": 504,
+    "output_tokens": 2320
+   },
+   "returned_models": [
+    "gpt-6-luna-global"
+   ]
+  },
+  {
+   "run_id": "ba6c09111441",
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 34364,
+    "cached_input_tokens": 28657,
+    "cache_write_input_tokens": 5203,
+    "uncached_input_tokens": 504,
+    "output_tokens": 2320
+   },
+   "returned_models": [
+    "gpt-6-luna-global"
+   ]
+  },
+  {
+   "run_id": "e0d3f9c8f4da",
+   "usage_api_reported": {
+    "requests": 4,
+    "input_tokens": 32754,
+    "cached_input_tokens": 27959,
+    "cache_write_input_tokens": 4291,
+    "uncached_input_tokens": 504,
+    "output_tokens": 1503
+   },
+   "returned_models": [
+    "gpt-6-luna-global"
+   ]
+  }
+ ],
+ "run_notes": {
+  "8fdbafd85aa9": "first attempt; the check script stopped afterwards on a Playwright checkbox call (script bug), so its result file wasn't written",
+  "ba6c09111441": "run2: identical request, usage identical to the first -> a Portkey gateway cache replay, not a fresh call",
+  "e0d3f9c8f4da": "run3: server restarted with AVF_CACHE_FORCE_REFRESH=1 and trace saving; gateway status REFRESH on all 4 requests (fresh)"
+ },
+ "run3_trace": {
+  "run_id": "fresh_clone__e0d3f9c8f4da",
+  "gateway_cache_status": [
+   "REFRESH",
+   "REFRESH",
+   "REFRESH",
+   "REFRESH"
+  ],
+  "tool_calls": [
+   "update_location_preferences",
+   "search_opportunities",
+   "assess_profile",
+   "final_result"
+  ],
+  "returned_models": [
+   "gpt-6-luna-global"
+  ],
+  "profile_used": {
+   "age": 25,
+   "town": "New Haven",
+   "has_car": false,
+   "animal_preferences": [
+    "cats"
+   ],
+   "available_hours": 2.0,
+   "available_hours_max": 3.0,
+   "available_days": [
+    "sat"
+   ],
+   "available_times": [
+    "morning"
+   ]
+  },
+  "usage_api_reported": {
+   "requests": 4,
+   "input_tokens": 32754,
+   "cached_input_tokens": 27959,
+   "cache_write_input_tokens": 4291,
+   "uncached_input_tokens": 504,
+   "output_tokens": 1503
+  }
+ }
+}

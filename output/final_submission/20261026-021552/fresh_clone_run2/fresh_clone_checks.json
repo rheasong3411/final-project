@@ -1,0 +1,181 @@
+{
+ "base": "http://127.0.0.1:8011",
+ "checks": [
+  {
+   "check": "desktop: / loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: /explore loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: /about loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: /find-my-fit loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: animal filter narrows results; towns match scope",
+   "passed": true,
+   "detail": "(24, 10, ['North Branford', 'North Haven'])"
+  },
+  {
+   "check": "desktop: ZIP gives distances; Clear all resets ZIP, sort and filters",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: comparison of two roles",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "check": "desktop: detail page with sources and next step",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "real Find my fit: answered by gpt-6-luna via Portkey",
+   "passed": true,
+   "detail": "(None, ['gpt-6-luna-global'])"
+  },
+  {
+   "check": "real Find my fit: profile captured (age, town, cats, no car, Saturday morning, 2–3 h range)",
+   "passed": true,
+   "detail": "{'age': 25, 'town': 'New Haven', 'has_car': False, 'animal_preferences': ['cats'], 'available_hours': 2.0, 'available_hours_max': 3.0, 'available_days': ['sat'], 'available_times': ['morning']}"
+  },
+  {
+   "check": "real Find my fit: tools ran (profile updates, assessments, option cards)",
+   "passed": true,
+   "detail": "{'profile_changes_from_tools': 8, 'requirement_assessments': 8, 'recommendations': ['ah_cat_socializing', 'ah_shelter_cleaning', 'bcc_shy_cat_socializing'], 'alternatives': [], 'sources_cited': 5}"
+  },
+  {
+   "check": "real Find my fit: API-reported usage present",
+   "passed": true,
+   "detail": "{'requests': 4, 'input_tokens': 34364, 'cached_input_tokens': 28657, 'cache_write_input_tokens': 5203, 'uncached_input_tokens': 504, 'output_tokens': 2320, 'provenance': \"API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e."
+  },
+  {
+   "check": "real Find my fit: Run details shows model and usage",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: no horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "desktop: no page errors or failed app requests",
+   "passed": true,
+   "detail": "([], [])"
+  },
+  {
+   "check": "mobile: / loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: /explore loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: /about loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: /find-my-fit loads",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: animal filter narrows results; towns match scope",
+   "passed": true,
+   "detail": "(24, 10, ['North Branford', 'North Haven'])"
+  },
+  {
+   "check": "mobile: ZIP gives distances; Clear all resets ZIP, sort and filters",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: comparison of two roles",
+   "passed": true,
+   "detail": "2"
+  },
+  {
+   "check": "mobile: detail page with sources and next step",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: no horizontal overflow",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "mobile: no page errors or failed app requests",
+   "passed": true,
+   "detail": "([], [])"
+  }
+ ],
+ "real_run": {
+  "run_id": "ba6c09111441",
+  "ok": true,
+  "requested_model": "gpt-6-luna",
+  "returned_models": [
+   "gpt-6-luna-global"
+  ],
+  "usage_api_reported": {
+   "requests": 4,
+   "input_tokens": 34364,
+   "cached_input_tokens": 28657,
+   "cache_write_input_tokens": 5203,
+   "uncached_input_tokens": 504,
+   "output_tokens": 2320,
+   "provenance": "API-reported: summed from the `usage` object in each raw Responses-API body returned by Portkey for this run's model requests. input_tokens INCLUDES cached reads (cached_tokens) and cache writes (cache_write_tokens); uncached = input - cached - cache_write. (Traces saved before Session 6 reported uncached = input - cached, i.e. including cache writes; their raw usage is unchanged.)"
+  },
+  "answer": "I found cat-focused possibilities, but the published information doesn’t confirm Saturday-morning availability or current openings; one role also doesn’t publish where the activity happens. You can optionally share a ZIP for approximate distance estimates—it’s never required.",
+  "follow_up_questions": [
+   "Optional: what's your ZIP code? It's only used to estimate which locations are closer. No street address needed.",
+   "Do you need to stay within New Haven, or can you travel to nearby towns?"
+  ],
+  "profile_used": {
+   "age": 25,
+   "town": "New Haven",
+   "has_car": false,
+   "animal_preferences": [
+    "cats"
+   ],
+   "available_hours": 2.0,
+   "available_hours_max": 3.0,
+   "available_days": [
+    "sat"
+   ],
+   "available_times": [
+    "morning"
+   ]
+  },
+  "tool_evidence": {
+   "profile_changes_from_tools": 8,
+   "requirement_assessments": 8,
+   "recommendations": [
+    "ah_cat_socializing",
+    "ah_shelter_cleaning",
+    "bcc_shy_cat_socializing"
+   ],
+   "alternatives": [],
+   "sources_cited": 5
+  }
+ },
+ "passed": 25,
+ "total": 25
+}

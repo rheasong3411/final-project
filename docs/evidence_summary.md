@@ -131,3 +131,11 @@ Kept separate on purpose:
   age wording, town options by scope, directions links, fewer repeated questions and notes. Backend 244 tests.
 - **Pending:** the participant hasn't retested; no verbatim quote, screenshot or timing was recorded; GitHub link and
   timed fresh clone.
+
+## Final submission checks (2026-10-26)
+
+- **Completed and verified:** public repo https://github.com/rheasong3411/final-project; fresh clone from GitHub in
+  about 23 s of setup commands; `.env` in the repo folder or one folder up; app checks 25/25 with a fresh real
+  gpt-6-luna run; report 15 pages and slides 10, visually inspected. Evidence: `output/final_submission/`.
+- **Pending (Rhea):** the Canvas upload (repo link, report.html, slides.html); optional demo video.
+- **Not recorded:** a verbatim participant quote or task timing.

@@ -5,7 +5,7 @@ Keep this file current as work proceeds. **Do not mark a row `verified` without 
 
 Status values: `pending` · `implemented but unverified` · `verified`
 
-Last updated: 2026-10-26 (one informal prospective-user test documented; reported issues reproduced and fixed by developer retesting; report.html and slides.html REBUILT. Still pending: GitHub link and timed fresh clone; a verbatim quote/timing was not recorded.) Previous: 2026-10-25 (Session 16: distances to the verified site, else the organization's verified location; one results list sorted by "Distance: nearest first"; report.html and slides.html REBUILT. User test, GitHub link and fresh clone still pending.) Previous: 2026-10-25, ~21:41 EDT (Session 12: closed roles left out of discovery, five location categories, "About" distance wording; report.html and slides.html REBUILT. User test, GitHub link and fresh clone still pending). Verification: `docs/deliverables_verification.md`.
+Last updated: 2026-10-26 (final submission prep: public repo https://github.com/rheasong3411/final-project; fresh clone verified; report 15 pages, slides 10; only the Canvas upload itself remains, plus optional items. A verbatim user quote/timing was not recorded.) Previous: 2026-10-26 (one informal prospective-user test documented; reported issues reproduced and fixed by developer retesting; report.html and slides.html REBUILT. Still pending: GitHub link and timed fresh clone; a verbatim quote/timing was not recorded.) Previous: 2026-10-25 (Session 16: distances to the verified site, else the organization's verified location; one results list sorted by "Distance: nearest first"; report.html and slides.html REBUILT. User test, GitHub link and fresh clone still pending.) Previous: 2026-10-25, ~21:41 EDT (Session 12: closed roles left out of discovery, five location categories, "About" distance wording; report.html and slides.html REBUILT. User test, GitHub link and fresh clone still pending). Verification: `docs/deliverables_verification.md`.
 
 > ⚠️ **Deadline: Monday, October 26, 2026, 6:00 PM (Canvas)**, per the original rubric. This update was made on Sunday, October 25, 2026, the day before the deadline.
 
@@ -13,12 +13,12 @@ Last updated: 2026-10-26 (one informal prospective-user test documented; reporte
 
 | # | Requirement (from PDF) | Pts | Evidence needed | Where we plan to satisfy it | Status | Evidence location |
 |---|---|---|---|---|---|---|
-| A1 | Submit on Canvas: repo link, `report.html`, `slides.html` (video optional) | — | Canvas submission | Canvas | pending | |
-| A2 | Due **Mon Oct 26, 2026, 6:00 PM** | — | Submitted on time | Canvas | pending | |
-| A3 | Solo project | — | — | — | pending | |
+| A1 | Submit on Canvas: repo link, `report.html`, `slides.html` (video optional) | — | Canvas submission | Canvas | **pending (Rhea submits)**: files ready; nothing submitted by the assistant | Repo link https://github.com/rheasong3411/final-project; `report.html`, `slides.html` at the repo root |
+| A2 | Due **Mon Oct 26, 2026, 6:00 PM** | — | Submitted on time | Canvas | pending (Rhea submits) | |
+| A3 | Solo project | — | — | — | verified (one author; built with Claude Code as stated in the report) | |
 | A4 | Both HTML files self-contained: open by double-click on any computer, all screenshots embedded | — | Open each file from another folder with no network images missing | `report.html`, `slides.html` | implemented but unverified (drafts) | report: 0 external requests, 8 embedded images; slides: 5 embedded images plus diagram, reveal.js from CDN (course instruction) so the library needs internet; `docs/deliverables_verification.md` |
-| A5 | Repo is public, **or** private with `zlisto` added as collaborator | — | GitHub settings screenshot or public URL | GitHub repo (account `rheasong3411`) | pending | |
-| A6 | Optional 2–3 min demo video of a real example, start to finish, narrated | (backup for "It works" and "Look + feel"; not for "staff can run it") | Video file | Canvas upload | pending (optional) | |
+| A5 | Repo is public, **or** private with `zlisto` added as collaborator | — | GitHub settings screenshot or public URL | GitHub repo (account `rheasong3411`) | **verified: public** (2026-10-26) | https://github.com/rheasong3411/final-project; no collaborator needed |
+| A6 | Optional 2–3 min demo video of a real example, start to finish, narrated | (backup for "It works" and "Look + feel"; not for "staff can run it") | Video file | Canvas upload | not done (optional) | |
 
 ## B. The idea (21 pts)
 
@@ -32,11 +32,11 @@ Last updated: 2026-10-26 (one informal prospective-user test documented; reporte
 | # | Requirement | Pts | Evidence needed | Where | Status | Evidence location |
 |---|---|---|---|---|---|---|
 | C1 | It works end to end: agents use real tools and real data and give useful results without crashing | 15 | Real runs, screenshots, traces | Website + backend + agent | verified (locally, synthetic inputs) | Browser checks 51/51 with 2 real AI turns sent from the website (`output/ui_test_report.json`, `output/screenshots/`); integrated traces `output/agent_runs/ui_integrated__af1ced1eab65.json`, `ui_integrated__5795fd1e411f.json`; `pytest` 59 passed. **Session 10:** 93 backend tests; 12 fresh real gpt-6-luna runs sent from the website (`output/agent_runs/ui_location_s10__*`, all `REFRESH`); conversation checks 118/119 (1 wording-regex miss, manually reviewed as correct), Explore/detail checks 48/48, earlier non-AI checks 42/42 (`output/location_check/ui_location_test_report.json`) |
-| C2 | Clean repo, **no secrets committed** | (in C1) | `git ls-files` contains no `.env`; secret scan | `.gitignore`, repo | implemented but unverified | `.gitignore` tested 2026-10-25 in a throwaway repo (scratch copy): `.env`, `.env.local`, `.venv/`, `node_modules/`, `credentials.json` and `private/` were ignored; `.env.example` was included. Not yet verified on the real repo (none exists). |
-| C3 | GitHub repo with all necessary code | (in C1/C4) | Fresh-clone dry run | Repo | pending | |
-| C4 | Staff can run it: online, or a fresh clone runs via the README within **10 minutes** (otherwise 0) | 5 | Timed fresh-clone dry run with `.env` one folder up | README "Quick start for graders" | implemented but unverified (clean-copy rehearsal passed; **fresh clone pending**) | `output/setup_rehearsal/clean_copy_rehearsal.md` |
-| C5 | App loads `.env` from the **repo root first, then the parent folder** | (in C4) | Test: move `.env` up one folder and the app still runs | `backend/config.py` `load_credentials` | implemented but unverified | Precedence unit-tested (`tests/test_api_and_config.py::test_env_*`). The real key currently comes from the shell environment; the move-`.env`-up-one-folder test with a real key has not been done. Repo root = `animal-volunteer/`, parent = `Final Project/`. |
-| C6 | `README.md` explains what the app is and how to run it step by step | (in C4) | README | `README.md` | implemented but unverified | Setup, production (1 terminal) and development (2 terminals) commands, URLs and ports written 2026-10-25; not yet followed from a fresh clone |
+| C2 | Clean repo, **no secrets committed** | (in C1) | `git ls-files` contains no `.env`; secret scan | `.gitignore`, repo | **verified** (2026-10-26): new repo, single history; scan of all 718 committed files found no key value, no token patterns and no real `.env` (only `.env.example`); `local_data/`, `.venv`, `node_modules` and archives excluded | |
+| C3 | GitHub repo with all necessary code | (in C1/C4) | Fresh-clone dry run | Repo | verified (fresh clone of commit c3f1e0a ran) | `output/final_submission/20261026-021552/` |
+| C4 | Staff can run it: online, or a fresh clone runs via the README within **10 minutes** (otherwise 0) | 5 | Timed fresh-clone dry run with `.env` one folder up | README "Quick start for graders" | **verified** on one Mac: about 23 s of setup commands from `git clone` to a running app (pip cache off), key from `../.env`; also from `./.env` | `output/final_submission/20261026-021552/fresh_clone_setup.json` |
+| C5 | App loads `.env` from the **repo root first, then the parent folder** | (in C4) | Test: move `.env` up one folder and the app still runs | `backend/config.py` `load_credentials` | **verified** in the fresh clone: `../.env` (credential source "parent-folder .env") and `./.env` ("project .env") | `output/final_submission/20261026-021552/fresh_clone_setup.json` |
+| C6 | `README.md` explains what the app is and how to run it step by step | (in C4) | README | `README.md` | verified (followed from a fresh GitHub clone, 2026-10-26) | `output/final_submission/20261026-021552/` |
 | C7 | `.env.example` lists every needed key with no real values | (in C4) | File contents | `.env.example` | verified | `.env.example` contains only `PORTKEY_API_KEY=` (empty), checked 2026-10-25 |
 | C8 | Key names exactly `PORTKEY_API_KEY` or `OPENAI_API_KEY` | (in C4) | Code and `.env.example` | Config | verified | `backend/config.py` `KEY_NAME = "PORTKEY_API_KEY"` (only key read); `.env.example` |
 | C9 | Data needed to run is included; a small test dataset if the full one is large | (in C4) | Data in repo | `data/` (about 64 roles, small, so no separate test set should be needed) | implemented but unverified | `data/organizations.json`, `data/opportunities.json`, `data/sources.json` |
@@ -56,8 +56,8 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
 
 | # | Section / requirement | Pts | Evidence needed (otherwise at most half) | Where | Status | Evidence location |
 |---|---|---|---|---|---|---|
-| E0 | 10–15 printed Letter pages; single self-contained HTML | — | Print preview page count | `report.html` | implemented but unverified (draft) | 15 Letter pages after the Session 11 rebuild (`output/deliverables_check/report_print_check.pdf`, `session11_check.json`); 24 numbered references with access dates |
-| E1 | **1. Title + links:** project name, name, repo link (same as Canvas), app link if online, one-sentence summary | (in sections) | — | `report.html` | pending | |
+| E0 | 10–15 printed Letter pages; single self-contained HTML | — | Print preview page count | `report.html` | **verified**: 15 Letter pages, 7 embedded images, 0 external requests, sections in the required order (2026-10-26) | `output/final_submission/20261026-021552/visual_check/` |
+| E1 | **1. Title + links:** project name, name, repo link (same as Canvas), app link if online, one-sentence summary | (in sections) | — | `report.html` | verified (repo link; app stated as not hosted, runs locally) | |
 | E2 | **2. Motivation** (who has the problem, today's workaround and its cost, why care) and **3. What is new here** | 8 | **Named existing products compared** | `report.html` §2–3 | implemented but unverified (draft) | Idealist/VolunteerMatch and Samaritan Scout compared from their own pages (accessed 2026-10-25): `docs/product_comparison.md`; report §3 table |
 | E3 | **4. The agents:** each agent, its tools, organization and diagram, model choice and why, one real run step by step | 10 | **One real run traced with screenshots of what each agent did** | `report.html` §4 | implemented but unverified (draft) | Diagram, tool table, matching rules, profile rules, run `ui_integrated__af1ced1eab65` step by step with screenshot |
 | E4 | **5. Tokenomics:** input, cached-input and output tokens per typical run; cost per run, per user per month, at 100 and 10,000 users; cost cuts and whether they hurt performance | 8 | **Real API-reported token counts**; evidence on whether cuts hurt quality | `report.html` §5 | implemented but unverified (draft) | Modeled at course/OpenAI published rates (actual Azure/course billing not verified); 12-run experiment with limitations |
@@ -71,7 +71,7 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
 | # | Requirement | Pts | Evidence needed | Where | Status | Evidence location |
 |---|---|---|---|---|---|---|
 | F1 | Single HTML file using **reveal.js**, **max 10 slides**, arrow keys and F for full screen | — | Open and step through | `slides.html` | implemented but unverified (draft) | 10 slides; arrow navigation tested; reveal.js 5.1.0 from CDN |
-| F2 | Content: whole story, with **diagram, screenshots and key numbers** embedded | 6 | — | `slides.html` | implemented but unverified (draft; impact pending) | `output/deliverables_check/slides/` |
+| F2 | Content: whole story, with **diagram, screenshots and key numbers** embedded | 6 | — | `slides.html` | verified (10 slides, diagram and 5 embedded screenshots, no overflow; visually inspected 2026-10-26) | `output/final_submission/20261026-021552/visual_check/` |
 | F3 | Design: big readable text, consistent style (same colors as app) | 2 | — | `slides.html` | implemented but unverified (draft) | Cream / forest / peach; body 24–32 px; no overflow |
 
 ## G. Evidence we must collect while building
@@ -86,7 +86,7 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
 | G6 | Demonstrated safety defense (test or screenshot) | verified | Website screenshot `output/screenshots/safety_app_level_defense_injection.png` (real run `ui_integrated__6adf5a88c619`); mocked tests in `tests/test_agent_mocked.py`, `tests/test_limits.py` |
 | G7 | Real prospective user tries the app (quote, screenshot, timing) | partly done: one informal test (2026-10-26); feedback paraphrased; **no verbatim quote, screenshot or timing recorded** | `docs/user_test_guide.md`, `docs/user_test_record_template.md` |
 | G8 | Honest comparison with named existing products (Idealist, Samaritan Scout, others) | verified (official pages, accessed 2026-10-25; "not found" ≠ absent) | `docs/product_comparison.md` |
-| G9 | Fresh-clone dry run with `.env` one folder up, timed under 10 minutes | pending (**clean-copy rehearsal done; GitHub clone not yet possible**) | Rehearsal: `output/setup_rehearsal/clean_copy_rehearsal.md` (about 33 s automated; both `.env` locations OK) |
+| G9 | Fresh-clone dry run with `.env` one folder up, timed under 10 minutes | **verified** (2026-10-26): about 23 s of setup commands; app checks 25/25; a real gpt-6-luna Find my fit run (fresh, REFRESH) | `output/final_submission/20261026-021552/README.md` |
 
 ## H. Data-stage items (this step)
 

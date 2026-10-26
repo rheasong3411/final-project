@@ -2983,3 +2983,94 @@ the participant's message and two follow-ups through the real app (gpt-6-luna). 
 ### Follow-up prompts
 
 None yet.
+
+## Session 21 — 2026-10-26 — Final submission: GitHub repository, fresh clone, final checks
+
+### Prompt (verbatim)
+
+```text
+please prepare the project for final submission. keep all work in the existing animal-volunteer project, inspect the current Git state first, and preserve existing files and evidence. no new features are needed.
+1. check the original assignment and rubric
+reread the original instructions in Final Project/Rubrics and check docs/rubric_checklist.md. use the original assignment as authoritative. identify any remaining submission requirements without claiming unverified items are complete.
+2. prepare the GitHub repository
+inspect the existing repository, remotes, and authenticated GitHub account. reuse the correct project repository if one already exists. do not initialize a nested repository or overwrite an unrelated remote.
+inspect the files to be committed and scan for credentials, real .env files, private local data, backup archives, and unnecessary generated files. check existing Git history for secrets before publishing; report any finding without printing the secret.
+include the code, README.md, .env.example, sample dataset, requirements and lockfiles, built frontend, report.html, slides.html, documentation, and relevant sanitized evidence. keep backup.zip untouched and excluded.
+prepare the commit and tell me the exact repository destination, visibility, and contents. if creating a repository and no destination or visibility has been established, ask me to choose those before publishing. do not force-push, delete history, or change repository visibility.
+3. add the actual repository link
+once the repository destination is confirmed, replace GitHub placeholders in the README, report and slide source scripts, and generated deliverables with the actual URL.
+distinguish the repository link from a hosted-app URL. do not describe localhost as a publicly accessible app. if the repository is private, check the assignment’s required grader access and report any access still needed.
+4. verify the final report and slides
+regenerate report.html and slides.html from their source scripts.
+verify the report is self-contained, has embedded screenshots, prints to 10–15 US Letter pages, and follows this section order: Title + links, Motivation, What is new here, The agents, Tokenomics, Safety, Impact, Limits + next steps.
+verify the reveal.js deck has no more than 10 slides, includes its required screenshots and diagram, and has no clipped text or overflow.
+render and visually inspect every report page and slide. check links, image loading, numerical consistency, and remaining placeholders. preserve historical evidence and label older screenshots accurately.
+keep feedback, developer retesting, automated tests, and real-run evidence clearly distinguished. do not invent participant quotes, timings, outcomes, or approval of fixes.
+5. publish and test a fresh clone
+after the repository destination and visibility are settled, push the prepared project using a normal commit and push.
+clone it from GitHub into a new temporary folder outside the working project. follow only the README instructions, using a new virtual environment and no dependencies or files borrowed from the working project.
+time setup through a usable running app and report the actual elapsed time, environment, and any installation-cache limitations. verify it meets the assignment’s setup requirement.
+configure credentials locally without printing or committing them. confirm the documented .env loading behavior works. use an unused port and leave unrelated servers alone.
+check the main pages, filters, comparison, ZIP reset, and a real Find my fit conversation through gpt-6-luna via Portkey. verify the response, profile, tool activity, and API-reported usage. do not substitute a mocked response for this check.
+if setup fails, fix the README or code, commit and push the fix, and repeat the affected fresh-clone checks. identify the final tested commit.
+6. finalize the evidence and checklist
+save setup results, final visual checks, and any new traces in a new timestamped output directory. never overwrite historical or recovered screenshots.
+update AI_prompts.md, docs/rubric_checklist.md, and the relevant verification records with actual results. distinguish completed, verified, and pending items. ensure documentation changes are committed and pushed.
+7. rebuild the clean submission ZIP
+rebuild Final_Project.zip in the established location outside the repository. package only Final Project/animal-volunteer/.
+exclude real .env files, credentials, .venv, node_modules, local_data, caches, .DS_Store, backup files, and all nested archives. include .env.example, the built frontend, report.html, slides.html, the sample dataset, documentation, and sanitized evidence.
+leave backup.zip untouched. inspect the finished ZIP for excluded files and secrets without printing secret values. extract it into a separate temporary folder and confirm the expected files are present.
+8. give me the final submission summary
+show the GitHub URL and visibility, final commit, fresh-clone setup time and results, report page count, slide count, ZIP path and size, and any unresolved requirement.
+list exactly what the original assignment requires me to upload or paste into Canvas. distinguish required items from optional items. do not submit to Canvas for me.
+```
+
+### What happened
+
+**Assignment re-read** (`Final Project/Rubrics.pdf`, authoritative).
+- **Canvas:** the repo link, `report.html` and `slides.html`; an optional 2–3 minute demo video.
+- **Repo:** public, or private with `zlisto` added.
+- **Running it:** a fresh clone runs within 10 minutes with `.env` in the repo or one folder up.
+
+**Repository:**
+- There was no Git repository before, and none in the parent folders, so this is not a nested repository.
+- `git init` was run in `animal-volunteer/`. Commits use the GitHub no-reply email, and `*.tsbuildinfo` was added to
+  `.gitignore`.
+- **Scan of the 718 files to commit:** no key value, no token patterns, no real `.env` (only `.env.example`) and no
+  personal email. `local_data/`, `.venv`, `node_modules` and archives are excluded, and `backup.zip` lies outside the
+  repository.
+- Downloading the GitHub CLI was first blocked by the permission system. Rhea approved it, and chose
+  `rheasong3411/final-project`, public; the existing `gh` keyring login was reused.
+- The repo was created and pushed with a normal push (`c3f1e0a`).
+
+**Links:** the repository URL went into the README (with clone steps, `cd final-project`), the report title section and
+slide 1. The app is described as not hosted; localhost is never presented as a public link.
+
+**Fresh clone from GitHub** (commit `c3f1e0a`, new temporary folder, new venv, README steps only):
+- **Setup:** about 23 s of setup commands to a running app, with the pip cache off and `PORTKEY_API_KEY` unset.
+- **.env loading:** both locations worked.
+- **App checks:** 25/25.
+- **Find my fit:**
+  - The first attempt's script stopped on a checkbox call.
+  - A second identical request was a gateway cache replay (identical usage), so it doesn't count as fresh.
+  - A third, with the cache bypassed, was fresh (`REFRESH`). Its tools were update_location_preferences,
+    search_opportunities and assess_profile. Its profile kept age 25, New Haven, no car, cats, Saturday mornings and
+    2–3 hours.
+  - API-reported usage of the fresh run: 4 requests; 32,754 input tokens (27,959 cached, 4,291 cache writes); 1,503
+    output tokens.
+
+**Report and slides:**
+- **Report:** 15 pages, in the required section order, with 7 embedded images; every page was inspected.
+- **Slides:** 10 slides with the diagram and 5 screenshots; every slide was inspected.
+- **Links:** all 26 returned 200.
+- **Fixes after inspection:** slide 3's location row, slide 6's build label, slide 10's testing line, and slide 5's notes.
+
+**Records:** evidence in `output/final_submission/`. `docs/rubric_checklist.md`, `docs/deliverables_verification.md` and
+`docs/evidence_summary.md` were updated.
+
+**Still Rhea's to do:** the Canvas submission, and an optional demo video. No verbatim user quote or timing was
+recorded.
+
+### Follow-up prompts
+
+None yet.
