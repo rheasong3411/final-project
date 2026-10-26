@@ -155,3 +155,11 @@ survive a rebuild.
   25/25, one fresh real gpt-6-luna Find my fit run. Evidence: `output/final_submission/`.
 - `report.html` 15 Letter pages, required section order, self-contained; `slides.html` 10 slides, no overflow; every
   page and slide visually inspected; 26 links returned 200; three slide labels corrected.
+
+## Participant quotes added (2026-10-26)
+
+- Four verbatim quotes from the informal prospective user (provided by Rhea) added to report §7 and §8 and slide 9;
+  one quote's placement (answers the assistant didn't use) is our reading. To stay at 15 pages: the evidence-index
+  paragraph was shortened, a sentence repeated elsewhere was removed, the Tokenomics limits became one paragraph, and
+  the feedback table may now split across pages (its header repeats).
+- `report.html`: 15 Letter pages, 0 external requests; `slides.html`: 10 slides, no overflow. Renders: `output/final_submission/20261026-023428_participant_quotes/`.

@@ -16,8 +16,16 @@ mornings.
 | Tasks attempted and completion (T1–T4 in `docs/user_test_guide.md`) | Not recorded |
 | Task times | Not recorded |
 | Ease and trust ratings (1–5) | Not recorded |
-| Verbatim quote with permission | Not recorded (the feedback below is paraphrased) |
+| Verbatim quotes | Four short quotes, provided by Rhea on 2026-10-26 (below); the rest of the feedback is paraphrased |
 | Manual-search baseline | Not done, so no time-saving claim is made |
+
+## Quotes (verbatim, as provided by Rhea)
+
+- “Every requirement shows where it came from.”
+- “The design is calm, readable and looks trustworthy.”
+- “I did say them, so that made the assistant seem broken.” (Placed by us with the answers the assistant didn't use,
+  weekend availability and no car; the quote itself doesn't name them.)
+- “I'd still have to visit three websites and probably email them.”
 
 ## Feedback (paraphrased, not a verbatim quote)
 
@@ -79,7 +87,9 @@ no bus routes or travel times were claimed; Animal Haven's commitment was descri
 
 ## Remaining limits
 
-- One informal session, no recorded tasks, times, ratings or verbatim quote.
+- One informal session; four short quotes, but no recorded tasks, times or ratings.
 - The one-year-commitment mismatch wasn't reproduced, so the new check addresses a likely cause, not a confirmed one.
 - Distances still need an optional ZIP and are straight lines; directions are only links; transit is not checked.
 - Model behaviour varies between runs; the fixes above are enforced by code where possible.
+- The participant's own words point to a limit the app doesn't remove: “I'd still have to visit three websites and
+  probably email them.” The app prepares people to apply; confirming openings still means contacting organizations.

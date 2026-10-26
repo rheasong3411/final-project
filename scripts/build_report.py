@@ -236,7 +236,7 @@ a{color:var(--forest)}
 .links{background:var(--sage);border-radius:12px;padding:12px 16px;margin:12px 0 16px}
 .links p{margin:2px 0}
 .pending{display:inline-block;background:#F8EED1;border:1px solid #DCC27A;color:#5A4209;border-radius:6px;padding:1px 8px;font-weight:700}
-table.fb{font-size:.86em}table.fb td,table.fb th{padding:3px 6px}
+table.fb{font-size:.86em;break-inside:auto;page-break-inside:auto}table.fb tr{break-inside:avoid;page-break-inside:avoid}table.fb td,table.fb th{padding:3px 6px}
 .pendingbox{background:#F8EED1;border:2px dashed #C9A94F;border-radius:12px;padding:12px 16px;margin:12px 0}
 .callout{background:var(--peach-s);border-left:4px solid var(--peach);border-radius:0 10px 10px 0;padding:10px 14px;margin:12px 0}
 figure{margin:12px 0 16px;break-inside:avoid;page-break-inside:avoid}
@@ -479,12 +479,7 @@ H.append(f"""<section class="pb"><h2><span class="n">5</span>Tokenomics</h2>
 <table><tr><th>Mean per run (6 each)</th><th class="num">Baseline</th><th class="num">Compact</th><th class="num">Change</th></tr>{''.join(b_rows)}</table>
 <p>Mean input tokens by case: ordinary match {bc['C1_ordinary']['baseline']['mean_input_tokens']:,.0f} → {bc['C1_ordinary']['compact']['mean_input_tokens']:,.0f} (<strong>no saving</strong>); conflict {bc['C2_conflict']['baseline']['mean_input_tokens']:,.0f} → {bc['C2_conflict']['compact']['mean_input_tokens']:,.0f}; minor {bc['C3_minor']['baseline']['mean_input_tokens']:,.0f} → {bc['C3_minor']['compact']['mean_input_tokens']:,.0f}.</p>
 <p><strong>Did it hurt?</strong> No regression was detected by our checks in this small sample (54/54 in both versions). Compact has been the default since.</p>
-<p><strong>Limits of this result:</strong></p>
-<ul>
-<li>There are only 6 runs per version, with large run-to-run variation, and the ordinary case did not improve.</li>
-<li>The checks test structure and correctness, not the quality of the writing.</li>
-<li>One compact run showed 2 recommendations instead of 3, and compact answers were about 6% shorter.</li>
-</ul>
+<p><strong>Limits of this result:</strong> only 6 runs per version, with large run-to-run variation, and the ordinary case did not improve; the checks test structure and correctness, not writing quality; one compact run showed 2 recommendations instead of 3, and compact answers were about 6% shorter.</p>
 <p><strong>A cache lesson:</strong> when identical requests were repeated during testing, Portkey's gateway cache replayed stored answers in 1.5–2.6 s. Those replays are labelled and excluded, and gateway cache status is now recorded on every call.</p>
 </section>""")
 
@@ -530,8 +525,8 @@ H.append(f"""<section class="pb"><h2><span class="n">6</span>Safety</h2>
 
 H.append(f"""<section><h2><span class="n">7</span>Impact</h2>
 <h3>One informal prospective-user test</h3>
-<p><strong>Participant (anonymous):</strong> a 25-year-old graduate student in New Haven who likes cats, has no car and can volunteer for 2–3 hours on weekend mornings. One informal session; task completion, times and ratings were <strong>not recorded</strong>; feedback is paraphrased. <strong>Liked:</strong> a cute, easy-to-read site; sources that build trust; useful cat suggestions. <strong>Reported problems</strong> are in the first column.</p>
-<table class="fb"><tr><th>Reported</th><th>Our retest (real gpt-6-luna, synthetic re-enactment)</th><th>Change</th></tr>
+<p><strong>Participant (anonymous):</strong> a 25-year-old graduate student in New Haven who likes cats, has no car and can volunteer for 2–3 hours on weekend mornings. One informal session; task completion, times and ratings were <strong>not recorded</strong>. In their words: <em>“Every requirement shows where it came from.”</em> <em>“The design is calm, readable and looks trustworthy.”</em> They also liked the cat suggestions. On answers the assistant didn't use: <em>“I did say them, so that made the assistant seem broken.”</em> Other feedback is paraphrased; <strong>reported problems</strong> are in the first column.</p>
+<table class="fb"><thead><tr><th>Reported</th><th>Our retest (real gpt-6-luna, synthetic re-enactment)</th><th>Change</th></tr></thead>
 {tr("Weekend availability ignored", "Reproduced: days and mornings stored as unverified suggestions", "Stated days and times are used; cards show a Schedule line")}
 {tr("Forgot no car", "Partly: used, but hidden from Your answers", "\"Has a car: No\" shown and kept")}
 {tr("One-year commitment explained differently", "Not reproduced; the chat hedged it", "Card text must describe uncertain rules as the card does")}
@@ -544,7 +539,7 @@ H.append(f"""<section><h2><span class="n">7</span>Impact</h2>
 <p class="small">Developer retesting, not the participant: before the fixes {FB['before']['passed']}/{FB['before']['total']} checks passed, after them {FB['after']['passed']}/{FB['after']['total']}, and {FB['screens']['passed']}/{FB['screens']['total']} on the final screens (desktop and mobile). The participant has not retested the changes. One informal test does not establish broad usability, adoption or time savings.</p>
 <p><strong>What we can show now (measured on the app and data):</strong></p>
 <ul>
-<li><strong>Reach of the data:</strong> {len(orgs)} organizations, {len(opps)} records and {len(srcs)} inspected pages. {N_QUOTES} of {N_QUOTES} quoted requirement passages were found verbatim in saved page snapshots. This shows the quotes were on the pages when checked, not that the pages are still current. {N_VERIFIED} records have a verified volunteering site.</li>
+<li><strong>Reach of the data:</strong> {len(orgs)} organizations, {len(opps)} records and {len(srcs)} inspected pages. {N_QUOTES} of {N_QUOTES} quoted requirement passages were found verbatim in saved page snapshots. {N_VERIFIED} records have a verified volunteering site.</li>
 <li><strong>Visible uncertainty:</strong> {n_conflict_age} records with conflicting age rules are flagged rather than guessed. {n_questions} "questions to ask the organization" are attached to records. The status labels and checklist are designed not to present any listing as a guaranteed opening.</li>
 </ul>
 </section>""")
@@ -555,7 +550,7 @@ H.append(f"""<section><h2><span class="n">8</span>Limits + next steps</h2>
 <li><strong>The data is a snapshot from October 25, 2026, and it will go stale.</strong> Openings, shifts and orientation dates are not live. Most records honestly say "Availability not confirmed".</li>
 <li>Free-text schedules are shown, not automatically checked.</li>
 <li>Only the {N_VERIFIED} records with a verified site get a distance to where you volunteer. {KIND_N["organization_location"]} get the organization's distance instead (the activity may be elsewhere, so the distance sort is approximate for them), and {KIND_N["unknown"]} have no location at all. Distances are straight lines from a ZIP area's center (not anyone's home), only for Connecticut ZIPs, with no travel times, transit or walkability data.</li>
-<li>The application recheck could not read Animal Haven's sign-up system (it requires an account) or the Cat Project's form (it would not render), and nothing was submitted. Most local listings still need confirming with the organization.</li>
+<li>The application recheck could not read Animal Haven's sign-up system (it requires an account) or the Cat Project's form (it would not render), and nothing was submitted. Most local listings still need confirming with the organization; as the participant put it, <em>“I'd still have to visit three websites and probably email them.”</em></li>
 <li>Reading facts from chat can still go wrong. A quote can be misread, and in one run the model labelled an inferred preference as stated. Confirmation reduces this; it does not remove it.</li>
 <li>Apart from one informal user session, AI testing uses synthetic inputs. Both cost samples are small (n = 6 per version in Session 6; {CUR['n']} current runs).</li>
 <li>Costs are modeled at published rates. The actual Azure or course billing is unverified.</li>
@@ -570,7 +565,7 @@ H.append(f"""<section><h2><span class="n">8</span>Limits + next steps</h2>
 <li>Add structured schedules so the code can check availability.</li>
 <li>Host the app with per-user limits, add more towns and causes, and track quality and cost on a larger set of real questions.</li>
 </ul>
-<p class="small">Evidence index: <code>docs/evidence_summary.md</code>. Traces: <code>output/agent_runs/</code>. Cost: <code>output/cost_eval/</code> (historical experiment and <code>current_agent_session11.md</code>). Locations and browser tests: <code>output/location_check/</code>. Setup rehearsal: <code>output/setup_rehearsal/</code>. Screenshots: <code>output/screenshots/</code>. Comparison sources: <code>docs/product_comparison.md</code>.</p>
+<p class="small">Evidence index: <code>docs/evidence_summary.md</code> (traces, cost runs, browser tests, screenshots, user-test findings and the fresh-clone check).</p>
 </section>
 {references_html()}
 </body></html>""")

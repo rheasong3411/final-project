@@ -3074,3 +3074,44 @@ recorded.
 ### Follow-up prompts
 
 None yet.
+
+## Session 22 — 2026-10-26 — Participant quotes added
+
+### Prompt (verbatim)
+
+```text
+some quotes to add: 
+
+“Every requirement shows where it came from.”
+“The design is calm, readable and looks trustworthy.”
+“I did say them, so that made the assistant seem broken.”
+“I'd still have to visit three websites and probably email them.”
+```
+
+### What happened
+
+**Where the quotes went:** the four quotes were treated as the informal prospective user's own words and added
+verbatim to:
+- `docs/user_test_findings.md`;
+- report §7 Impact (the first three) and §8 Limits (the fourth, about still contacting organizations);
+- slide 9 (two of them).
+
+The placement of "I did say them…" next to the answers the assistant didn't use is our reading, and is labelled as
+such in the findings document.
+
+**Keeping the report at 15 pages:** the report went to 16 pages. The main cause was the feedback table moving whole to
+the next page and leaving a gap. Fixes:
+- The table may now split, with its header repeated.
+- The evidence-index paragraph was shortened.
+- One repeated sentence was removed.
+- The Tokenomics limits were merged into one paragraph.
+
+Result: `report.html` is 15 pages with 0 external requests, and `slides.html` is 10 slides with no overflow. Renders are
+in `output/final_submission/20261026-023428_participant_quotes/`.
+
+**Records:** the rubric (E6, G7, H14), the evidence summary and the deliverables verification were updated. There is
+still no session timing or session screenshot.
+
+### Follow-up prompts
+
+None yet.
