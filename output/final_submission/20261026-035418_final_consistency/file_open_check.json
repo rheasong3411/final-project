@@ -1,0 +1,29 @@
+{
+ "report": {
+  "images": 6,
+  "all_embedded": true,
+  "all_loaded": true,
+  "h2": [
+   "1Title + links",
+   "2Motivation",
+   "3What is new here",
+   "4The agents",
+   "5Tokenomics",
+   "6Safety",
+   "7Impact",
+   "8Limits + next steps",
+   "References"
+  ],
+  "failed_requests": []
+ },
+ "slides": {
+  "slides": 10,
+  "images": 5,
+  "all_embedded": true,
+  "all_loaded": true,
+  "svg_diagrams": 1,
+  "slide4_notes_has_exception": true,
+  "failed_requests": [],
+  "arrow_key_moves": true
+ }
+}

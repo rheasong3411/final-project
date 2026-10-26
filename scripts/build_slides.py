@@ -17,7 +17,7 @@ C, B, P = R.C, R.B, R.P
 IMG = dict(R.IMG)
 # tighter, larger crops for slide size (left conversation column only)
 IMG["detail_slide"] = R.shot("session16/s16_detail_organization_desktop.png", (880, 155, 1312, 840), width=432, q=90)
-IMG["fit_slide"] = R.shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_2_option_card.png", (0, 0, 1330, 1345), width=665, q=90)
+IMG["fit_slide"] = R.shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_2_option_card.png", (0, 0, 1330, 1240), width=665, q=90)
 IMG["safety_slide"] = R.shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/safety_reply_full.png", (0, 0, 1430, 1840), width=900, q=88)
 REVEAL = "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0"
 REFS = dict(R.REFS)
@@ -113,7 +113,7 @@ s.append(f"""<section>
 s.append(f"""<section>
 <div class="kicker">How it works</div><h2>One agent, real tools, rules decided by code</h2>
 <div class="diagram">{R.DIAGRAM}</div>
-{notes("Six tools: search, details, assess (fixed rules), alternatives, checklist, and update_location_preferences, which records where someone lives, how they travel and where they'll volunteer. A definite 'not met' is allowed only for a requirement marked published_applicable. Distances, fit labels and application status are rendered from structured results, never from the model's prose. Explore and the search tool use the same filter function, and a hard constraint such as 'I can only do a one-time project' is applied to every search; unknown commitments are only 'activities to ask about'. gpt-6-luna is called through Portkey's Responses API with no fallback model.", "portkey_resp")}
+{notes("Six tools: search, details, assess (fixed rules), alternatives, checklist, and update_location_preferences, which records where someone lives, how they travel and where they'll volunteer. A definite 'not met' is allowed only for a requirement marked published_applicable, with one exception: when every conflicting published minimum age is above the person's age, the role is kept out of recommendations and alternatives, while the source conflict stays visible and unresolved. Distances, fit labels and application status are rendered from structured results, never from the model's prose. Explore and the search tool use the same filter function, and a hard constraint such as 'I can only do a one-time project' is applied to every search; unknown commitments are only 'activities to ask about'. gpt-6-luna is called through Portkey's Responses API with no fallback model.", "portkey_resp")}
 </section>""")
 s.append(f"""<section>
 <div class="kicker">The working app</div><h2>Verified locations, honest estimates, a clear next step</h2>
@@ -135,7 +135,7 @@ s.append(f"""<section>
 s.append(f"""<section>
 <div class="kicker">Tokenomics</div><h2>About two-tenths of a cent per run (current agent)</h2>
 <div class="stats">
-<div class="card"><div class="big">{R.money(R.CUR['mean_cost_usd'])}</div><div class="lbl">mean per run, {R.CUR['n']} fresh current runs</div></div>
+<div class="card"><div class="big">{R.money(R.CUR['mean_cost_usd'])}</div><div class="lbl">mean per run, {R.CUR['n']} fresh runs (Session 11); final build: $0.00160 (10 runs)</div></div>
 <div class="card"><div class="big">{R.money(R.CUR_S['per_user_month'], 4)}</div><div class="lbl">per user per month (4 runs)</div></div>
 <div class="card"><div class="big">{R.money(R.CUR_S['users_100'], 2)}</div><div class="lbl">per month for 100 users</div></div>
 <div class="card"><div class="big">{R.money(R.CUR_S['users_10000'], 0)}</div><div class="lbl">per month for 10,000 users</div></div></div>

@@ -49,7 +49,7 @@ N_VERIFIED = sum(r["location_status"] == "verified_site" for r in locs["opportun
 N_SITES = len(locs["sites"])
 N_QUOTES = 391        # scripts/check_evidence_quotes.py, run 2026-10-25 after the Session 11 recheck (0 not found)
 N_LOC_QUOTES = 41     # scripts/build_geo_data.py verify (site, role and home-travel quotes)
-N_TESTS, N_VALIDATOR_TESTS = 244, 52  # pytest tests/; scripts/test_validate_data.py (re-counted 2026-10-26)
+N_TESTS, N_VALIDATOR_TESTS = 245, 52  # pytest tests/; scripts/test_validate_data.py (re-counted 2026-10-26)
 sys_path_geo = ROOT / "backend"
 import sys as _sys  # noqa: E402
 _sys.path.insert(0, str(ROOT))
@@ -161,11 +161,11 @@ def shot(file, box, width=1400, q=84):
 IMG = {
     "hero": shot("session11/s11_home_desktop.png", (0, 0, 1440, 720)),
     # Current interface: Session 16 build captures (the answers panel is unchanged since Session 12).
-    "explore": shot("session16/s16_explore_sorted_boundary_desktop.png", (455, 60, 1320, 870)),
+    "explore": shot("session16/s16_explore_sorted_boundary_desktop.png", (455, 100, 1320, 870)),
     "selected": shot("session16/s16_explore_two_selected_desktop.png", (350, 280, 1320, 900)),
     "detail": shot("session16/s16_detail_organization_desktop.png", (100, 70, 1340, 900)),
     "compare": shot("session16/s16_compare_three_desktop.png", (100, 70, 1340, 900)),
-    "card": shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_2_option_card.png", (0, 0, 1330, 1345), width=665, q=88),
+    "card": shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_2_option_card.png", (0, 0, 1330, 1240), width=665, q=88),
     "run_details": shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_4_run_details.png", (0, 0, 1330, 384), width=665, q=90),
     "prefs": shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/walk_3_your_answers.png", (0, 0, 868, 1560), width=434, q=88),
     "safety": shot("../final_submission/20261026-023657_grading_fixes/rerun_fixed_build/screenshots/safety_reply_full.png", (0, 0, 1430, 1450), width=900, q=86),
@@ -274,7 +274,7 @@ code{font-size:12.5px;background:#F3F1EA;padding:0 4px;border-radius:4px}
  .pb{break-before:auto}
  figure img{width:auto;max-width:100%;max-height:4.4in;margin:0 auto}
  .two{break-inside:avoid;page-break-inside:avoid}
- .two figure img{max-height:3.2in;width:100%;object-fit:cover;object-position:top}
+ .two figure img{max-height:3.75in;width:100%;object-fit:cover;object-position:top}
  .diagram svg{max-height:3.6in}
  a{color:var(--forest);text-decoration:none}
 }
@@ -421,12 +421,9 @@ H.append(f"""<section class="pb"><h2><span class="n">4</span>The agents</h2>
 </ol>
 <div class="two">
 <figure><img src="{IMG['card']}" alt="Option card for The Animal Haven cat socializer: North Haven, about 6 miles away, with a directions link; minimum age 18+ or 21+, you 25, needs confirmation because your age meets both published minimums but the sources disagree; hours not published; 12 months from an older form, needing confirmation; schedule: no days or times published, you Saturday morning, needs confirmation; availability not confirmed; Possible fit, confirm requirements; Visit volunteer page and Contact organization"><figcaption>An option from this run (final build). Facts are labelled lines from the structured results. "Availability not confirmed" is information, with a "?" explanation, and the links name their destinations.</figcaption></figure>
-<figure><img src="{IMG['prefs']}" alt="Your answers panel from this run: hours you can give 2–3 (week, month or visit not said yet), has a car No, New Haven, ZIP, age 25, cats, Saturday, morning, each marked from chat with Edit and Remove, and a Confirm these details button"><figcaption>"Your answers" after this run (top of the panel): the 2–3 hours kept as a range, "no car" and the town, each "from chat"; the ZIP, age, cats, Saturday and morning follow below. One action confirms them; each can be edited or removed.</figcaption></figure>
+<figure><img src="{IMG['prefs']}" alt="Your answers panel from this run: hours you can give 2–3 (week, month or visit not said yet), has a car No, New Haven, ZIP, age 25, cats, Saturday, morning, each marked from chat with Edit and Remove, and a Confirm these details button"><figcaption>"Your answers" after this run (top of the panel): the 2–3 hours kept as a range, "no car", the town, ZIP and age, each "from chat"; cats, Saturday and morning follow below. One action confirms them; each can be edited or removed.</figcaption></figure>
 </div>
-<div class="two">
-<figure><img src="{IMG['explore']}" alt="Explore with a test ZIP and Distance: nearest first selected: Friends of the New Haven Animal Shelter cards read Organization: New Haven, About 1 mile away, with the note Activity location may differ, followed in the same list by The Animal Haven cards reading North Haven, About 6 miles away"><figcaption>Explore (Session 16): one list sorted by distance. Organization distances are labelled as such and sit in the same ranking as verified sites.</figcaption></figure>
-<figure><img src="{IMG['run_details']}" alt="Run details panel for run da50c35fac69: requested model gpt-6-luna, returned model gpt-6-luna-global, API-reported usage 4 model requests, 34104 input tokens with 28570 cached reads and 5030 cache writes, 1626 output tokens"><figcaption>The app shows each run's API-reported token usage ("Run details", this run). Section 5 prices these tokens.</figcaption></figure>
-</div>
+<figure class="narrow"><img src="{IMG['run_details']}" alt="Run details panel for run da50c35fac69: requested model gpt-6-luna, returned model gpt-6-luna-global, API-reported usage 4 model requests, 34104 input tokens with 28570 cached reads and 5030 cache writes, 1626 output tokens"><figcaption>The app shows each run's API-reported token usage ("Run details", this run). Section 5 prices these tokens.</figcaption></figure>
 </section>""")
 
 b_rows = (

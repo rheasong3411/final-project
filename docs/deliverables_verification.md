@@ -179,3 +179,10 @@ renders (`output/deliverables_check/slides/slide01.png`–`slide10.png` and `sli
 render folders from October 26. The current renders are `output/deliverables_check/slides/slide_01.png`–`slide_10.png`,
 `report_print_check.pdf`, and `output/final_submission/20261026-031300_last_pass/`. Traces, run reports and the screenshots used in the report were kept. The removed
 files remain in the Git history.
+
+## Final consistency check (2026-10-26)
+
+Report 15 pages (required section order, 6 embedded images, 0 external requests); slides 10 (5 embedded images and the
+diagram, no overflow, reveal.js from the CDN). Both were opened via `file://`, all 26 links returned 200, and the facts
+were checked against the code. Slide 4's notes and the app's About page now state the conflicting-age exception. Evidence:
+`output/final_submission/20261026-035418_final_consistency/`.

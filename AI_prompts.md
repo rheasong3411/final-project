@@ -3244,3 +3244,59 @@ folder READMEs now point there. The removed files remain in the Git history.
 ### Follow-up prompts
 
 None yet.
+
+## Session 27 — 2026-10-26 — Final consistency and visual check
+
+### Prompt (verbatim)
+
+```text
+please complete a focused final consistency and visual check. no new app features are needed.
+1. correct slide 4’s speaker notes
+the notes currently say a definite “not met” is allowed only for requirements marked published_applicable. add the existing exception: when every conflicting published minimum age exceeds the user’s age, the role is excluded from recommendations while the source conflict remains unresolved.
+check the report, slides, README, and design documentation for the same outdated statement. update current descriptions consistently and preserve historical testing records.
+2. verify the exact final HTML files
+regenerate report.html and slides.html from their source scripts. render and visually inspect every report page and slide for clipping, overflow, unreadable screenshots, broken images, and excessive blank space.
+confirm the report prints to 10–15 US Letter pages in the required section order. confirm the deck has no more than 10 slides. verify all screenshots are embedded and both files open correctly by double-clicking.
+3. verify content consistency
+check numerical claims, tool names, model names, source references, repository links, and descriptions of current behavior against the code and saved evidence. clearly distinguish historical experiments from current app behavior. fix factual inconsistencies without inventing new evidence.
+4. synchronize the submission copies and GitHub
+commit and push the final corrections to the existing repository using a normal push. confirm the published report.html and slides.html match the local final files.
+copy those exact files into Desktop/Submission and open that folder in Finder. rebuild the clean ZIP using the established exclusions, leaving backup.zip untouched.
+5. report the actual results
+update AI_prompts.md and the verification record. give me the final commit, report page count, slide count, checks performed, and any unresolved issue. do not claim a check passed unless you actually performed it.
+```
+
+### What happened
+
+**Fixes:**
+- **Slide 4's notes** now state the conflicting-age exception.
+- **The app's About page** had the same outdated claim ("never counts against you"). It now states the exception;
+  frontend rebuilt.
+- **Numbers:** the report's test count went from 244 to 245. Slide 7 labels the $0.00185 mean as Session 11 and adds
+  the final-build spot check.
+- **Report page 8:**
+  - The option card's badge was clipped; fixed.
+  - The small, older Explore screenshot was removed (the location table covers it).
+  - "Run details" now stands alone.
+  - A caption was corrected.
+
+**Checks run:**
+- **Report:** 15 Letter pages, in the required section order. 6 embedded images and 5 on the slides, all loading from
+  `file://`.
+- **Slides:** 10, plus the SVG diagram. The arrow keys work; reveal.js comes from the CDN.
+- **Overflow:** none.
+- **Links:** all 26 returned 200.
+- **Facts:** tools, model, limits, data counts and test counts were checked against the code.
+- **Tests:** 245.
+- **Visual:** every page and slide was inspected.
+
+Evidence: `output/final_submission/20261026-035418_final_consistency/`.
+
+**Synchronised:**
+- GitHub: pushed, and the published HTML was verified to match the local files.
+- Copies in `Desktop/Submission`.
+- The ZIP was rebuilt; `backup.zip` was untouched.
+
+### Follow-up prompts
+
+None yet.
