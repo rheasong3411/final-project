@@ -28,7 +28,7 @@ Followed only the README quick start, in a new temporary folder outside the proj
   4,291 cache writes, 504 uncached), 1,503 output tokens.
   The two earlier calls used 34,364 input / 2,320 output tokens each (the second being the replay).
 
-## Report and slides (`visual_check/`)
+## Report and slides (renders of this version were removed as outdated; see `../20261026-031300_last_pass/`)
 
 - `report.html`: **15** US Letter pages (Chrome print), 7 embedded images, 0 external requests, sections in the required
   order (Title + links → Limits + next steps). Every page rendered and inspected (`report_page_*.png`).

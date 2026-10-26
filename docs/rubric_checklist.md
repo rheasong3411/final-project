@@ -56,7 +56,7 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
 
 | # | Section / requirement | Pts | Evidence needed (otherwise at most half) | Where | Status | Evidence location |
 |---|---|---|---|---|---|---|
-| E0 | 10–15 printed Letter pages; single self-contained HTML | — | Print preview page count | `report.html` | **verified**: 15 Letter pages, 7 embedded images, 0 external requests, sections in the required order (2026-10-26) | `output/final_submission/20261026-021552/visual_check/` |
+| E0 | 10–15 printed Letter pages; single self-contained HTML | — | Print preview page count | `report.html` | **verified**: 15 Letter pages, 7 embedded images, 0 external requests, sections in the required order (2026-10-26) | `output/final_submission/20261026-031300_last_pass/` |
 | E1 | **1. Title + links:** project name, name, repo link (same as Canvas), app link if online, one-sentence summary | (in sections) | — | `report.html` | verified (repo link; app stated as not hosted, runs locally) | |
 | E2 | **2. Motivation** (who has the problem, today's workaround and its cost, why care) and **3. What is new here** | 8 | **Named existing products compared** | `report.html` §2–3 | implemented but unverified (draft) | Idealist/VolunteerMatch and Samaritan Scout compared from their own pages (accessed 2026-10-25): `docs/product_comparison.md`; report §3 table |
 | E3 | **4. The agents:** each agent, its tools, organization and diagram, model choice and why, one real run step by step | 10 | **One real run traced with screenshots of what each agent did** | `report.html` §4 | implemented but unverified (draft) | Diagram, tool table, matching rules, profile rules, run `ui_integrated__af1ced1eab65` step by step with screenshot |
@@ -71,7 +71,7 @@ Format: a single HTML file, **10–15 printed Letter pages** (regular font, scre
 | # | Requirement | Pts | Evidence needed | Where | Status | Evidence location |
 |---|---|---|---|---|---|---|
 | F1 | Single HTML file using **reveal.js**, **max 10 slides**, arrow keys and F for full screen | — | Open and step through | `slides.html` | implemented but unverified (draft) | 10 slides; arrow navigation tested; reveal.js 5.1.0 from CDN |
-| F2 | Content: whole story, with **diagram, screenshots and key numbers** embedded | 6 | — | `slides.html` | verified (10 slides, diagram and 5 embedded screenshots, no overflow; visually inspected 2026-10-26) | `output/final_submission/20261026-021552/visual_check/` |
+| F2 | Content: whole story, with **diagram, screenshots and key numbers** embedded | 6 | — | `slides.html` | verified (10 slides, diagram and 5 embedded screenshots, no overflow; visually inspected 2026-10-26) | `output/final_submission/20261026-031300_last_pass/` |
 | F3 | Design: big readable text, consistent style (same colors as app) | 2 | — | `slides.html` | implemented but unverified (draft) | Cream / forest / peach; body 24–32 px; no overflow |
 
 ## G. Evidence we must collect while building

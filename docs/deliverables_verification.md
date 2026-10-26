@@ -29,7 +29,7 @@ the notice. It was retaken (`safety_provider_filter_blatant_injection.png`, run
 | Slide count | **10** (maximum 10) | `Reveal.getTotalSlides()` |
 | reveal.js | Loaded from the jsDelivr CDN (`reveal.js@5.1.0`), as the course's slide instructions suggest. **Needs internet** for that library only. | Request log: only the 2 CDN files |
 | Embedded assets | 5 screenshots and the diagram embedded (base64 and inline SVG) | `src` scan |
-| Overflow | No element extends past the 1280×720 slide on any slide | Bounding-box check per slide (`output/deliverables_check/slides_check.json`) |
+| Overflow | No element extends past the 1280×720 slide on any slide | Bounding-box check per slide (`output/deliverables_check/session11_check.json`) |
 | Navigation | The right arrow moves to slide 2; controls and slide numbers shown; no console errors | Playwright keyboard test |
 | Readability | Body text 24–32 px, smallest footnotes 21 px. All slides viewed (contact sheet plus slide 6 at full size). Fixed: content stuck in the top half, small type, and screenshots cropped at the right edge. | Screenshots in `output/deliverables_check/slides/` |
 | Pending shown honestly | The Impact slide says "Prospective-user test: PENDING"; the GitHub link and fresh clone are marked pending on slides 1 and 10 | Reading |
@@ -162,7 +162,7 @@ survive a rebuild.
   one quote's placement (answers the assistant didn't use) is our reading. To stay at 15 pages: the evidence-index
   paragraph was shortened, a sentence repeated elsewhere was removed, the Tokenomics limits became one paragraph, and
   the feedback table may now split across pages (its header repeats).
-- `report.html`: 15 Letter pages, 0 external requests; `slides.html`: 10 slides, no overflow. Renders: `output/final_submission/20261026-023428_participant_quotes/`.
+- `report.html`: 15 Letter pages, 0 external requests; `slides.html`: 10 slides, no overflow. Renders of the final version: `output/final_submission/20261026-031300_last_pass/`.
 
 ## Self-grading fixes (2026-10-26): report and slides rebuilt
 
@@ -170,4 +170,12 @@ survive a rebuild.
   Demonstration 1 replaced by a final-build safety run (Session 6 run kept as a mention); §5 adds a current-build cost
   spot check. Slides 6 and 8 use the same runs. Tables may now split across pages with repeated headers.
 - `report.html` 15 Letter pages, 0 external requests; `slides.html` 10 slides, no overflow; all pages/slides rendered
-  and inspected (`output/final_submission/20261026-023657_grading_fixes/visual_check/`).
+  and inspected (final renders: `output/final_submission/20261026-031300_last_pass/`).
+
+## Outdated renders removed (2026-10-26)
+
+Removed from the repository because they showed earlier versions of the report and slides: the October 25 draft slide
+renders (`output/deliverables_check/slides/slide01.png`–`slide10.png` and `slides_check.json`) and three intermediate
+render folders from October 26. The current renders are `output/deliverables_check/slides/slide_01.png`–`slide_10.png`,
+`report_print_check.pdf`, and `output/final_submission/20261026-031300_last_pass/`. Traces, run reports and the screenshots used in the report were kept. The removed
+files remain in the Git history.

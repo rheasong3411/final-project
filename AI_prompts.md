@@ -3214,3 +3214,33 @@ fix till you it reaches 100/100 plz and repush the github to make sure its the n
 ### Follow-up prompts
 
 None yet.
+
+## Session 26 — 2026-10-26 — Outdated outputs removed
+
+### Prompt (verbatim)
+
+```text
+also make sure that you remove the outdated outputs (i saw that there are two versions of slides)
+```
+
+### What happened
+
+**Two slide sets:** `output/deliverables_check/slides/` held two sets of renders.
+- `slide01.png`–`slide10.png` (plus `slides_check.json`) were the October 25 draft, made by an older check script.
+- `slide_01.png`–`slide_10.png` are the final version.
+
+**Removed:**
+- the old set;
+- three intermediate render folders from October 26 that showed superseded versions of the report and slides:
+  - `20261026-021552/visual_check/`;
+  - `20261026-023428_participant_quotes/`;
+  - `20261026-023657_grading_fixes/visual_check/`.
+
+**Kept:** traces, run reports, and the screenshots the report is built from.
+
+**Current renders:** `output/deliverables_check/` and `output/final_submission/20261026-031300_last_pass/`. Docs and
+folder READMEs now point there. The removed files remain in the Git history.
+
+### Follow-up prompts
+
+None yet.

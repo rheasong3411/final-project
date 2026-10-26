@@ -19,4 +19,4 @@ Real gpt-6-luna calls (fresh, `REFRESH`, test server port 8002, traces saved), s
 - The safety run's two follow-up questions overlapped ("other ways to help" and the model's "other animal-volunteering
   activities"); the duplicate check now recognises that wording (test added). The report's safety crop ends above them.
 - Cost spot check on the final build: 10 fresh runs today averaged $0.00160 (range $0.00094–$0.00256).
-- `visual_check/`: all 15 report pages and 10 slides rendered after the changes.
+- Renders of the report and slides at this stage were removed as outdated; the final renders are in `../20261026-031300_last_pass/`.
