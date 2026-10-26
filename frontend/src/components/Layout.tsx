@@ -65,7 +65,9 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </footer>
-      {compareIds.length > 0 && loc.pathname !== "/compare" && (
+      {/* Not on Compare (already there) or Find my fit (its cards have no compare buttons; the bar would cover the chat
+          on phones). The "Compare (N)" link in the menu stays available everywhere. */}
+      {compareIds.length > 0 && loc.pathname !== "/compare" && loc.pathname !== "/find-my-fit" && (
         <div className="compare-tray" role="region" aria-label="Comparison selection">
           <span className="compare-tray-text" aria-live="polite">
             <strong>{compareIds.length} {compareIds.length === 1 ? "opportunity" : "opportunities"} selected</strong>

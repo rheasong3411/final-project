@@ -351,7 +351,7 @@ H.append(f"""<section class="pb"><h2><span class="n">4</span>The agents</h2>
 </ul>
 <p><strong>Model choice:</strong> the course key allows only <code>gpt-6-luna</code>. It is also the cheapest of the course's models ($0.10 input / $0.50 output per million tokens){cite("lec11")}. It is called through Portkey's OpenAI-compatible Responses API{cite("portkey_resp")} with no fallback model. Every real response identified itself as <code>gpt-6-luna-global</code>.</p>
 <table><thead><tr><th>Tool</th><th>What it does</th></tr></thead>
-{tr("search_opportunities", "The same filter as Explore (scope, the role's own town, commitment, activity, animals, record type; closed roles left out unless named), so the same explicit filters give the same candidates. The person's hard limits (area, \"only one-time\") are always applied, never relaxed. It reports matches outside the chosen area and commitment-unknown leads separately.")}
+{tr("search_opportunities", "The same filter as Explore (scope, the role's own town, commitment, activity, animals, record type; closed roles left out unless named), so the same explicit filters give the same candidates. The person's hard limits (area, “only one-time”) are always applied, never relaxed. It reports matches outside the chosen area and commitment-unknown leads separately.")}
 {tr("get_opportunity_details", "Description, location, schedules, fees, notes and source links. Evidence quotes are returned on request.")}
 {tr("assess_profile", "Runs the fixed rules for up to 4 records. Returns each requirement's result, wording, uncertainty, explanation and sources.")}
 {tr("find_alternatives", "Other ways to help that are not a definite mismatch and not closed: roles, interest areas, self-organized activities.")}
@@ -531,13 +531,13 @@ H.append(f"""<section><h2><span class="n">7</span>Impact</h2>
 <p><strong>Participant (anonymous):</strong> a 25-year-old graduate student in New Haven who likes cats, has no car and can volunteer for 2–3 hours on weekend mornings. One informal session; task completion, times and ratings were <strong>not recorded</strong>. In their words: <em>“Every requirement shows where it came from.”</em> <em>“The design is calm, readable and looks trustworthy.”</em> They also liked the cat suggestions. On answers the assistant didn't use: <em>“I did say them, so that made the assistant seem broken.”</em> Other feedback is paraphrased; <strong>reported problems</strong> are in the first column.</p>
 <table class="fb"><thead><tr><th>Reported</th><th>Our retest (real gpt-6-luna, synthetic re-enactment)</th><th>Change</th></tr></thead>
 {tr("Weekend availability ignored", "Reproduced: days and mornings stored as unverified suggestions", "Stated days and times are used; cards show a Schedule line")}
-{tr("Forgot no car", "Partly: used, but hidden from Your answers", "\"Has a car: No\" shown and kept")}
+{tr("Forgot no car", "Partly: used, but hidden from Your answers", "“Has a car: No” shown and kept")}
 {tr("One-year commitment explained differently", "Not reproduced; the chat hedged it", "Card text must describe uncertain rules as the card does")}
-{tr("Age rules hard to read", "Reproduced", "\"Your age meets both published minimums; confirm the organization's current rule.\"")}
+{tr("Age rules hard to read", "Reproduced", "“Your age meets both published minimums; confirm the organization's current rule.”")}
 {tr("Town filter", "Reproduced: other Connecticut towns in the default scope", "Options follow the selected scope")}
 {tr("Repeated warnings", "Reproduced: same questions every turn; a note on two lines", "Asked once; shared notes shown once")}
 {tr("Distances and directions", "Distances needed an optional ZIP; no directions", "Directions links; organization addresses labelled")}
-{tr("(Found by us) \"2–3 hours\"", "Dropped, then made a 3-hour session", "Kept as a range; the app asks what it means")}
+{tr("(Found by us) “2–3 hours”", "Dropped, then made a 3-hour session", "Kept as a range; the app asks what it means")}
 </table>
 <p class="small">Developer retesting, not the participant: before the fixes {FB['before']['passed']}/{FB['before']['total']} checks passed, after them {FB['after']['passed']}/{FB['after']['total']}, and {FB['screens']['passed']}/{FB['screens']['total']} on the final screens (desktop and mobile). The participant has not retested the changes. One informal test does not establish broad usability, adoption or time savings.</p>
 <p><strong>What we can show now (measured on the app and data):</strong></p>
@@ -558,7 +558,7 @@ H.append(f"""<section><h2><span class="n">8</span>Limits + next steps</h2>
 <li>Reading facts from chat can still go wrong. A quote can be misread, and in one run the model labelled an inferred preference as stated. Confirmation reduces this; it does not remove it.</li>
 <li>Apart from one informal user session, AI testing uses synthetic inputs. Both cost samples are small (n = 6 per version in Session 6; {CUR['n']} current runs).</li>
 <li>Costs are modeled at published rates. The actual Azure or course billing is unverified.</li>
-<li>The app is not hosted online; it runs locally. A fresh clone from GitHub (commit c3f1e0a, one Mac, Python 3.14, no pip cache) went from <code>git clone</code> to a working app in about 23 s of setup commands, with the key read from the folder above. Typing and reading time is not included.</li>
+<li>The app is not hosted online; it runs locally. Fresh clones from GitHub (one Mac, Python 3.14, no pip cache) went from <code>git clone</code> to a working app in about 23–25 s of setup commands, with the key read from the folder above; typing and reading time is extra. It needs Python 3.11 or newer.</li>
 <li>Coverage is {len(orgs)} organizations and needs manual curation.</li>
 </ul>
 <h3>With another month</h3>

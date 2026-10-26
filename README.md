@@ -12,9 +12,10 @@ The key feature is the explanation. For each opportunity the assistant says **wh
 fit**, citing the organization's published rules. It flags information that is **missing or
 conflicting**, and when someone can't meet a requirement it suggests **another way to help**.
 
-## Quick start (about 1 minute of commands; Python 3.10+, no Node needed)
+## Quick start (about 1 minute of commands; Python 3.11+, no Node needed)
 
 ```bash
+python3 --version                                       # must be 3.11 or newer (if not, use e.g. python3.12 below)
 git clone https://github.com/rheasong3411/final-project.git
 cd final-project
 python3 -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
@@ -252,7 +253,7 @@ sees any credential.
 
 ## Setup and run (local)
 
-Requires Python 3.10 or newer (tested on 3.14.7). Node.js 18 or newer (tested on 24.21.0) is needed
+Requires **Python 3.11 or newer** (tested on 3.14.7; `pydantic-ai-slim` 2.61 does not install on 3.10, checked 2026-10-26). Node.js 18 or newer (tested on 24.21.0) is needed
 only to build or develop the website.
 
 ### Quick start for graders (no Node needed)

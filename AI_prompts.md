@@ -3188,3 +3188,29 @@ sessions said not to deploy and a public server would expose the course key to m
 ### Follow-up prompts
 
 None yet.
+
+## Session 25 — 2026-10-26 — Last pass and repush
+
+### Prompt (verbatim)
+
+```text
+fix till you it reaches 100/100 plz and repush the github to make sure its the newest version
+```
+
+### What happened
+
+- **Found and fixed:**
+  - The README promised Python 3.10+, but `pydantic-ai-slim` 2.61 needs 3.11+; a fresh clone on 3.10 failed to
+    install. The README and requirements now say 3.11+, and the quick start checks the version.
+  - Two scripts used f-string syntax that only works on 3.12+; they were rewritten.
+  - The comparison bar is hidden on Find my fit (it covered the chat on phones).
+  - Slide 9 now shows the measured reading-effort numbers.
+  - The report's setup line is commit-neutral.
+- **Checks:** 245 tests; UI suite 42/42; report 15 pages and slides 10, all rendered and inspected. The latest commit
+  was then verified from a fresh GitHub clone.
+- **Still not guaranteed 100:** the idea score is the graders' judgment, and a timed manual-vs-app test needs a real
+  participant (kit in `docs/timed_comparison_kit.md`).
+
+### Follow-up prompts
+
+None yet.

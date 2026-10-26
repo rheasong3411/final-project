@@ -142,7 +142,7 @@ code{font-size:12.5px;background:#F3F1EA;padding:0 4px;border-radius:4px}
 </ul>
 <p><strong>Model choice:</strong> the course key allows only <code>gpt-6-luna</code>. It is also the cheapest of the course's models ($0.10 input / $0.50 output per million tokens)<span class="cite">[<a href="#ref-6">6</a>]</span>. It is called through Portkey's OpenAI-compatible Responses API<span class="cite">[<a href="#ref-9">9</a>]</span> with no fallback model. Every real response identified itself as <code>gpt-6-luna-global</code>.</p>
 <table><thead><tr><th>Tool</th><th>What it does</th></tr></thead>
-<tr><td>search_opportunities</td><td>The same filter as Explore (scope, the role's own town, commitment, activity, animals, record type; closed roles left out unless named), so the same explicit filters give the same candidates. The person's hard limits (area, "only one-time") are always applied, never relaxed. It reports matches outside the chosen area and commitment-unknown leads separately.</td></tr>
+<tr><td>search_opportunities</td><td>The same filter as Explore (scope, the role's own town, commitment, activity, animals, record type; closed roles left out unless named), so the same explicit filters give the same candidates. The person's hard limits (area, “only one-time”) are always applied, never relaxed. It reports matches outside the chosen area and commitment-unknown leads separately.</td></tr>
 <tr><td>get_opportunity_details</td><td>Description, location, schedules, fees, notes and source links. Evidence quotes are returned on request.</td></tr>
 <tr><td>assess_profile</td><td>Runs the fixed rules for up to 4 records. Returns each requirement's result, wording, uncertainty, explanation and sources.</td></tr>
 <tr><td>find_alternatives</td><td>Other ways to help that are not a definite mismatch and not closed: roles, interest areas, self-organized activities.</td></tr>
@@ -304,13 +304,13 @@ code{font-size:12.5px;background:#F3F1EA;padding:0 4px;border-radius:4px}
 <p><strong>Participant (anonymous):</strong> a 25-year-old graduate student in New Haven who likes cats, has no car and can volunteer for 2–3 hours on weekend mornings. One informal session; task completion, times and ratings were <strong>not recorded</strong>. In their words: <em>“Every requirement shows where it came from.”</em> <em>“The design is calm, readable and looks trustworthy.”</em> They also liked the cat suggestions. On answers the assistant didn't use: <em>“I did say them, so that made the assistant seem broken.”</em> Other feedback is paraphrased; <strong>reported problems</strong> are in the first column.</p>
 <table class="fb"><thead><tr><th>Reported</th><th>Our retest (real gpt-6-luna, synthetic re-enactment)</th><th>Change</th></tr></thead>
 <tr><td>Weekend availability ignored</td><td>Reproduced: days and mornings stored as unverified suggestions</td><td>Stated days and times are used; cards show a Schedule line</td></tr>
-<tr><td>Forgot no car</td><td>Partly: used, but hidden from Your answers</td><td>"Has a car: No" shown and kept</td></tr>
+<tr><td>Forgot no car</td><td>Partly: used, but hidden from Your answers</td><td>“Has a car: No” shown and kept</td></tr>
 <tr><td>One-year commitment explained differently</td><td>Not reproduced; the chat hedged it</td><td>Card text must describe uncertain rules as the card does</td></tr>
-<tr><td>Age rules hard to read</td><td>Reproduced</td><td>"Your age meets both published minimums; confirm the organization's current rule."</td></tr>
+<tr><td>Age rules hard to read</td><td>Reproduced</td><td>“Your age meets both published minimums; confirm the organization's current rule.”</td></tr>
 <tr><td>Town filter</td><td>Reproduced: other Connecticut towns in the default scope</td><td>Options follow the selected scope</td></tr>
 <tr><td>Repeated warnings</td><td>Reproduced: same questions every turn; a note on two lines</td><td>Asked once; shared notes shown once</td></tr>
 <tr><td>Distances and directions</td><td>Distances needed an optional ZIP; no directions</td><td>Directions links; organization addresses labelled</td></tr>
-<tr><td>(Found by us) "2–3 hours"</td><td>Dropped, then made a 3-hour session</td><td>Kept as a range; the app asks what it means</td></tr>
+<tr><td>(Found by us) “2–3 hours”</td><td>Dropped, then made a 3-hour session</td><td>Kept as a range; the app asks what it means</td></tr>
 </table>
 <p class="small">Developer retesting, not the participant: before the fixes 25/34 checks passed, after them 34/34, and 23/23 on the final screens (desktop and mobile). The participant has not retested the changes. One informal test does not establish broad usability, adoption or time savings.</p>
 <p><strong>What we can show now (measured on the app and data):</strong></p>
@@ -329,7 +329,7 @@ code{font-size:12.5px;background:#F3F1EA;padding:0 4px;border-radius:4px}
 <li>Reading facts from chat can still go wrong. A quote can be misread, and in one run the model labelled an inferred preference as stated. Confirmation reduces this; it does not remove it.</li>
 <li>Apart from one informal user session, AI testing uses synthetic inputs. Both cost samples are small (n = 6 per version in Session 6; 17 current runs).</li>
 <li>Costs are modeled at published rates. The actual Azure or course billing is unverified.</li>
-<li>The app is not hosted online; it runs locally. A fresh clone from GitHub (commit c3f1e0a, one Mac, Python 3.14, no pip cache) went from <code>git clone</code> to a working app in about 23 s of setup commands, with the key read from the folder above. Typing and reading time is not included.</li>
+<li>The app is not hosted online; it runs locally. Fresh clones from GitHub (one Mac, Python 3.14, no pip cache) went from <code>git clone</code> to a working app in about 23–25 s of setup commands, with the key read from the folder above; typing and reading time is extra. It needs Python 3.11 or newer.</li>
 <li>Coverage is 8 organizations and needs manual curation.</li>
 </ul>
 <h3>With another month</h3>

@@ -32,6 +32,8 @@ SRC = Path(__file__).resolve().parent.parent
 EXCLUDE_DIRS = {".venv", "node_modules", "local_data", "__pycache__", ".pytest_cache", ".git"}
 EXCLUDE_FILES = {".env", ".DS_Store"}
 
+ROOT_DIV = b'<div id="root">'
+
 
 def copy_tree(dst: Path) -> int:
     n = 0
@@ -81,7 +83,7 @@ def check(port: int, assistant: bool, stage: str = "") -> dict:
            "credential_source": health["assistant"]["credential_source"]}
     for path in ("/", "/explore", "/opportunities/gnhcp_grant_writing", "/find-my-fit"):
         st, ct, b = get(base + path)
-        out[f"page {path}"] = f"{st} {ct.split(';')[0]} {'has app root' if b'<div id=\"root\">' in b else 'NO ROOT'}"
+        out[f"page {path}"] = f"{st} {ct.split(';')[0]} {'has app root' if ROOT_DIV in b else 'NO ROOT'}"
     st, _, b = get(base + "/api/opportunities")
     out["api /api/opportunities count"] = json.loads(b)["count"]
     if assistant:

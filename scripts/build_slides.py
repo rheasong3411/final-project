@@ -159,7 +159,8 @@ s.append(f"""<section>
 <div class="row c2" style="font-size:24px"><div><h3>Liked</h3><ul><li>Cute and easy to read</li><li>Sources build trust</li><li>Useful cat suggestions</li></ul>
 <h3>Reported</h3><ul><li>Weekend times not used; "no car" forgotten: <em>“I did say them, so that made the assistant seem broken.”</em></li><li>One-year rule explained differently</li><li>Wanted distances and directions</li><li>Age wording, town filter, repeated warnings</li></ul></div>
 <div><h3>Reproduced and fixed (developer retest)</h3><ul><li>Days and "no car" kept and shown; a schedule line on every card</li><li>"2–3 hours" kept as a range; the app asks what it means</li><li>Plain age wording; town options follow scope</li><li>Directions links; questions and shared notes shown once</li></ul>
-<p class="small">Retest checks: {R.FB['before']['passed']}/{R.FB['before']['total']} before, {R.FB['after']['passed']}/{R.FB['after']['total']} after. The participant hasn't retested. One test doesn't show broad usability or time savings.</p></div></div>
+<p class="small">Retest checks: {R.FB['before']['passed']}/{R.FB['before']['total']} before, {R.FB['after']['passed']}/{R.FB['after']['total']} after. The participant hasn't retested.</p></div></div>
+<p style="font-size:22px;margin-top:10px"><strong>Measured:</strong> by hand, Greater New Haven's 28 roles mean reading <strong>13 pages across 5 organizations</strong> (15 roles split over 2–4 pages); here, one sourced card per role and a fit check in a median <strong>22 s</strong>. No manual search was timed, so no time saving is claimed.</p>
 {notes("This is one informal test with one person; the feedback is paraphrased. The one-year-commitment mismatch was not reproduced in our runs, but a check now keeps card text consistent with the card. Developer retests used real gpt-6-luna calls with a synthetic re-enactment.")}
 </section>""")
 s.append(f"""<section>

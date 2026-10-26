@@ -1,4 +1,4 @@
-# Backend (installed and tested 2026-10-25 on Python 3.14.7)
+# Backend: needs Python 3.11 or newer (pydantic-ai-slim 2.61 requires it); installed and tested on Python 3.14.7
 pydantic-ai-slim[openai]==2.61.0
 pydantic==2.14.1
 fastapi==0.162.0
